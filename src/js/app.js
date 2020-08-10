@@ -1,5 +1,7 @@
 
 import $ from "jquery";
+require('./slick/slick');
+
 
 // window.dropdownMenu = function (){dropdownMenu() };
 // function dropdownMenu(){
@@ -14,8 +16,15 @@ import $ from "jquery";
 //text writer
 $(document).ready(function () {
 
+  $('.single-item').slick({
+    prevArrow: $('.prev-slider-video'),
+    nextArrow: $('.next-slider-video'),
+  });
+  $('.multiple-items').slick({
+    prevArrow: $('.prev-slider-img'),
+    nextArrow: $('.next-slider-img'),
+  });
 });
-const cursorTime = 500;
 const textTime = 1100;
 const textNode = document.querySelector('.welcome-txt');
 function textWriter(node, ms) {
@@ -66,71 +75,45 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
-
+//video  slider 1
 document.addEventListener("DOMContentLoaded", setupControl, false);
- function setupControl() {  
-  var myVideo = document.getElementById("myVideo");
-   if (myVideo.canPlayType) {  
-    myVideo.removeAttribute("controls"); 
-
-    myVideo.addEventListener("timeupdate", reportProgress, false);
+function setupControl() {
+  var myVideo = document.getElementById("video-in-block");
+  if (myVideo.canPlayType) {
+    myVideo.removeAttribute("controls");
     myVideo.addEventListener("ended", endPlayback, false);
- 
     myVideo.addEventListener("play", function () {
       document.getElementById("start").disabled = true;
       document.getElementById("pause").disabled = false;
-      document.getElementById("stop").disabled = false;
-
-      document.getElementById("plus").disabled = false; 
-      document.getElementById("minus").disabled = false;
-      document.getElementById("mute").disabled = false;
     }, false);
-     myVideo.addEventListener("pause", function () {
-      document.getElementById("start").disabled = false; 
+    myVideo.addEventListener("pause", function () {
+      document.getElementById("start").disabled = false;
       document.getElementById("pause").disabled = true;
-      document.getElementById("plus").disabled = true; 
-      document.getElementById("minus").disabled = true;
-      document.getElementById("mute").disabled = true;
- 
     }, false);
- 
     document.getElementById("start").addEventListener("click", startPlayback, false);
-    document.getElementById("stop").addEventListener("click", stopPlayback, false);
     document.getElementById("pause").addEventListener("click", pausePlayback, false);
   }
 }
-window.startvideo = function (){startvideo() };
+window.startvideo = function () { startvideo() };
 function startvideo() {
-  document.getElementById("start").style.display="none";
-  document.getElementById("pause").style.display="inline";
+  document.getElementById("start").style.display = "none";
+  document.getElementById("pause").style.display = "inline";
+  myVideo.setAttribute("controls");
 }
-window.pausevideo = function (){pausevideo() };
+window.pausevideo = function () { pausevideo() };
 function pausevideo() {
-  document.getElementById("start").style.display="inline";
-  document.getElementById("pause").style.display="none";
+  document.getElementById("start").style.display = "inline";
+  document.getElementById("pause").style.display = "none";
 }
 function startPlayback() {
-  document.getElementById("myVideo").play();
-}  
-function pausePlayback() { 
-  document.getElementById("myVideo").pause(); 
- 
+  document.getElementById("video-in-block").play();
 }
- function stopPlayback() {
-  var myVideo = document.getElementById("myVideo");
-  myVideo.pause(); myVideo.currentTime = 0; endPlayback();
- 
+function pausePlayback() {
+  document.getElementById("video-in-block").pause();
 }
- 
-function endPlayback() {  
-  document.getElementById("start").disabled = false; 
+function endPlayback() {
+  document.getElementById("start").disabled = false;
   document.getElementById("pause").disabled = true;
-  document.getElementById("stop").disabled = true;
- 
-} // update the progress bar 
-function reportProgress() {
-  var barwidth = 500; var sliderwidth = 30;
- 
-  var time = Math.round(this.currentTime);  
-  var duration = parseInt(this.duration);
-}
+  document.getElementById("pause").style.display = "none";
+  document.getElementById("start").style.display = "inline";
+}  
