@@ -1503,6 +1503,7 @@
   overflow: hidden;
   width: 223px;
   height: 223px;
+  position: relative;
 }
 .course-block .pic-box img {
   width: 100%;
@@ -1525,8 +1526,105 @@
   padding: 22px 34px 13px 34px;
   transition: all 0.5s ease-in-out;
 }
-.course-block:hover .title-box {
-  transform: rotate(-5deg);
+.course-block .hoverbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 30px;
+}
+.course-block .hoverbox .title {
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 0 30px 0;
+}
+.course-block .hoverbox ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.course-block .hoverbox ul li {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 36px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  padding-left: 30px;
+  position: relative;
+  background-size: 16px 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.course-block .hoverbox ul li.age {
+  background-image: url("/img/people.svg");
+}
+.course-block .hoverbox ul li.time {
+  background-image: url("/img/calendar.svg");
+}
+.course-block .hoverbox ul li.status {
+  background-image: url("/img/mobile-analytics.svg");
+}
+.course-block .hoverbox {
+  opacity: 0;
+  transition: 0.5s;
+}
+.course-block:hover .hoverbox {
+  opacity: 1;
+  position: absolute;
+  background: linear-gradient(148.2deg, rgba(102, 59, 148, 0.75) 0.96%, rgba(70, 29, 255, 0.75) 102.09%);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 30px;
+}
+.course-block:hover .hoverbox .title {
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 0 30px 0;
+}
+.course-block:hover .hoverbox ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.course-block:hover .hoverbox ul li {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 36px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  padding-left: 30px;
+  position: relative;
+  background-size: 16px 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.course-block:hover .hoverbox ul li.age {
+  background-image: url("/img/people.svg");
+}
+.course-block:hover .hoverbox ul li.time {
+  background-image: url("/img/calendar.svg");
+}
+.course-block:hover .hoverbox ul li.status {
+  background-image: url("/img/mobile-analytics.svg");
+}
+
+.course-block.violet .hoverbox {
+  background: linear-gradient(148.2deg, rgba(102, 59, 148, 0.75) 0.96%, rgba(70, 29, 255, 0.75) 102.09%);
+}
+
+.course-block.green .hoverbox {
+  background: linear-gradient(98.96deg, rgba(9, 153, 57, 0.7) 3.03%, rgba(110, 181, 44, 0.7) 81.58%);
+}
+
+.course-block.blue .hoverbox {
+  background: linear-gradient(36.05deg, rgba(70, 29, 255, 0.7) -4.31%, rgba(17, 183, 255, 0.7) 102.53%);
 }
 
 .course-block.green .pic-box {
@@ -1704,6 +1802,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .hoverbox {
+    display: none;
   }
 }
 @media (max-width: 767.8px) {
