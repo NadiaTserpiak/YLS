@@ -1,4 +1,3 @@
-
 import $ from "jquery";
 require('./slick/slick');
 
