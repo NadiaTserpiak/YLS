@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-@import url(/src/js/slick/slick-theme.css);@import url(/src/js/slick/slick.css);* {
-=======
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap);@charset "UTF-8";
-* {
->>>>>>> 318000b53e04d1a9197a8eb171463a27494b6662
+@import url(/src/js/slick/slick-theme.css);@import url(/src/js/slick/slick.css);@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap);* {
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
@@ -1208,7 +1203,6 @@
   height: 65px;
   position: absolute;
   background-color: transparent;
-<<<<<<< HEAD
   cursor: pointer;
   display: none;
 }
@@ -1333,7 +1327,6 @@
 
 .btn-know-more {
   cursor: pointer;
-=======
 }
 
 .courses-container {
@@ -1779,5 +1772,4 @@
   .course-block {
     margin-bottom: 20px;
   }
->>>>>>> 318000b53e04d1a9197a8eb171463a27494b6662
 }
