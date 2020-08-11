@@ -11119,12 +11119,15 @@ function endPlayback() {
   document.getElementById("pause").disabled = true;
   document.getElementById("pause").style.display = "none";
   document.getElementById("start").style.display = "inline";
-} // $(".todown a").on("click", function (event) {
-//     event.preventDefault();
-//     var id = $(this).attr('href'),
-//         top = $(id).offset().top;
-//     $('body,html').animate({ scrollTop: top }, 1500);
-// });
+} // SCROLL TO TOP
+
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.todown').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('body,html').animate({
+    scrollTop: 0
+  }, 400);
+  return false;
+});
 
 /***/ }),
 

@@ -123,11 +123,11 @@ function endPlayback() {
 }
 
 
+// SCROLL TO TOP
 
-// $(".todown a").on("click", function (event) {
-//     event.preventDefault();
-//     var id = $(this).attr('href'),
-//         top = $(id).offset().top;
-//     $('body,html').animate({ scrollTop: top }, 1500);
-// });
-
+$('.todown').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 400);
+    return false;
+});
