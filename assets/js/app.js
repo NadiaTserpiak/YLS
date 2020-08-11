@@ -11118,12 +11118,9 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.single-item')) {
     startvideo();
   };
 
-<<<<<<< HEAD
-function endPlayback() {
-  document.getElementById("start").disabled = false;
-  document.getElementById("pause").disabled = true;
-  document.getElementById("pause").style.display = "none";
-  document.getElementById("start").style.display = "inline";
+  window.pausevideo = function () {
+    pausevideo();
+  };
 } // SCROLL TO TOP
 
 
@@ -11133,12 +11130,6 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.todown').click(function () {
   }, 400);
   return false;
 });
-=======
-  window.pausevideo = function () {
-    pausevideo();
-  };
-}
->>>>>>> 36eaace07dd1a1bd1c541ac2a25dac21e858fab0
 
 /***/ }),
 
@@ -13852,8 +13843,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Vasyl\Desktop\projects\NadiaTserpiak.github.io\YLS\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Vasyl\Desktop\projects\NadiaTserpiak.github.io\YLS\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\flyfox05\Desktop\YLS\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\flyfox05\Desktop\YLS\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })

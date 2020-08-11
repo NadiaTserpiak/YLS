@@ -122,13 +122,13 @@ if ($('*').is('.single-item')) {
         document.getElementById("pause").style.display = "none";
         document.getElementById("start").style.display = "inline";
     }
+}
 
+// SCROLL TO TOP
 
-    // SCROLL TO TOP
-
-    $('.todown').click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 400);
-        return false;
-    });
+$('.todown').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 400);
+    return false;
+});
