@@ -1875,3 +1875,111 @@
     margin-bottom: 20px;
   }
 }
+footer {
+  height: 206px;
+  margin-top: 80px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+footer .footer__content {
+  background: #333333;
+  height: 158px;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: inherit;
+}
+footer .footer-leftpic {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+footer .footer__content-left {
+  flex: 0 0 calc(50% - 70px);
+  max-width: calc(50% - 70px);
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer .footer__content-left .footer__title {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-top: 24px;
+}
+footer .footer__content-left .footer__title p {
+  color: #fff;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 0 25px 0;
+}
+footer .footer__content-left .footer__title a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+}
+footer .footer__content-left .footer__title a:first-child {
+  margin-right: 13px;
+}
+footer .footer__content-left .footer__social {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-top: 36px;
+}
+footer .footer__content-left .footer__social ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer__content-left .footer__social ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+footer .footer__content-left .footer__social ul li:last-child {
+  margin-right: 0;
+}
+footer .footer__content-right {
+  flex: 0 0 calc(50% - 70px);
+  max-width: calc(50% - 70px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+footer .footer__content-right a {
+  width: 290px;
+  height: 84px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 30px 38px 11px 38px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  letter-spacing: 0.2em;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+footer .footer__content-right .footer__greenbtn {
+  background-image: url("/img/footer-btngreen.png");
+}
+footer .footer__content-right .footer__violetbtn {
+  background-image: url("/img/footer-btnviolet.png");
+  margin-left: 110px;
+}
+footer .footer__content-center {
+  flex: 0 0 140px;
+  max-width: 140px;
+}

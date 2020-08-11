@@ -11004,46 +11004,49 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     nextArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()('.next-slider-img')
   });
 });
-var textTime = 1100;
-var textNode = document.querySelector('.welcome-txt');
 
-function textWriter(node, ms) {
-  var text = node.textContent;
-  var index = 0;
-  var textToShowArray = ['Welcome to'];
-  var textToShow = text;
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.welcome-txt')) {
+  var textWriter = function textWriter(node, ms) {
+    var text = node.textContent;
+    var index = 0;
+    var textToShowArray = ['Welcome to'];
+    var textToShow = text;
 
-  function reverse() {
-    var step = ms / textToShow.length;
-    var interval = setInterval(function () {
-      textToShow = textToShow.slice(0, textToShow.length - 1);
-      node.textContent = textToShow;
+    function reverse() {
+      var step = ms / textToShow.length;
+      var interval = setInterval(function () {
+        textToShow = textToShow.slice(0, textToShow.length - 1);
+        node.textContent = textToShow;
 
-      if (textToShow.length === 0) {
-        clearTimeout(interval);
-        textToShow = textToShowArray[index];
-        index++;
-        forward();
-      }
-    }, step);
-  }
+        if (textToShow.length === 0) {
+          clearTimeout(interval);
+          textToShow = textToShowArray[index];
+          index++;
+          forward();
+        }
+      }, step);
+    }
 
-  function forward() {
-    var step = ms / textToShow.length;
-    var length = textToShow.length;
-    var copyText = textToShow;
-    var currentIndex = 1;
-    var interval = setInterval(function () {
-      textToShow = copyText.slice(0, currentIndex);
-      currentIndex++;
-      node.textContent = textToShow;
-    }, step);
-  }
+    function forward() {
+      var step = ms / textToShow.length;
+      var length = textToShow.length;
+      var copyText = textToShow;
+      var currentIndex = 1;
+      var interval = setInterval(function () {
+        textToShow = copyText.slice(0, currentIndex);
+        currentIndex++;
+        node.textContent = textToShow;
+      }, step);
+    }
 
-  reverse();
-}
+    reverse();
+  };
 
-textWriter(textNode, textTime);
+  var textTime = 1100;
+  var textNode = document.querySelector('.welcome-txt');
+  textWriter(textNode, textTime);
+} // -
+
 
 window.openNav = function () {
   openNav();
@@ -11116,7 +11119,12 @@ function endPlayback() {
   document.getElementById("pause").disabled = true;
   document.getElementById("pause").style.display = "none";
   document.getElementById("start").style.display = "inline";
-}
+} // $(".todown a").on("click", function (event) {
+//     event.preventDefault();
+//     var id = $(this).attr('href'),
+//         top = $(id).offset().top;
+//     $('body,html').animate({ scrollTop: top }, 1500);
+// });
 
 /***/ }),
 
