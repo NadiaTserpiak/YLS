@@ -11066,65 +11066,62 @@ function closeNav() {
 } //video  slider 1
 
 
-document.addEventListener("DOMContentLoaded", setupControl, false);
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.single-item')) {
+  var setupControl = function setupControl() {
+    var myVideo = document.getElementById("video-in-block");
 
-function setupControl() {
-  var myVideo = document.getElementById("video-in-block");
+    if (myVideo.canPlayType) {
+      myVideo.removeAttribute("controls");
+      myVideo.addEventListener("ended", endPlayback, false);
+      myVideo.addEventListener("play", function () {
+        document.getElementById("start").disabled = true;
+        document.getElementById("pause").disabled = false;
+      }, false);
+      myVideo.addEventListener("pause", function () {
+        document.getElementById("start").disabled = false;
+        document.getElementById("pause").disabled = true;
+      }, false);
+      document.getElementById("start").addEventListener("click", startPlayback, false);
+      document.getElementById("pause").addEventListener("click", pausePlayback, false);
+    }
+  };
 
-  if (myVideo.canPlayType) {
-    myVideo.removeAttribute("controls");
-    myVideo.addEventListener("ended", endPlayback, false);
-    myVideo.addEventListener("play", function () {
-      document.getElementById("start").disabled = true;
-      document.getElementById("pause").disabled = false;
-    }, false);
-    myVideo.addEventListener("pause", function () {
-      document.getElementById("start").disabled = false;
-      document.getElementById("pause").disabled = true;
-    }, false);
-    document.getElementById("start").addEventListener("click", startPlayback, false);
-    document.getElementById("pause").addEventListener("click", pausePlayback, false);
-  }
+  var startvideo = function startvideo() {
+    document.getElementById("start").style.display = "none";
+    document.getElementById("pause").style.display = "inline";
+    myVideo.setAttribute("controls");
+  };
+
+  var pausevideo = function pausevideo() {
+    document.getElementById("start").style.display = "inline";
+    document.getElementById("pause").style.display = "none";
+  };
+
+  var startPlayback = function startPlayback() {
+    document.getElementById("video-in-block").play();
+  };
+
+  var pausePlayback = function pausePlayback() {
+    document.getElementById("video-in-block").pause();
+  };
+
+  var endPlayback = function endPlayback() {
+    document.getElementById("start").disabled = false;
+    document.getElementById("pause").disabled = true;
+    document.getElementById("pause").style.display = "none";
+    document.getElementById("start").style.display = "inline";
+  };
+
+  document.addEventListener("DOMContentLoaded", setupControl, false);
+
+  window.startvideo = function () {
+    startvideo();
+  };
+
+  window.pausevideo = function () {
+    pausevideo();
+  };
 }
-
-window.startvideo = function () {
-  startvideo();
-};
-
-function startvideo() {
-  document.getElementById("start").style.display = "none";
-  document.getElementById("pause").style.display = "inline";
-  myVideo.setAttribute("controls");
-}
-
-window.pausevideo = function () {
-  pausevideo();
-};
-
-function pausevideo() {
-  document.getElementById("start").style.display = "inline";
-  document.getElementById("pause").style.display = "none";
-}
-
-function startPlayback() {
-  document.getElementById("video-in-block").play();
-}
-
-function pausePlayback() {
-  document.getElementById("video-in-block").pause();
-}
-
-function endPlayback() {
-  document.getElementById("start").disabled = false;
-  document.getElementById("pause").disabled = true;
-  document.getElementById("pause").style.display = "none";
-  document.getElementById("start").style.display = "inline";
-} // $(".todown a").on("click", function (event) {
-//     event.preventDefault();
-//     var id = $(this).attr('href'),
-//         top = $(id).offset().top;
-//     $('body,html').animate({ scrollTop: top }, 1500);
-// });
 
 /***/ }),
 
@@ -13838,8 +13835,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\flyfox05\Desktop\YLS\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\flyfox05\Desktop\YLS\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\Vasyl\Desktop\projects\NadiaTserpiak.github.io\YLS\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Vasyl\Desktop\projects\NadiaTserpiak.github.io\YLS\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })

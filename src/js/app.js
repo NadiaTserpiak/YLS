@@ -80,6 +80,7 @@ function closeNav() {
 }
 
 //video  slider 1
+if ($('*').is('.single-item')) {
 document.addEventListener("DOMContentLoaded", setupControl, false);
 function setupControl() {
     var myVideo = document.getElementById("video-in-block");
@@ -122,12 +123,5 @@ function endPlayback() {
     document.getElementById("start").style.display = "inline";
 }
 
-
-
-// $(".todown a").on("click", function (event) {
-//     event.preventDefault();
-//     var id = $(this).attr('href'),
-//         top = $(id).offset().top;
-//     $('body,html').animate({ scrollTop: top }, 1500);
-// });
+}
 
