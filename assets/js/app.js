@@ -11127,7 +11127,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.single-item')) {
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.todown').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('body,html').animate({
     scrollTop: 0
-  }, 400);
+  }, 1000);
   return false;
 });
 
