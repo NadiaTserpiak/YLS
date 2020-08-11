@@ -80,54 +80,55 @@ function closeNav() {
 }
 
 //video  slider 1
-document.addEventListener("DOMContentLoaded", setupControl, false);
-function setupControl() {
-    var myVideo = document.getElementById("video-in-block");
-    if (myVideo.canPlayType) {
-        myVideo.removeAttribute("controls");
-        myVideo.addEventListener("ended", endPlayback, false);
-        myVideo.addEventListener("play", function () {
-            document.getElementById("start").disabled = true;
-            document.getElementById("pause").disabled = false;
-        }, false);
-        myVideo.addEventListener("pause", function () {
-            document.getElementById("start").disabled = false;
-            document.getElementById("pause").disabled = true;
-        }, false);
-        document.getElementById("start").addEventListener("click", startPlayback, false);
-        document.getElementById("pause").addEventListener("click", pausePlayback, false);
+if ($('*').is('.single-item')) {
+    document.addEventListener("DOMContentLoaded", setupControl, false);
+    function setupControl() {
+        var myVideo = document.getElementById("video-in-block");
+        if (myVideo.canPlayType) {
+            myVideo.removeAttribute("controls");
+            myVideo.addEventListener("ended", endPlayback, false);
+            myVideo.addEventListener("play", function () {
+                document.getElementById("start").disabled = true;
+                document.getElementById("pause").disabled = false;
+            }, false);
+            myVideo.addEventListener("pause", function () {
+                document.getElementById("start").disabled = false;
+                document.getElementById("pause").disabled = true;
+            }, false);
+            document.getElementById("start").addEventListener("click", startPlayback, false);
+            document.getElementById("pause").addEventListener("click", pausePlayback, false);
+        }
     }
-}
-window.startvideo = function () { startvideo() };
-function startvideo() {
-    document.getElementById("start").style.display = "none";
-    document.getElementById("pause").style.display = "inline";
-    myVideo.setAttribute("controls");
-}
-window.pausevideo = function () { pausevideo() };
-function pausevideo() {
-    document.getElementById("start").style.display = "inline";
-    document.getElementById("pause").style.display = "none";
-}
-function startPlayback() {
-    document.getElementById("video-in-block").play();
-}
-function pausePlayback() {
-    document.getElementById("video-in-block").pause();
-}
-function endPlayback() {
-    document.getElementById("start").disabled = false;
-    document.getElementById("pause").disabled = true;
-    document.getElementById("pause").style.display = "none";
-    document.getElementById("start").style.display = "inline";
-}
+    window.startvideo = function () { startvideo() };
+    function startvideo() {
+        document.getElementById("start").style.display = "none";
+        document.getElementById("pause").style.display = "inline";
+        myVideo.setAttribute("controls");
+    }
+    window.pausevideo = function () { pausevideo() };
+    function pausevideo() {
+        document.getElementById("start").style.display = "inline";
+        document.getElementById("pause").style.display = "none";
+    }
+    function startPlayback() {
+        document.getElementById("video-in-block").play();
+    }
+    function pausePlayback() {
+        document.getElementById("video-in-block").pause();
+    }
+    function endPlayback() {
+        document.getElementById("start").disabled = false;
+        document.getElementById("pause").disabled = true;
+        document.getElementById("pause").style.display = "none";
+        document.getElementById("start").style.display = "inline";
+    }
 
 
-// SCROLL TO TOP
+    // SCROLL TO TOP
 
-$('.todown').click(function () {
-    $('body,html').animate({
-        scrollTop: 0
-    }, 400);
-    return false;
-});
+    $('.todown').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
