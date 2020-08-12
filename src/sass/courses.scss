@@ -49,7 +49,8 @@
 }
 
 .breadcrums {
-    margin: 45px 0 58px 0;
+    margin: 0 0 58px 0;
+    padding-top: 45px;
 
     a,
     li {
@@ -443,6 +444,13 @@
     }
 }
 
+.courses-content {
+    margin-bottom: 155px;
+}
+
+.individual-way {
+    height: auto;
+}
 
 // ADAPTIVE
 
@@ -458,7 +466,8 @@
     }
 
     .breadcrums {
-        margin: 25px 0 50px 0;
+        margin: 0 0 50px 0;
+        padding-top: 25px;
     }
 
     .sidebar-filter {
@@ -605,7 +614,8 @@
     }
 
     .breadcrums {
-        margin: 10px 0 30px 0;
+        margin: 0 0 30px 0;
+        padding-top: 10px;
     }
 
     .courses__rightcont .courses-col-4 {

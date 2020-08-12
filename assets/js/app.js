@@ -11278,9 +11278,34 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.single-item')) {
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.todown').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('body,html').animate({
     scrollTop: 0
-  }, 400);
+  }, 1000);
   return false;
+<<<<<<< HEAD
 }); //animation
+=======
+}); // SLIDER COURSES ABOUT
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  dots: true,
+  asNavFor: '.slider-nav',
+  prevArrow: '<button type="button" class="slick-prev"></button>',
+  nextArrow: '<button type="button" class="slick-next"></button>'
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-nav').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  arrows: false,
+  focusOnSelect: true,
+  vertical: true,
+  verticalSwiping: true
+});
+>>>>>>> de041c91112205b7ca34fa56c25d44cd04efc693
 
 /***/ }),
 
