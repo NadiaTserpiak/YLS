@@ -132,3 +132,25 @@ $('.todown').click(function () {
     }, 1000);
     return false;
 });
+
+// SLIDER COURSES ABOUT
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    dots: true,
+    asNavFor: '.slider-nav',
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+});
+$('.slider-nav').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    arrows: false,
+    focusOnSelect: true,
+    vertical: true,
+    verticalSwiping: true
+});

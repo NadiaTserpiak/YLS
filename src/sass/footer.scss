@@ -55,6 +55,10 @@ footer {
                 &:first-child {
                     margin-right: 13px;
                 }
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
 
