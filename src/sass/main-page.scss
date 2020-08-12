@@ -370,7 +370,6 @@ width: 20px;
 }
 .individual-way {
     width: 1206px;
-    height: 556px;
     margin-top: 70px;
 }
 .txt-individual {
@@ -527,7 +526,7 @@ width: 20px;
     }
     .individual-way {
         width: 1006px;
-        height: 556px;
+      
         margin-top: 70px;
     }
     .txt-individual {
@@ -579,7 +578,7 @@ width: 20px;
     }
     .boy-img {
         margin-left: 405px;
-        margin-top: -86px;
+        margin-top: -88px;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -674,11 +673,16 @@ width: 20px;
             margin-left: 158px;
         }
     }
+    .boy-img {
+  
+        margin-top: -86px;
+   
+    }
 }
 @media screen and (max-width: 980px) {
     .individual-way {
         width: 500px;
-        height: 556px;
+    
         margin-top: 70px;
     }
     .txt-individual {
@@ -700,7 +704,7 @@ width: 20px;
     .boy-img {
         position: absolute;
         margin-left: 245px;
-        margin-top: 62px;
+        margin-top: 61.5px;
         width: 300px;
     }
     .pick-up-txt {
@@ -749,7 +753,7 @@ width: 20px;
     .individual-way {
         width: 300px;
         margin-top: 50px;
-        height: 300px;
+
     }
     .txt-individual {
         font-weight: 800;
@@ -823,7 +827,7 @@ width: 20px;
     .individual-way {
         width: 280px;
         margin-top: 50px;
-        height: 250px;
+  
     }
     .txt-individual {
         font-size: 18px;
@@ -844,7 +848,7 @@ width: 20px;
     .boy-img {
         position: absolute;
         margin-left: 135px;
-        margin-top: 48px;
+        margin-top: 47.7px;
         width: 150px;
     }
     .pick-up-txt {

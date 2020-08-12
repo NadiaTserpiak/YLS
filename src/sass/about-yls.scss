@@ -3,6 +3,7 @@
     height: 548px;
     display: flex;
     padding-left: 40px;
+    margin-top: 110px;
 }
 .bg-txt-about {
     font-weight: 800;
@@ -216,12 +217,18 @@
 .btn-know-more {
     cursor: pointer;
 }
+@media screen and (max-width: 1400px) {
+    .block-about {
+        margin-top: 70px;
+    }
+}
 @media screen and (max-width: 1300px) {
     .block-about {
         width: 100%;
         height: 100%;
         flex-direction: column;
         padding-left: 0px;
+        margin-top: 40px;
     }
     .main-txt-about {
         text-align: center;

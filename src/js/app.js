@@ -1,16 +1,134 @@
 import $ from "jquery";
 require('./slick/slick');
+//
+/* ---- particles.js config ---- */
 
-// window.dropdownMenu = function (){dropdownMenu() };
-// function dropdownMenu(){
-//   document.getElementById("dropdown").style.opacity = "1";
+particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 270,
+        "density": {
+          "enable": true,
+          "value_area": 1000
+        }
+      },
+      "color": {
+        "value": "#7838BC"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 2,
+          "color": "#7838BC"
+        },
+        "polygon": {
+          "nb_sides": 5
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#7838BC",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "grab"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 140,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+  
+  
+//   var count_particles, stats, update;
+//   stats = new Stats;
+//   stats.setMode(0);
+//   stats.domElement.style.position = 'absolute';
+//   stats.domElement.style.left = '0px';
+//   stats.domElement.style.top = '0px';
+//   document.body.appendChild(stats.domElement);
+//   count_particles = document.querySelector('.js-count-particles');
+//   update = function() {
+//     stats.begin();
+//     stats.end();
+//     if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+//       count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+//     }
+//     requestAnimationFrame(update);
+//   };
+//   requestAnimationFrame(update);
 
-// }
-// window.dropdownMenuHide = function (){dropdownMenuHide() };
-// function dropdownMenuHide(){
-//   document.getElementById("dropdown").style.opacity = "0";
 
-// }
 //text writer
 $(document).ready(function () {
 
@@ -22,9 +140,38 @@ $(document).ready(function () {
         prevArrow: $('.prev-slider-img'),
         nextArrow: $('.next-slider-img'),
     });
+    $('.autoplay').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.prev-slider-program'),
+        nextArrow: $('.next-slider-program'),
+      });
 });
-
-
+//adaptive slider
+var mql = window.matchMedia('(min-width: 820px) and (max-width: 1380px)');
+if (mql.matches) {
+    $('.autoplay').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: $('.prev-slider-program'),
+                nextArrow: $('.next-slider-program'),
+              });
+}
+var mql = window.matchMedia('all and (max-width: 820px)');
+if (mql.matches) {
+    $('.autoplay').slick({
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: $('.prev-slider-program'),
+                nextArrow: $('.next-slider-program'),
+              });
+}
 if ($('*').is('.welcome-txt')) {
     const textTime = 1100;
     const textNode = document.querySelector('.welcome-txt');
@@ -132,3 +279,4 @@ $('.todown').click(function () {
     }, 400);
     return false;
 });
+//animation
