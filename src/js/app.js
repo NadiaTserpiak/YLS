@@ -2,7 +2,7 @@ import $ from "jquery";
 require('./slick/slick');
 //
 /* ---- particles.js config ---- */
-
+if ($('*').is('.block-values')) {
 particlesJS("particles-js", {
     "particles": {
       "number": {
@@ -108,7 +108,7 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
   });
-  
+}
   
 //   var count_particles, stats, update;
 //   stats = new Stats;
