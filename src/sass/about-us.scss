@@ -1,0 +1,114 @@
+.courses-mainscreen.aboutus {
+    background-image: url('/img/aboutus-mainpic.png');
+}
+
+.about-course.project {
+    z-index: 1;
+    position: relative;
+}
+
+.catalog-section {
+    padding-top: 130px;
+
+    .courses-row {
+        position: relative;
+    }
+
+    h2 {
+        @include double-title;
+        margin: 0;
+    }
+
+    .left-title {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .rightbtn {
+        flex: 0 0 40%;
+        max-width: 40%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        a {
+            background-image: url('/img/download-iconblue.svg');
+            background-repeat: no-repeat;
+            background-position: left center;
+            text-decoration: underline;
+            color: $blue-link;
+            letter-spacing: 0.2em;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            display: inline-block;
+            padding-left: 25px;
+            margin: 0;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.catalog-pics {
+    margin-top: 80px;
+
+    .picbox {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.vertical-sliderwrap {
+
+    .slick-prev.slick-arrow,
+    .slick-next.slick-arrow {
+        transition: .3s;
+    }
+
+    .slick-prev.slick-arrow:hover {
+        transform: rotate(-10deg);
+    }
+
+    .slick-next.slick-arrow:hover {
+        transform: rotate(10deg);
+    }
+}
+
+@media(max-width:991.8px) {
+    .catalog-section .left-title {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .catalog-section .rightbtn {
+        flex: 0 0 100%;
+        max-width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .catalog-section h2 span {
+        font-size: 80px;
+    }
+
+    .catalog-pics {
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .catalog-section h2 {
+        font-size: 32px;
+
+        span {
+            font-size: 50px;
+        }
+    }
+}
