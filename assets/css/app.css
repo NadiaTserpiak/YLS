@@ -6,11 +6,6 @@
   outline: none;
 }
 
-.overlay-content {
-  background-color: black;
-  width: 100%;
-}
-
 .fullscreen-bg {
   overflow: hidden;
   z-index: 1;
@@ -107,6 +102,70 @@
 
 .search-items {
   margin-right: 19px;
+}
+
+.search-form {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.input-group.search-group {
+  height: 50px;
+  min-width: 50px;
+  position: relative;
+}
+
+.input-group .form-control:hover,
+.input-group .form-control:focus {
+  padding: 10px 20px;
+  width: 330px;
+  color: #000;
+  cursor: auto;
+  background-color: #fff;
+}
+
+.input-group .form-control::-moz-placeholder {
+  color: transparent;
+}
+
+.input-group .form-control::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.input-group .form-control:hover::-moz-placeholder,
+.input-group .form-control:focus::-moz-placeholder {
+  color: #ddd;
+}
+
+.input-group .form-control:hover::-webkit-input-placeholder,
+.input-group .form-control:focus::-webkit-input-placeholder {
+  color: #ddd;
+}
+
+.input-group .form-control:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-color: #e6e6e6;
+}
+
+.form-control.search-control {
+  background: url(/img/search-icon.svg) no-repeat right 11px center/25px;
+  color: transparent;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  outline: 0 none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  border: none;
+  transition: width 0.25s;
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -213,6 +272,10 @@
   display: none;
 }
 
+.search-mobile {
+  display: none;
+}
+
 .overlay {
   width: 0;
   top: 0;
@@ -227,62 +290,50 @@
   position: relative;
   top: 0px;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 20px;
+  background-color: black;
 }
 
 .overlay a {
-  font-size: 18px;
-  line-height: 21px;
-  color: #fefeff;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
   display: block;
-  padding-left: 30px;
-  margin-bottom: 30px;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-bottom: 40px;
   text-align: left;
   transition: 0.3s;
 }
 
-.for-droptmenu {
-  margin-left: 147px;
-  margin-top: -30px;
-  position: absolute;
-}
-
-.overlay .menu6 a {
-  font-size: 14px;
-}
-
 .overlay a:hover,
 .overlay a:focus {
-  color: #6EB52C;
-}
-
-.menu-polygon-burger {
-  width: 16.16px;
-  height: 10.57px;
-  margin-left: -20px;
-  position: absolute;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-right: 100px;
-  display: inline;
-  transition: 0.5s ease;
-}
-.menu-polygon-burger:hover {
-  transform: scale(1, -1);
+  color: #6eb52c;
 }
 
 .overlay .closebtn {
-  width: 20px;
   cursor: pointer;
-  font-size: 33px;
-  color: wheat;
+  position: absolute;
 }
 
-.contact-elem {
-  font-family: Arial;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
+.contact-burger {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 30px;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+#closeNavB {
+  float: right;
+  padding: 20px;
+}
+
+.logo-burger {
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 .drop-menu-burger {
@@ -291,22 +342,33 @@
 
 .dropdown-content-burger {
   display: none;
-  position: absolute;
-  margin-left: 130px;
+  width: 143px;
+  margin-left: 10px;
   z-index: 1;
-  margin-top: 30px;
+  margin-top: -40px;
+  margin-bottom: 20px;
 }
 
 .dropdown-content-burger a {
   margin-left: 20px;
-  margin-top: -20px;
-  padding-top: 10px;
-  margin-bottom: 0px;
-  height: 55px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 .icon-menu {
-  float: left;
+  cursor: pointer;
+  float: right;
+  padding-top: 39px;
+}
+
+.circle-burger {
+  position: absolute;
+  margin-left: -15px;
+  margin-top: 10px;
 }
 
 .dropdown-burger:hover .dropdown-content-burger {
@@ -367,7 +429,7 @@
   40% {
     transform: rotate(25deg) scale(1) skew(1deg);
   }
-  100%, 50% {
+  50% {
     transform: rotate(0deg) scale(1) skew(1deg);
   }
 }
@@ -388,7 +450,7 @@
   40% {
     transform: rotate(25deg) scale(1) skew(1deg);
   }
-  100%, 50% {
+  50% {
     transform: rotate(0deg) scale(1) skew(1deg);
   }
 }
@@ -506,33 +568,19 @@
   margin-top: -100px;
   margin-left: 20px;
   position: absolute;
-  -webkit-animation: svg-animation1 13s;
-          animation: svg-animation1 13s;
+  -webkit-animation: svg-animation1 24s;
+          animation: svg-animation1 24s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  z-index: -1;
 }
 
 @-webkit-keyframes svg-animation1 {
   0% {
     margin-top: -90px;
   }
-  10% {
-    margin-left: 10px;
-  }
-  20% {
-    margin-left: 2px;
-  }
-  30% {
-    margin-left: 20px;
-  }
-  70% {
-    margin-left: 32px;
-  }
-  90% {
-    margin-left: 10px;
-  }
   100% {
-    margin-top: 841px;
+    margin-top: 1987px;
   }
 }
 
@@ -540,31 +588,17 @@
   0% {
     margin-top: -90px;
   }
-  10% {
-    margin-left: 10px;
-  }
-  20% {
-    margin-left: 2px;
-  }
-  30% {
-    margin-left: 20px;
-  }
-  70% {
-    margin-left: 32px;
-  }
-  90% {
-    margin-left: 10px;
-  }
   100% {
-    margin-top: 841px;
+    margin-top: 1987px;
   }
 }
 .svg-animate2 {
   margin-top: -70px;
   margin-left: 60px;
+  z-index: -1;
   position: absolute;
-  -webkit-animation: svg-animation2 15s;
-          animation: svg-animation2 15s;
+  -webkit-animation: svg-animation2 22s;
+          animation: svg-animation2 22s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -573,23 +607,8 @@
   0% {
     margin-top: -40px;
   }
-  10% {
-    margin-left: 100px;
-  }
-  20% {
-    margin-left: 130px;
-  }
-  30% {
-    margin-left: 90px;
-  }
-  70% {
-    margin-left: 140px;
-  }
-  90% {
-    margin-left: 90px;
-  }
   100% {
-    margin-top: 741px;
+    margin-top: 1986px;
   }
 }
 
@@ -597,23 +616,8 @@
   0% {
     margin-top: -40px;
   }
-  10% {
-    margin-left: 100px;
-  }
-  20% {
-    margin-left: 130px;
-  }
-  30% {
-    margin-left: 90px;
-  }
-  70% {
-    margin-left: 140px;
-  }
-  90% {
-    margin-left: 90px;
-  }
   100% {
-    margin-top: 741px;
+    margin-top: 1986px;
   }
 }
 .svg-animate3 {
@@ -621,8 +625,8 @@
   margin-top: 20px;
   margin-left: 260px;
   position: absolute;
-  -webkit-animation: svg-animation3 15s;
-          animation: svg-animation3 15s;
+  -webkit-animation: svg-animation3 23s;
+          animation: svg-animation3 23s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -631,23 +635,8 @@
   0% {
     margin-top: 10px;
   }
-  10% {
-    margin-left: 280px;
-  }
-  20% {
-    margin-left: 299px;
-  }
-  30% {
-    margin-left: 250px;
-  }
-  70% {
-    margin-left: 230px;
-  }
-  90% {
-    margin-left: 220px;
-  }
   100% {
-    margin-top: 841px;
+    margin-top: 1999px;
   }
 }
 
@@ -655,25 +644,14 @@
   0% {
     margin-top: 10px;
   }
-  10% {
-    margin-left: 280px;
-  }
-  20% {
-    margin-left: 299px;
-  }
-  30% {
-    margin-left: 250px;
-  }
-  70% {
-    margin-left: 230px;
-  }
-  90% {
-    margin-left: 220px;
-  }
   100% {
-    margin-top: 841px;
+    margin-top: 1999px;
   }
 }
+.mobile-enter {
+  display: none;
+}
+
 @media screen and (max-width: 1850px) {
   .general-text {
     margin-left: 100px;
@@ -690,6 +668,10 @@
 @media screen and (max-width: 1600px) {
   .menu-items {
     margin-right: 43px;
+  }
+
+  .search-items {
+    margin-right: 13px;
   }
 }
 @media screen and (max-width: 1470px) {
@@ -765,6 +747,45 @@
 
   .burger {
     display: block;
+  }
+
+  .icon-menu {
+    margin-left: 99%;
+    float: none;
+    padding-top: 37px;
+  }
+
+  .green-bg {
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+
+  .person-svg {
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 230px;
+    position: absolute;
+  }
+
+  .enter-txt {
+    position: absolute;
+    margin-top: 36px;
+    margin-left: 255px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  .search-mobile {
+    display: block;
+    margin-left: 63%;
+    margin-top: 50px;
+    position: absolute;
+  }
+
+  .contact-number {
+    display: none;
   }
 
   .general-menu {
@@ -877,6 +898,10 @@
   .boy-img {
     margin-top: -86px;
   }
+
+  .search-mobile {
+    margin-left: 59%;
+  }
 }
 @media screen and (max-width: 980px) {
   .individual-way {
@@ -920,8 +945,25 @@
     width: 200px;
     height: 90px;
   }
+
+  .search-mobile {
+    margin-left: 50%;
+  }
+
+  .input-group .form-control:hover,
+.input-group .form-control:focus {
+    padding: 10px 20px;
+    width: 240px;
+    color: #000;
+    cursor: auto;
+    background-color: #fff;
+  }
 }
 @media screen and (max-width: 700px) {
+  .icon-menu {
+    padding-top: 39px;
+  }
+
   .welcome-txt {
     font-size: 20px;
     line-height: 20px;
@@ -957,8 +999,47 @@
   .main-page {
     height: 550px;
   }
+
+  .search-mobile {
+    margin-left: 55%;
+    margin-top: 56px;
+  }
+
+  .green-bg {
+    display: none;
+  }
+
+  .enter-txt {
+    display: none;
+  }
+
+  .person-svg {
+    display: none;
+  }
+
+  .mobile-enter {
+    display: block;
+    position: absolute;
+    margin-top: 36px;
+    margin-left: 66%;
+  }
 }
 @media screen and (max-width: 602px) {
+  .main-page {
+    background-image: url(/img/mobile-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+  }
+
+  .search-mobile {
+    margin-left: 62%;
+  }
+
+  .mobile-enter {
+    margin-left: 70%;
+  }
+
   .individual-way {
     width: 300px;
     margin-top: 50px;
@@ -1019,13 +1100,14 @@
 
   .general-text {
     margin-left: 0px;
-    padding-top: 150px;
+    padding-top: 140px;
   }
 
   .bg-btn-registration {
     width: 170px;
     height: 80px;
     margin-left: 10px;
+    margin-top: 50px;
   }
 
   .registration-txt {
@@ -1036,14 +1118,60 @@
   .logotip {
     width: 70px;
     height: 70px;
-    margin-top: 10px;
+    margin-top: -5px;
   }
 
   .call-phone {
     margin-right: 119px;
   }
+
+  .search-mobile {
+    margin-top: 100px;
+    margin-left: 81.9%;
+  }
+
+  .mobile-enter {
+    margin-left: 76.7%;
+    margin-top: 0px;
+  }
+
+  .icon-menu {
+    margin-left: 78%;
+    float: none;
+    position: absolute;
+    padding-top: 42px;
+  }
+
+  .input-group .form-control:hover,
+.input-group .form-control:focus {
+    padding: 10px 20px;
+    width: 360px;
+    color: #000;
+    cursor: auto;
+    background-color: #fff;
+  }
+
+  .form-control.search-control {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 410px) {
+  .welcome-txt {
+    padding-top: 0px;
+  }
+
+  .general-text {
+    margin-left: -20px;
+    padding-top: 150px;
+  }
+
+  .logotip {
+    width: 60px;
+    height: 60px;
+    margin-top: 2px;
+    margin-left: -20px;
+  }
+
   .individual-way {
     width: 280px;
     margin-top: 50px;
@@ -1083,6 +1211,42 @@
   .bg-btn-pick {
     width: 120px;
     height: 80px;
+  }
+
+  .search-mobile {
+    margin-top: 100px;
+    margin-left: 72.7%;
+  }
+
+  .mobile-enter {
+    margin-left: 66.7%;
+    margin-top: 0px;
+  }
+
+  .icon-menu {
+    margin-left: 68%;
+    float: none;
+    position: absolute;
+    padding-top: 42px;
+  }
+
+  .bg-btn-registration {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+
+  .registration-txt {
+    font-size: 13px;
+    margin-left: -10px;
+  }
+
+  .input-group .form-control:hover,
+.input-group .form-control:focus {
+    padding: 10px 20px;
+    width: 280px;
+    color: #000;
+    cursor: auto;
+    background-color: #fff;
   }
 }
 .block-about {
@@ -2274,6 +2438,14 @@
     width: 96%;
     flex-direction: column;
   }
+
+  .img-catalog1 {
+    width: 420px;
+  }
+
+  .img-catalog2 {
+    width: 600px;
+  }
 }
 @media screen and (max-width: 1123px) {
   .catalog-block {
@@ -2282,13 +2454,18 @@
   }
 
   .img-catalog1 {
-    width: 500px;
+    width: 400px;
     height: 280px;
   }
 
   .img-catalog2 {
-    width: 480px;
+    width: 580px;
     height: 280px;
+  }
+
+  .download-catalog {
+    float: left;
+    margin-left: 30%;
   }
 }
 @media screen and (max-width: 700px) {
@@ -2341,6 +2518,10 @@
   .img-catalog2 {
     width: 300px;
     height: 280px;
+  }
+
+  .download-catalog {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 520px) {

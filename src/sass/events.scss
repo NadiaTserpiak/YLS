@@ -167,6 +167,12 @@
         width: 96%;
         flex-direction: column;
     }
+    .img-catalog1 {
+        width: 420px;
+    }
+    .img-catalog2 {
+        width: 600px;
+    }
 }
 @media screen and (max-width: 1123px) {
     .catalog-block {
@@ -175,12 +181,16 @@
         margin-top: 220px;
     }
     .img-catalog1 {
-        width: 500px;
+        width: 400px;
         height: 280px;
     }
     .img-catalog2 {
-        width: 480px;
+        width: 580px;
         height: 280px;
+    }
+    .download-catalog{
+        float: left;
+        margin-left: 30%;
     }
 }
 @media screen and (max-width: 700px) {
@@ -225,6 +235,9 @@
     .img-catalog2 {
         width: 300px;
         height: 280px;
+    }
+    .download-catalog {
+  font-size: 12px;
     }
 }
 @media screen and (max-width: 520px) {

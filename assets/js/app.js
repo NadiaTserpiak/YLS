@@ -11208,7 +11208,9 @@ window.openNav = function () {
 
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
-  document.getElementById("myNav").style.height = "700px";
+  document.getElementById("myNav").style.height = "100%";
+  document.getElementById("myNav").style.position = "fixed";
+  document.getElementById("phone-animation").style.opacity = "0";
 }
 
 window.closeNav = function () {
@@ -11217,6 +11219,9 @@ window.closeNav = function () {
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+  document.getElementById("myNav").style.height = "0%";
+  document.getElementById("myNav").style.position = "none";
+  document.getElementById("phone-animation").style.opacity = "1";
 } //video  slider 1
 
 

@@ -131,7 +131,7 @@ particlesJS("particles-js", {
 
 //text writer
 $(document).ready(function () {
-
+ 
     $('.single-item').slick({
         prevArrow: $('.prev-slider-video'),
         nextArrow: $('.next-slider-video'),
@@ -148,7 +148,9 @@ $(document).ready(function () {
         prevArrow: $('.prev-slider-program'),
         nextArrow: $('.next-slider-program'),
       });
+    
 });
+
 //adaptive slider
 var mql = window.matchMedia('(min-width: 820px) and (max-width: 1380px)');
 if (mql.matches) {
@@ -219,11 +221,16 @@ if ($('*').is('.welcome-txt')) {
 window.openNav = function () { openNav() };
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
-    document.getElementById("myNav").style.height = "700px";
+    document.getElementById("myNav").style.height = "100%";
+    document.getElementById("myNav").style.position = "fixed";
+    document.getElementById("phone-animation").style.opacity = "0";
 }
 window.closeNav = function () { closeNav() };
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav").style.position = "none";
+    document.getElementById("phone-animation").style.opacity = "1";
 }
 
 //video  slider 1
