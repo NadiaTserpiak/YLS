@@ -22,12 +22,14 @@
         background: rgba(0, 0, 0, .3);
     }
 }
+
 .fullscreen-bg__video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
 }
+
 .full-video {
     position: absolute;
     left: 0;
@@ -36,9 +38,11 @@
     z-index: 1;
     padding: 21px 50px;
 }
+
 .green-bg {
     position: absolute;
 }
+
 .contact-number {
     margin-left: -50px;
     font-weight: 800;
@@ -47,15 +51,18 @@
     margin-top: 4px;
     color: #ffffff;
 }
+
 .btn-enter {
     cursor: pointer;
     margin-left: -110px;
 }
+
 .contact-block {
     display: flex;
     width: 300px;
     float: right;
 }
+
 .enter-txt {
     position: absolute;
     margin-top: 6px;
@@ -65,22 +72,26 @@
     line-height: 24px;
     color: #ffffff;
 }
+
 .person-svg {
     cursor: pointer;
     margin-top: 9.5px;
     margin-left: 35px;
     position: absolute;
 }
+
 .logotip {
     cursor: pointer;
     float: left;
     margin-top: -9px;
 }
+
 .general-menu {
     list-style-type: none;
     margin-top: 58px;
     text-align: right;
 }
+
 .menu-items {
     display: inline-block;
     margin-right: 83px;
@@ -90,18 +101,22 @@
     color: #ffffff;
     cursor: pointer;
     transition: 0.5s ease;
+
     &:hover {
         color: #6eb52c;
     }
 }
+
 .circle-svg {
     margin-left: -17px;
     position: absolute;
     margin-top: 18.6px;
 }
+
 .search-items {
     margin-right: 19px;
 }
+
 .search-form {
     position: absolute;
     margin-top: -30px;
@@ -122,6 +137,7 @@
     cursor: auto;
     background-color: #fff;
 }
+
 .input-group .form-control::-moz-placeholder {
     color: transparent;
 }
@@ -134,6 +150,7 @@
 .input-group .form-control:focus::-moz-placeholder {
     color: #ddd;
 }
+
 .input-group .form-control:hover::-webkit-input-placeholder,
 .input-group .form-control:focus::-webkit-input-placeholder {
     color: #ddd;
@@ -185,18 +202,22 @@
     color: #ffffff;
     list-style-type: none;
 }
+
 .down-item {
     display: block;
     padding-bottom: 10px;
     cursor: pointer;
     transition: 0.5s ease;
+
     &:hover {
         color: #6eb52c;
     }
 }
+
 .menu-dropdown:hover .dropdown-content {
     display: block;
 }
+
 .welcome-txt {
     margin-left: 0px;
     font-weight: 800;
@@ -204,6 +225,7 @@
     line-height: 30px;
     color: #6eb52c;
 }
+
 .yls-txt {
     font-weight: 800;
     font-size: 48px;
@@ -211,10 +233,12 @@
     color: white;
     animation: apear 4s;
 }
+
 @keyframes apear {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -233,6 +257,7 @@
     margin-top: 200px;
     margin-left: 310px;
 }
+
 .registration-txt {
     cursor: pointer;
     font-family: Open Sans;
@@ -247,6 +272,7 @@
     width: 194px;
     height: 19px;
 }
+
 .burger {
     display: none;
 }
@@ -295,6 +321,7 @@
     cursor: pointer;
     position: absolute;
 }
+
 .contact-burger {
     font-weight: 800;
     font-size: 16px;
@@ -303,17 +330,21 @@
     color: #ffffff;
     padding-bottom: 30px;
 }
+
 #closeNavB {
     float: right;
     padding: 20px;
 }
+
 .logo-burger {
     padding-left: 20px;
     margin-bottom: 20px;
 }
+
 .drop-menu-burger {
     display: none;
 }
+
 .dropdown-content-burger {
     display: none;
     width: 143px;
@@ -322,6 +353,7 @@
     margin-top: -40px;
     margin-bottom: 20px;
 }
+
 .dropdown-content-burger a {
     margin-left: 20px;
     margin-bottom: 5px;
@@ -331,22 +363,27 @@
     line-height: 24px;
     color: #ffffff;
 }
+
 .icon-menu {
     cursor: pointer;
     float: right;
     padding-top: 39px;
 }
+
 .circle-burger {
     position: absolute;
     margin-left: -15px;
     margin-top: 10px;
 }
+
 .dropdown-burger:hover .dropdown-content-burger {
     display: block;
 }
+
 .about-yls {
     width: 100%;
 }
+
 .call-phone {
     width: 230px;
     height: 149px;
@@ -365,10 +402,12 @@
     z-index: 1;
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
 }
+
 .svg-eclipse {
     cursor: pointer;
     position: absolute;
 }
+
 .call-phone__circle-img {
     z-index: 1;
     cursor: pointer;
@@ -377,19 +416,24 @@
     position: absolute;
     animation: call-phone__circle-img-anim 1s infinite ease-in-out;
 }
+
 @keyframes call-phone__circle-img-anim {
     0% {
         transform: rotate(0deg) scale(1) skew(1deg);
     }
+
     10% {
         transform: rotate(-25deg) scale(1) skew(1deg);
     }
+
     20% {
         transform: rotate(25deg) scale(1) skew(1deg);
     }
+
     30% {
         transform: rotate(-25deg) scale(1) skew(1deg);
     }
+
     40% {
         transform: rotate(25deg) scale(1) skew(1deg);
     }
@@ -422,17 +466,21 @@
     animation-iteration-count: infinite;
     z-index: 0;
 }
+
 @keyframes phone-text {
     from {
         margin-left: 185px;
     }
+
     to {
         margin-left: 141px;
     }
 }
+
 .box-text-phone {
     filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.2));
 }
+
 .txt-order-phone {
     text-align: left;
     width: 89px;
@@ -443,16 +491,19 @@
     line-height: 18px;
     color: #461dff;
 }
+
 .individual-way {
     width: 1206px;
     margin-top: 70px;
 }
+
 .txt-individual {
     font-weight: 900;
     font-size: 48px;
     line-height: 48px;
     color: #333333;
 }
+
 .txt-online {
     font-family: Open Sans;
     font-size: 20px;
@@ -463,6 +514,7 @@
     margin-top: 26px;
     margin-bottom: 60px;
 }
+
 .pick-up-txt {
     cursor: pointer;
     margin-left: 112px;
@@ -473,15 +525,18 @@
     letter-spacing: 0.2em;
     color: #ffffff;
 }
+
 .bg-btn-pick {
     cursor: pointer;
 }
+
 .block-purpule {
     width: 1206px;
     height: 280px;
     padding: 78px 0px 0px 153px;
     background: #663b94;
 }
+
 .boy-img {
     position: absolute;
     margin-left: 705px;
@@ -501,14 +556,17 @@
     animation-iteration-count: infinite;
     z-index: -1;
 }
+
 @keyframes svg-animation1 {
     0% {
         margin-top: -90px;
     }
+
     100% {
         margin-top: 1987px;
     }
 }
+
 .svg-animate2 {
     margin-top: -70px;
     margin-left: 60px;
@@ -517,6 +575,7 @@
     animation: svg-animation2 25s;
     animation-iteration-count: infinite;
 }
+
 @keyframes svg-animation2 {
     0% {
         margin-top: -40px;
@@ -526,6 +585,7 @@
         margin-top: 1986px;
     }
 }
+
 .svg-animate3 {
     z-index: -1;
     margin-top: 20px;
@@ -534,6 +594,7 @@
     animation: svg-animation3 23s;
     animation-iteration-count: infinite;
 }
+
 @keyframes svg-animation3 {
     0% {
         margin-top: 10px;
@@ -589,17 +650,21 @@
     .general-text {
         margin-left: 100px;
     }
+
     .bg-btn-registration {
         margin-left: 100px;
     }
+
     .registration-txt {
         margin-left: 135px;
     }
 }
+
 @media screen and (max-width: 1600px) {
     .menu-items {
         margin-right: 43px;
     }
+
     .search-items {
         margin-right: 13px;
     }
@@ -609,11 +674,13 @@
     .call-phone {
         margin-top: -165px;
     }
+
     .individual-way {
         width: 1006px;
 
         margin-top: 70px;
     }
+
     .txt-individual {
         font-size: 44px;
     }
@@ -623,33 +690,40 @@
 
         padding: 78px 0px 0px 123px;
     }
+
     .boy-img {
         margin-left: 545px;
         margin-top: -83px;
     }
 }
+
 @media screen and (max-width: 1330px) {
     .general-text {
         margin-left: 70px;
         padding-top: 150px;
     }
+
     .bg-btn-registration {
         margin-left: 70px;
         margin-top: 120px;
     }
+
     .registration-txt {
         margin-left: 105px;
     }
+
     .individual-way {
         width: 900px;
 
         margin-top: 70px;
     }
+
     .txt-individual {
         font-weight: 900;
         font-size: 35px;
         line-height: 48px;
     }
+
     .txt-online {
         font-size: 18px;
         line-height: 28px;
@@ -661,6 +735,7 @@
 
         padding: 78px 0px 0px 63px;
     }
+
     .boy-img {
         margin-left: 405px;
         margin-top: -88px;
@@ -685,28 +760,34 @@
     }
      
 }
+
 @media screen and (max-width: 1200px) {
     .fullscreen-bg__video {
         display: none;
     }
+
     .burger {
         display: block;
     }
+
     .icon-menu {
         margin-left: 99%;
         float: none;
         padding-top: 37px;
     }
+
     .green-bg {
         margin-left: 200px;
         margin-top: 30px;
     }
+
     .person-svg {
         cursor: pointer;
         margin-top: 40px;
         margin-left: 230px;
         position: absolute;
     }
+
     .enter-txt {
         position: absolute;
         margin-top: 36px;
@@ -716,18 +797,22 @@
         line-height: 24px;
         color: #ffffff;
     }
+
     .search-mobile {
         display: block;
         margin-left: 63%;
         margin-top: 50px;
         position: absolute;
     }
+
     .contact-number {
         display: none;
     }
+
     .general-menu {
         display: none;
     }
+
     .main-page {
         background-image: url(/img/bg-main-page.png);
         background-position-x: center;
@@ -736,51 +821,63 @@
         object-fit: cover;
         object-position: 50% 50%;
     }
+
     .call-phone {
         margin-top: -75px;
     }
+
     .logotip {
         width: 100px;
         height: 100px;
         margin-top: 10px;
     }
+
     .general-text {
         padding-top: 220px;
     }
+
     .bg-btn-registration {
         margin-top: 220px;
     }
 }
+
 @media screen and (max-width: 1064px) {
     .welcome-txt {
         font-size: 30px;
         line-height: 30px;
     }
+
     .yls-txt {
         font-weight: 800;
         font-size: 40px;
         line-height: 58px;
     }
+
     .general-text {
         margin-left: 10px;
     }
+
     .bg-btn-registration {
         width: 200px;
         height: 90px;
         margin-left: 20px;
     }
+
     .registration-txt {
         margin-left: 25px;
         margin-top: -60px;
     }
+
     .mobile-phone {
         width: 70px;
         margin-top: 27px;
         margin-left: 10px;
     }
+
     .svg-eclipse {
         width: 90px;
     }
+
     .icon-phone {
         width: 20px;
     }
@@ -789,6 +886,7 @@
         margin-left: 274px;
         margin-top: 75px;
     }
+
     .text-block-phone {
         padding-left: 25px;
         padding-top: 8px;
@@ -797,6 +895,7 @@
         margin-left: 158px;
         margin-top: 40px;
     }
+
     .txt-order-phone {
         width: 69px;
         height: 34px;
@@ -809,28 +908,34 @@
         from {
             margin-left: 185px;
         }
+
         to {
             margin-left: 158px;
         }
     }
+
     .boy-img {
         margin-top: -86px;
     }
+
     .search-mobile {
         margin-left: 59%;
     }
 }
+
 @media screen and (max-width: 980px) {
     .individual-way {
         width: 500px;
 
         margin-top: 70px;
     }
+
     .txt-individual {
         font-weight: 900;
         font-size: 35px;
         line-height: 48px;
     }
+
     .txt-online {
         font-size: 18px;
         line-height: 28px;
@@ -842,25 +947,30 @@
         height: 200px;
         padding: 50px 0px 0px 33px;
     }
+
     .boy-img {
         position: absolute;
         margin-left: 245px;
         margin-top: 61.5px;
         width: 300px;
     }
+
     .pick-up-txt {
         margin-left: 49px;
         margin-top: -58px;
         font-size: 14px;
         line-height: 20px;
     }
+
     .bg-btn-pick {
         width: 200px;
         height: 90px;
     }
+
     .search-mobile {
         margin-left: 50%;
     }
+
     .input-group .form-control:hover,
     .input-group .form-control:focus {
         padding: 10px 20px;
@@ -870,36 +980,44 @@
         background-color: #fff;
     }
 }
+
 @media screen and (max-width: 700px) {
     .icon-menu {
         padding-top: 39px;
     }
+
     .welcome-txt {
         font-size: 20px;
         line-height: 20px;
     }
+
     .yls-txt {
         font-size: 30px;
         line-height: 38px;
     }
+
     .general-text {
         margin-left: 0px;
     }
+
     .bg-btn-registration {
         width: 170px;
         height: 80px;
         margin-left: 10px;
         margin-top: 80px;
     }
+
     .registration-txt {
         margin-left: 0px;
         margin-top: -56px;
     }
+
     .logotip {
         width: 80px;
         height: 80px;
         margin-top: 10px;
     }
+
     .main-page {
         width: 100%;
         height: 550px;
@@ -914,19 +1032,24 @@
       
         }
     }
+
     .search-mobile {
         margin-left: 55%;
         margin-top: 56px;
     }
+
     .green-bg {
         display: none;
     }
+
     .enter-txt {
         display: none;
     }
+
     .person-svg {
         display: none;
     }
+
     .mobile-enter {
         display: block;
         position: absolute;
@@ -934,6 +1057,7 @@
         margin-left: 66%;
     }
 }
+
 @media screen and (max-width: 602px) {
     .main-page {
         background-image: url(/img/mobile-bg.png);
@@ -955,21 +1079,26 @@
             background: rgba(0, 0, 0, .3);
         }
     }
+
     .search-mobile {
         margin-left: 62%;
     }
+
     .mobile-enter {
         margin-left: 70%;
     }
+
     .individual-way {
         width: 300px;
         margin-top: 50px;
     }
+
     .txt-individual {
         font-weight: 800;
         font-size: 21px;
         line-height: 32px;
     }
+
     .txt-online {
         font-size: 12px;
         line-height: 18px;
@@ -981,23 +1110,27 @@
         height: 100px;
         padding: 10px 0px 0px 20px;
     }
+
     .boy-img {
         position: absolute;
         margin-left: 135px;
         margin-top: 58px;
         width: 180px;
     }
+
     .pick-up-txt {
         margin-left: 15px;
         margin-top: -54px;
         font-size: 14px;
         line-height: 20px;
     }
+
     .bg-btn-pick {
         width: 120px;
         height: 80px;
     }
 }
+
 @media screen and (max-width: 510px) {
     .main-page {
         height: 450px;
@@ -1014,46 +1147,56 @@
         line-height: 20px;
         padding-top: 20px;
     }
+
     .yls-txt {
         font-size: 22px;
         line-height: 35px;
     }
+
     .general-text {
         margin-left: 0px;
         padding-top: 140px;
     }
+
     .bg-btn-registration {
         width: 170px;
         height: 80px;
         margin-left: 10px;
         margin-top: 50px;
     }
+
     .registration-txt {
         margin-left: 0px;
         margin-top: -56px;
     }
+
     .logotip {
         width: 70px;
         height: 70px;
         margin-top: -5px;
     }
+
     .call-phone {
         margin-right: 119px;
     }
+
     .search-mobile {
         margin-top: 100px;
         margin-left: 81.9%;
     }
+
     .mobile-enter {
         margin-left: 76.7%;
         margin-top: 0px;
     }
+
     .icon-menu {
         margin-left: 78%;
         float: none;
         position: absolute;
         padding-top: 42px;
     }
+
     .input-group .form-control:hover,
     .input-group .form-control:focus {
         padding: 10px 20px;
@@ -1062,31 +1205,38 @@
         cursor: auto;
         background-color: #fff;
     }
+
     .form-control.search-control {
         font-size: 12px;
     }
 }
+
 @media screen and (max-width: 410px) {
     .welcome-txt {
         padding-top: 0px;
     }
+
     .general-text {
         margin-left: -20px;
         padding-top: 150px;
     }
+
     .logotip {
         width: 60px;
         height: 60px;
         margin-top: 2px;
         margin-left: -20px;
     }
+
     .individual-way {
         width: 280px;
         margin-top: 50px;
     }
+
     .txt-individual {
         font-size: 18px;
     }
+
     .txt-online {
         font-size: 12px;
         line-height: 16px;
@@ -1100,44 +1250,53 @@
 
         padding: 10px 0px 0px 20px;
     }
+
     .boy-img {
         position: absolute;
         margin-left: 135px;
         margin-top: 47.7px;
         width: 150px;
     }
+
     .pick-up-txt {
         margin-left: 15px;
         margin-top: -54px;
         font-size: 14px;
         line-height: 20px;
     }
+
     .bg-btn-pick {
         width: 120px;
         height: 80px;
     }
+
     .search-mobile {
         margin-top: 100px;
         margin-left: 72.7%;
     }
+
     .mobile-enter {
         margin-left: 66.7%;
         margin-top: 0px;
     }
+
     .icon-menu {
         margin-left: 68%;
         float: none;
         position: absolute;
         padding-top: 42px;
     }
+
     .bg-btn-registration {
         margin-top: 50px;
         margin-left: 0px;
     }
+
     .registration-txt {
         font-size: 13px;
         margin-left: -10px;
     }
+
     .input-group .form-control:hover,
     .input-group .form-control:focus {
         padding: 10px 20px;
