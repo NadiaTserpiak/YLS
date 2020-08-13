@@ -2,7 +2,7 @@
     background-color: white;
 }
 .bg-events {
-    background-image: url(/img/bgevent.png);
+    background-image: url(../../img/bgevent.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 200px;
@@ -20,7 +20,7 @@
     margin-top: 62px;
 }
 .bg-block-item {
-    background-image: url(/img/green-bg-event.png);
+    background-image: url(../../img/green-bg-event.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 216.44px;
@@ -188,7 +188,7 @@
         width: 580px;
         height: 280px;
     }
-    .download-catalog{
+    .download-catalog {
         float: left;
         margin-left: 30%;
     }
@@ -237,7 +237,7 @@
         height: 280px;
     }
     .download-catalog {
-  font-size: 12px;
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 520px) {

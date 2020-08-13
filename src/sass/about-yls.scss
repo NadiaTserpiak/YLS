@@ -42,7 +42,7 @@
     color: #000000;
 }
 .block-video {
-    background-image: url(/img/bg-blue-video.svg);
+    background-image: url(../../img/bg-blue-video.svg);
     width: 569px;
     height: 356px;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 .block-bg-video {
     float: right;
     padding: 149px 0px 0px 130px;
-    background-image: url(/img/bg-main-block.svg);
+    background-image: url(../../img/bg-main-block.svg);
     width: 719px;
     height: 769px;
     background-repeat: no-repeat;
@@ -79,7 +79,7 @@
     margin-top: 38px;
     z-index: 1;
     position: absolute;
-    background-image: url(/img/kids.png);
+    background-image: url(../../img/kids.png);
 }
 .video-slider {
     width: 509.27px;
@@ -88,7 +88,7 @@
     margin-top: 38px;
     z-index: 1;
     position: absolute;
-    background-image: url(/img/kids.png);
+    background-image: url(../../img/kids.png);
 }
 #start {
     margin-top: 160px;
@@ -145,12 +145,12 @@
 }
 .block-bg-img {
     padding: 128px 0px 0px 0px;
-    background-image: url(/img/bg-mainsecond.svg);
+    background-image: url(../../img/bg-mainsecond.svg);
     width: 743px;
     background-repeat: no-repeat;
 }
 .block-img-slider {
-    background-image: url(/img/bg-green-block.svg);
+    background-image: url(../../img/bg-green-block.svg);
     width: 569px;
     height: 356px;
     background-repeat: no-repeat;
@@ -261,7 +261,7 @@
     }
     .block-bg-img {
         padding: 0px 0px 0px 0px;
-        background-image: url(/img/bg-mainsecond.svg);
+        background-image: url(../../img/bg-mainsecond.svg);
         width: 649px;
         height: 509px;
         background-repeat: no-repeat;
@@ -429,12 +429,12 @@
     .second-block-text {
         width: 250px;
     }
-   
+
     .svg-know-more {
         margin-top: 34px;
         width: 140px;
     }
     .btn-know-more {
-  margin-left: 50px;
+        margin-left: 50px;
     }
 }

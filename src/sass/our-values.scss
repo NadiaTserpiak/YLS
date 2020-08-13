@@ -1,5 +1,5 @@
 .our-values {
-    background-image: url(/img/bg-purpule.svg);
+    background-image: url(../../img/bg-purpule.svg);
     background-size: cover;
     width: 100%;
     padding-top: 128px;
@@ -46,7 +46,7 @@
 }
 .offer-item {
     z-index: 1;
-    background-image: url(/img/offer-item1.svg);
+    background-image: url(../../img/offer-item1.svg);
     background-repeat: no-repeat;
     display: flex;
     width: 600px;
@@ -60,7 +60,7 @@
     }
 }
 .other-bg {
-    background-image: url(/img/offer-item2.svg);
+    background-image: url(../../img/offer-item2.svg);
     padding: 39px 40px 0px 80px;
     &:hover {
         transform: rotate(-1.5deg);
@@ -336,7 +336,7 @@
     margin-top: -36px;
     margin-left: 30px;
     padding: 170px 25px;
-    background-image: url(/img/emptyblock.svg);
+    background-image: url(../../img/emptyblock.svg);
     background-repeat: no-repeat;
     background-position-x: center;
     height: 420px;

@@ -103,7 +103,7 @@ footer {
             text-align: center;
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            font-family: 'Open Sans', sans-serif;
+            font-family: "Open Sans", sans-serif;
             color: $white;
             letter-spacing: 0.2em;
             font-size: 16px;
@@ -112,11 +112,11 @@ footer {
         }
 
         .footer__greenbtn {
-            background-image: url('/img/footer-btngreen.png');
+            background-image: url("../../img/footer-btngreen.png");
         }
 
         .footer__violetbtn {
-            background-image: url('/img/footer-btnviolet.png');
+            background-image: url("../../img/footer-btnviolet.png");
             margin-left: 110px;
         }
     }
@@ -131,19 +131,18 @@ footer {
         }
 
         p {
-            color: #4F4F4F;
+            color: #4f4f4f;
             font-size: 12px;
             line-height: 20px;
         }
     }
-
 }
 
 footer .footer__content-left .footer__title a:last-child {
     margin-left: 10px;
 }
 
-@media(max-width:1600.8px) {
+@media (max-width: 1600.8px) {
     footer {
         .footer-leftpic {
             width: 40%;
@@ -200,7 +199,7 @@ footer .footer__content-left .footer__title a:last-child {
     }
 }
 
-@media(max-width:1400.8px) {
+@media (max-width: 1400.8px) {
     footer .footer__content-left .footer__title p {
         font-size: 16px;
         margin: 0 0 5px 0;
@@ -219,7 +218,7 @@ footer .footer__content-left .footer__title a:last-child {
     }
 }
 
-@media(max-width:1199.8px) {
+@media (max-width: 1199.8px) {
     footer .footer__content {
         height: auto;
         padding-top: 20px;
@@ -255,7 +254,7 @@ footer .footer__content-left .footer__title a:last-child {
     }
 }
 
-@media(max-width:575.8px) {
+@media (max-width: 575.8px) {
     footer .footer__content-center {
         flex: 0 0 100px;
         max-width: 100px;
@@ -265,7 +264,6 @@ footer .footer__content-left .footer__title a:last-child {
         flex: 0 0 calc(100% - 100px);
         max-width: calc(100% - 100px);
         padding-right: 20px;
-
     }
 
     footer .footer__content-left .footer__social {
@@ -301,7 +299,7 @@ footer .footer__content-left .footer__title a:last-child {
     }
 }
 
-@media(max-width:420.8px) {
+@media (max-width: 420.8px) {
     footer .footer__content {
         padding-left: 15px;
         padding-right: 15px;

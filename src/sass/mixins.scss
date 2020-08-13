@@ -1,11 +1,10 @@
 $white: #fff;
-$green: #6EB52C;
+$green: #6eb52c;
 $grey: #828282;
-$light-grey: #E0E0E0;
-$blue-link: #22A8FF;
+$light-grey: #e0e0e0;
+$blue-link: #22a8ff;
 $black: #000;
 $dark-color: #333333;
-
 
 @mixin titleh2 {
     color: $dark-color;
@@ -38,7 +37,7 @@ $dark-color: #333333;
 
     span {
         position: absolute;
-        color: #F2F2F2;
+        color: #f2f2f2;
         font-weight: 800;
         font-size: 120px;
         line-height: 64px;
@@ -51,7 +50,7 @@ $dark-color: #333333;
 @mixin beauty-button {
     width: 267px;
     height: 100px;
-    background-image: url('/img/beauty-btn-green.png');
+    background-image: url("../../img/beauty-btn-green.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: inline-flex;
@@ -62,7 +61,7 @@ $dark-color: #333333;
     color: $white;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
     padding: 25px 20px 20px 20px;
 }

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 .courses-container {
     max-width: 1234px;
@@ -23,14 +23,14 @@
 
 .courses-mainscreen {
     height: 400px;
-    background-image: url('/img/courses-mainpic.jpg');
+    background-image: url("../../img/courses-mainpic.jpg");
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
     padding-bottom: 30px;
     background-position: right top;
 
-    >img {
+    > img {
         background-size: cover;
         background-position: top right;
     }
@@ -74,13 +74,11 @@
         vertical-align: middle;
 
         &:not(:first-child):before {
-            content: '/';
+            content: "/";
             display: inline-block;
             margin: 0 4px 0 2px;
         }
     }
-
-
 }
 
 .sidebar-filter {
@@ -89,7 +87,7 @@
     max-width: 282px;
     padding-right: 16px;
 
-    >.title {
+    > .title {
         font-weight: 900;
         font-size: 48px;
         line-height: 64px;
@@ -108,7 +106,7 @@
         .sidebar-filter__cont {
             transform: skewY(2deg);
 
-            >.title {
+            > .title {
                 font-weight: 800;
                 font-size: 18px;
                 line-height: 27px;
@@ -117,7 +115,6 @@
             }
         }
     }
-
 }
 
 .filter__checkfield {
@@ -152,12 +149,11 @@
             top: 50%;
             transform: translateY(-50%);
         }
-
     }
 
-    input:checked+label {
+    input:checked + label {
         &:after {
-            background-image: url('/img/check.svg');
+            background-image: url("../../img/check.svg");
             background-repeat: no-repeat;
             background-position: center center;
             background-color: $green;
@@ -169,7 +165,7 @@
         color: $grey;
         font-size: 16px;
         line-height: 22px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
     }
 }
 
@@ -186,7 +182,6 @@
     margin-bottom: 40px;
     text-decoration: none;
     display: block;
-
 
     .pic-box {
         height: 260px;
@@ -225,7 +220,7 @@
         font-size: 16px;
         line-height: 20px;
         padding: 22px 34px 13px 34px;
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .hoverbox {
@@ -253,7 +248,7 @@
                 font-weight: bold;
                 font-size: 16px;
                 line-height: 36px;
-                font-family: 'Open Sans', sans-serif;
+                font-family: "Open Sans", sans-serif;
                 color: $white;
                 padding-left: 30px;
                 position: relative;
@@ -263,22 +258,22 @@
             }
 
             li.age {
-                background-image: url('/img/people.svg');
+                background-image: url("../../img/people.svg");
             }
 
             li.time {
-                background-image: url('/img/calendar.svg');
+                background-image: url("../../img/calendar.svg");
             }
 
             li.status {
-                background-image: url('/img/mobile-analytics.svg');
+                background-image: url("../../img/mobile-analytics.svg");
             }
         }
     }
 
     .hoverbox {
         opacity: 0;
-        transition: .5s;
+        transition: 0.5s;
     }
 
     &:hover {
@@ -309,7 +304,7 @@
                     font-weight: bold;
                     font-size: 16px;
                     line-height: 36px;
-                    font-family: 'Open Sans', sans-serif;
+                    font-family: "Open Sans", sans-serif;
                     color: $white;
                     padding-left: 30px;
                     position: relative;
@@ -319,15 +314,15 @@
                 }
 
                 li.age {
-                    background-image: url('/img/people.svg');
+                    background-image: url("../../img/people.svg");
                 }
 
                 li.time {
-                    background-image: url('/img/calendar.svg');
+                    background-image: url("../../img/calendar.svg");
                 }
 
                 li.status {
-                    background-image: url('/img/mobile-analytics.svg');
+                    background-image: url("../../img/mobile-analytics.svg");
                 }
             }
         }
@@ -342,38 +337,38 @@
 
 .course-block.green {
     .hoverbox {
-        background: linear-gradient(98.96deg, rgba(#099939, .7) 3.03%, rgba(#6EB52C, .7) 81.58%);
+        background: linear-gradient(98.96deg, rgba(#099939, 0.7) 3.03%, rgba(#6eb52c, 0.7) 81.58%);
     }
 }
 
 .course-block.blue {
     .hoverbox {
-        background: linear-gradient(36.05deg, rgba(#461DFF, .7) -4.31%, rgba(#11B7FF, .7) 102.53%);
+        background: linear-gradient(36.05deg, rgba(#461dff, 0.7) -4.31%, rgba(#11b7ff, 0.7) 102.53%);
     }
 }
 
 .course-block.green .pic-box {
-    background-image: url('/img/green-figure.png');
+    background-image: url("../../img/green-figure.png");
 }
 
 .course-block.violet .pic-box {
-    background-image: url('/img/violet-figure.png');
+    background-image: url("../../img/violet-figure.png");
 }
 
 .course-block.blue .pic-box {
-    background-image: url('/img/blue-figure.png');
+    background-image: url("../../img/blue-figure.png");
 }
 
 .course-block.green .title-box {
-    background-image: url('/img/green-title.png');
+    background-image: url("../../img/green-title.png");
 }
 
 .course-block.violet .title-box {
-    background-image: url('/img/violet-title.png');
+    background-image: url("../../img/violet-title.png");
 }
 
 .course-block.blue .title-box {
-    background-image: url('/img/blue-title.png');
+    background-image: url("../../img/blue-title.png");
 }
 
 .pagination {
@@ -385,7 +380,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         background: transparent;
         border: none;
         outline: none;
@@ -418,7 +413,7 @@
                 color: $black;
                 font-size: 16px;
                 line-height: 24px;
-                transition: .3s;
+                transition: 0.3s;
             }
 
             span {
@@ -459,8 +454,7 @@
 
 // ADAPTIVE
 
-@media(max-width:1400.8px) {
-
+@media (max-width: 1400.8px) {
     .courses-mainscreen {
         height: 350px;
 
@@ -476,7 +470,7 @@
     }
 
     .sidebar-filter {
-        >.title {
+        > .title {
             font-size: 32px;
             line-height: normal;
             margin: 0 0 20px 0;
@@ -486,27 +480,24 @@
             padding: 25px 20px;
 
             .sidebar-filter__cont {
-                >.title {
+                > .title {
                     margin-bottom: 20px;
                 }
             }
         }
-
-
     }
 
     .filter__checkfield {
         margin-bottom: 20px;
     }
-
 }
 
-@media(max-width:1199.8px) {
+@media (max-width: 1199.8px) {
     .courses-container {
         max-width: 990px;
     }
 
-    .sidebar-filter>.title {
+    .sidebar-filter > .title {
         font-size: 24px;
     }
 
@@ -522,7 +513,7 @@
     }
 }
 
-@media(max-width:991.8px) {
+@media (max-width: 991.8px) {
     .courses-container {
         max-width: 768px;
     }
@@ -570,10 +561,9 @@
     .hoverbox {
         display: none;
     }
-
 }
 
-@media(max-width:767.8px) {
+@media (max-width: 767.8px) {
     .courses-container {
         max-width: 575px;
     }
@@ -601,10 +591,9 @@
     .sidebar-filter .sidebar-filter__wrap {
         margin-bottom: 40px;
     }
-
 }
 
-@media(max-width:575.8px) {
+@media (max-width: 575.8px) {
     .courses-container {
         max-width: 420px;
     }
@@ -643,9 +632,6 @@
         margin-bottom: 20px;
     }
 }
-
-
-
 
 // font-family: "M PLUS 1p", sans-serif;
 // font-family: 'Open Sans', sans-serif;

@@ -25,7 +25,7 @@
                 font-size: 18px;
                 line-height: 30px;
                 margin-bottom: 25px;
-                background-image: url('/img/listcheck.svg');
+                background-image: url("../../img/listcheck.svg");
                 background-repeat: no-repeat;
                 background-position: center left;
                 padding-left: 39px;
@@ -45,7 +45,7 @@
         .timesbox {
             width: 100%;
             height: 251px;
-            background-image: url('/img/figure.png');
+            background-image: url("../../img/figure.png");
             background-repeat: no-repeat;
             background-size: 100% 100%;
             padding: 70px 125px 0 135px;
@@ -77,7 +77,7 @@
             justify-content: center;
             width: 267px;
             height: 100px;
-            background-image: url('/img/btn-bg.png');
+            background-image: url("../../img/btn-bg.png");
             background-size: 100% 100%;
             background-repeat: no-repeat;
             color: $white;
@@ -109,8 +109,7 @@
             background: $blue-link;
             padding: 18px;
             text-decoration: none;
-            transition: .3s;
-
+            transition: 0.3s;
 
             &:last-child {
                 margin-right: 0;
@@ -203,12 +202,12 @@
 
             .slick-prev.slick-arrow {
                 right: 78px;
-                background-image: url('/img/slider-arrowleft.svg');
+                background-image: url("../../img/slider-arrowleft.svg");
             }
 
             .slick-next.slick-arrow {
                 right: 0;
-                background-image: url('/img/slider-arrowright.svg');
+                background-image: url("../../img/slider-arrowright.svg");
             }
 
             .slick-dots {
@@ -226,7 +225,7 @@
                         height: 12px;
                         padding: 0;
                         outline: none;
-                        background-image: url('/img/dots.svg');
+                        background-image: url("../../img/dots.svg");
                         background-repeat: no-repeat;
                         background-size: 100% 100%;
                         background-position: center;
@@ -235,12 +234,11 @@
                             display: none;
                         }
                     }
-
                 }
 
                 li.slick-active {
                     button {
-                        background-image: url('/img/dots-act.svg');
+                        background-image: url("../../img/dots-act.svg");
                     }
                 }
             }
@@ -271,7 +269,7 @@
 
             .slidelitt.slidelitt__video {
                 &:after {
-                    content: '';
+                    content: "";
                     position: absolute;
                     left: 50%;
                     top: 50%;
@@ -279,7 +277,7 @@
                     width: 65px;
                     height: 65px;
                     display: inline-block;
-                    background: url('/img/play-btn.png') no-repeat center;
+                    background: url("../../img/play-btn.png") no-repeat center;
                 }
             }
 
@@ -297,7 +295,7 @@
 }
 
 .learn-program {
-    background: url('/img/violetbg.png');
+    background: url("../../img/violetbg.png");
     background-repeat: no-repeat;
     background-position: top 55px right;
     background-size: cover;
@@ -338,11 +336,11 @@
                 margin-bottom: 30px;
 
                 &:nth-child(even) {
-                    background-image: url('/img/list-styletype2.svg');
+                    background-image: url("../../img/list-styletype2.svg");
                 }
 
                 &:nth-child(odd) {
-                    background-image: url('/img/list-styletype1.svg');
+                    background-image: url("../../img/list-styletype1.svg");
                 }
 
                 &:last-child {
@@ -358,10 +356,10 @@
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
-            font-family: 'Open Sans', sans-serif;
+            font-family: "Open Sans", sans-serif;
             display: inline-block;
             padding-left: 30px;
-            background-image: url('/img/download-icon.svg');
+            background-image: url("../../img/download-icon.svg");
             background-repeat: no-repeat;
             background-position: left center;
             background-size: 20px;
@@ -385,9 +383,8 @@
     max-width: 100%;
 }
 
-
 // COURSES ABOUT ADAPTIVE
-@media(max-width:1199.8px) {
+@media (max-width: 1199.8px) {
     .abcourses__topsect {
         h1 {
             font-size: 32px;
@@ -452,7 +449,7 @@
     }
 }
 
-@media(max-width:991.8px) {
+@media (max-width: 991.8px) {
     .abcourses__topsect .abcours-btnsection a {
         max-width: 250px;
     }
@@ -472,8 +469,7 @@
     }
 }
 
-@media(max-width:767.8px) {
-
+@media (max-width: 767.8px) {
     .abcourses__topsect .leftlist,
     .abcourses__topsect .rightbox {
         flex: 0 0 100%;
@@ -529,8 +525,7 @@
     }
 }
 
-@media(max-width:575.8px) {
-
+@media (max-width: 575.8px) {
     .learn-program h2,
     .learn-program .learn-program__box .title {
         font-size: 24px;
@@ -585,6 +580,4 @@
     .vertical-sliderwrap {
         padding-bottom: 55px;
     }
-
-
 }
