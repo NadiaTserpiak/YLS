@@ -128,7 +128,65 @@ particlesJS("particles-js", {
 //   };
 //   requestAnimationFrame(update);
 
-
+//
+if ($('*').is('.about-yls')) {
+  window.onscroll = function () { scrollFunction() };
+  function scrollFunction() {
+    if (document.documentElement.scrollTop > 300) {
+      document.getElementById("phone-animation").style.position = "fixed";
+      document.getElementById("phone-animation").style.marginLeft = "70.6%";
+      document.getElementById("phone-animation").style.marginTop = "-500px";
+      document.getElementById("individ-block").style.marginTop = "134px";
+      var mql = window.matchMedia('all and (max-height: 600px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginTop = "-600px";
+      }
+      var mql = window.matchMedia('all and (max-height: 500px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginTop = "-700px";
+      }
+   
+      var mql = window.matchMedia('all and (max-width: 1323px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "67%";
+      }
+      var mql = window.matchMedia('all and (max-width: 1166px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "63%";
+      }
+      var mql = window.matchMedia('all and (max-width: 889px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "53%";
+      }
+      var mql = window.matchMedia('all and (max-width: 700px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "40%";
+      }
+         var mql = window.matchMedia('all and (max-width: 510px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginTop = "-250px";
+      }
+      var mql = window.matchMedia('all and (max-width: 543px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "30%";
+      }
+      var mql = window.matchMedia('all and (max-width: 484px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "10%";
+      }
+        var mql = window.matchMedia('all and (max-width: 400px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "0%";
+      }
+   
+ }
+ else {
+  document.getElementById("individ-block").style.marginTop = "70px";
+  document.getElementById("phone-animation").style.position = "relative";
+  document.getElementById("phone-animation").style.marginTop = "-85px";
+}
+}
+}
 //text writer
 $(document).ready(function () {
  

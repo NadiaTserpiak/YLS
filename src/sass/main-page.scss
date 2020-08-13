@@ -12,9 +12,21 @@
     position: relative;
     width: 100%;
     height: 799px;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .3);
+    }
 }
 .fullscreen-bg__video {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 .full-video {
     position: absolute;
@@ -342,8 +354,10 @@
     margin-right: 179px;
     margin-top: -85px;
     z-index: 2;
-    position: relative;
+    position: absolute;
+
 }
+ 
 .mobile-phone {
     cursor: pointer;
     position: absolute;
@@ -483,7 +497,7 @@
     margin-top: -100px;
     margin-left: 20px;
     position: absolute;
-    animation: svg-animation1 24s;
+    animation: svg-animation1 27s;
     animation-iteration-count: infinite;
     z-index: -1;
 }
@@ -500,7 +514,7 @@
     margin-left: 60px;
     z-index: -1;
     position: absolute;
-    animation: svg-animation2 22s;
+    animation: svg-animation2 25s;
     animation-iteration-count: infinite;
 }
 @keyframes svg-animation2 {
@@ -529,7 +543,34 @@
         margin-top: 1999px;
     }
 }
+.svg-animate4 {
+    z-index: -1;
+    margin-top: -70px;
+    margin-left: 60%;
+    position: absolute;
+    animation: svg-animation3 37s;
+    animation-iteration-count: infinite;
+}
+ 
 
+.svg-animate5 {
+    z-index: -1;
+    margin-top: 70px;
+    margin-left: 88%;
+    position: absolute;
+    animation: svg-animation3 29s;
+    animation-iteration-count: infinite;
+}
+ 
+.svg-animate6 {
+    z-index: -1;
+    margin-top: 80px;
+    margin-left: 80%;
+    position: absolute;
+    animation: svg-animation3 24s;
+    animation-iteration-count: infinite;
+}
+ 
 
 
 
@@ -624,6 +665,25 @@
         margin-left: 405px;
         margin-top: -88px;
     }
+    .svg-animate4 {
+ 
+        margin-left: 50%;
+ 
+    }
+     
+    
+    .svg-animate5 {
+ 
+        margin-left:68%;
+   
+    }
+     
+    .svg-animate6 {
+ 
+        margin-left: 60%;
+ 
+    }
+     
 }
 @media screen and (max-width: 1200px) {
     .fullscreen-bg__video {
@@ -671,7 +731,10 @@
     .main-page {
         background-image: url(/img/bg-main-page.png);
         background-position-x: center;
-        height: 650px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
     }
     .call-phone {
         margin-top: -75px;
@@ -838,7 +901,18 @@
         margin-top: 10px;
     }
     .main-page {
+        width: 100%;
         height: 550px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+    .fullscreen-bg {
+ 
+        &:after {
+ 
+            height: 550px;
+      
+        }
     }
     .search-mobile {
         margin-left: 55%;
@@ -866,6 +940,20 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 650px;
+         object-fit: cover;
+        object-position: 50% 50%;
+    }
+    .fullscreen-bg {
+ 
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 650px;
+            background: rgba(0, 0, 0, .3);
+        }
     }
     .search-mobile {
         margin-left: 62%;
@@ -913,6 +1001,13 @@
 @media screen and (max-width: 510px) {
     .main-page {
         height: 450px;
+    }
+    .fullscreen-bg {
+ 
+        &:after {
+            height: 450px;
+            background: rgba(0, 0, 0, .3);
+        }
     }
     .welcome-txt {
         font-size: 18px;
