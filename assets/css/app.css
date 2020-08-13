@@ -2749,6 +2749,11 @@
   height: auto;
 }
 
+.greybg {
+  background-color: #f6f6f6;
+  padding-bottom: 75px;
+}
+
 @media (max-width: 1400.8px) {
   .courses-mainscreen {
     height: 350px;
@@ -3475,6 +3480,132 @@
 
   .vertical-sliderwrap {
     padding-bottom: 55px;
+  }
+}
+.courses-mainscreen.project {
+  background-image: url("/img/project-mainpic.png");
+}
+
+.about-course.project {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 980.8px) {
+  .greybg {
+    margin-bottom: 55px;
+  }
+}
+.courses-mainscreen.aboutus {
+  background-image: url("/img/aboutus-mainpic.png");
+}
+
+.about-course.project {
+  z-index: 1;
+  position: relative;
+}
+
+.catalog-section {
+  padding-top: 130px;
+}
+.catalog-section .courses-row {
+  position: relative;
+}
+.catalog-section h2 {
+  color: #333333;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 64px;
+  position: relative;
+  margin: 0;
+}
+.catalog-section h2 span {
+  position: absolute;
+  color: #F2F2F2;
+  font-weight: 800;
+  font-size: 120px;
+  line-height: 64px;
+  left: 0;
+  z-index: -1;
+  top: -27px;
+}
+.catalog-section .left-title {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.catalog-section .rightbtn {
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.catalog-section .rightbtn a {
+  background-image: url("/img/download-iconblue.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  text-decoration: underline;
+  color: #22A8FF;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-block;
+  padding-left: 25px;
+  margin: 0;
+}
+.catalog-section .rightbtn a:hover {
+  text-decoration: none;
+}
+
+.catalog-pics {
+  margin-top: 80px;
+}
+.catalog-pics .picbox {
+  width: 100%;
+}
+.catalog-pics .picbox img {
+  width: 100%;
+}
+
+.vertical-sliderwrap .slick-prev.slick-arrow,
+.vertical-sliderwrap .slick-next.slick-arrow {
+  transition: 0.3s;
+}
+.vertical-sliderwrap .slick-prev.slick-arrow:hover {
+  transform: rotate(-10deg);
+}
+.vertical-sliderwrap .slick-next.slick-arrow:hover {
+  transform: rotate(10deg);
+}
+
+@media (max-width: 991.8px) {
+  .catalog-section .left-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .catalog-section .rightbtn {
+    flex: 0 0 100%;
+    max-width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .catalog-section h2 span {
+    font-size: 80px;
+  }
+
+  .catalog-pics {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 575.8px) {
+  .catalog-section h2 {
+    font-size: 32px;
+  }
+  .catalog-section h2 span {
+    font-size: 50px;
   }
 }
 footer {
