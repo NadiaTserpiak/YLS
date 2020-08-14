@@ -714,6 +714,10 @@ Dots */
   position: relative;
 }
 
+#phone-animation {
+  margin-left: 70%;
+}
+
 .mobile-phone {
   cursor: pointer;
   position: absolute;
@@ -1037,7 +1041,7 @@ Dots */
 }
 @media screen and (max-width: 1470px) {
   .call-phone {
-    margin-top: -165px;
+    margin-top: -85px;
   }
 
   .individual-way {
@@ -1057,6 +1061,10 @@ Dots */
   .boy-img {
     margin-left: 545px;
     margin-top: -83px;
+  }
+
+  #phone-animation {
+    margin-left: 60%;
   }
 }
 @media screen and (max-width: 1330px) {
@@ -1110,6 +1118,10 @@ Dots */
   }
 
   .svg-animate6 {
+    margin-left: 60%;
+  }
+
+  #phone-animation {
     margin-left: 60%;
   }
 }
@@ -1293,6 +1305,10 @@ Dots */
     line-height: 48px;
   }
 
+  #phone-animation {
+    margin-left: 50%;
+  }
+
   .txt-online {
     font-size: 18px;
     line-height: 28px;
@@ -1410,6 +1426,10 @@ Dots */
     margin-top: 36px;
     margin-left: 66%;
   }
+
+  #phone-animation {
+    margin-left: 40%;
+  }
 }
 @media screen and (max-width: 602px) {
   .main-page {
@@ -1481,6 +1501,10 @@ Dots */
   .bg-btn-pick {
     width: 120px;
     height: 80px;
+  }
+
+  #phone-animation {
+    margin-left: 35%;
   }
 }
 @media screen and (max-width: 510px) {
@@ -1560,6 +1584,10 @@ Dots */
 
   .form-control.search-control {
     font-size: 12px;
+  }
+
+  #phone-animation {
+    margin-left: 20%;
   }
 }
 @media screen and (max-width: 410px) {
@@ -1653,10 +1681,18 @@ Dots */
     cursor: auto;
     background-color: #fff;
   }
+
+  #phone-animation {
+    margin-left: 9%;
+  }
 }
 @media screen and (max-width: 353px) {
   .search-mobile {
     margin-left: 73.4%;
+  }
+
+  #phone-animation {
+    margin-left: 0%;
   }
 }
 .block-about {
