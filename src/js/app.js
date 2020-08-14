@@ -135,8 +135,16 @@ if ($('*').is('.about-yls')) {
     if (document.documentElement.scrollTop > 300) {
       document.getElementById("phone-animation").style.position = "fixed";
       document.getElementById("phone-animation").style.marginLeft = "70.6%";
-      document.getElementById("phone-animation").style.marginTop = "-500px";
+      document.getElementById("phone-animation").style.marginTop = "-300px";
       document.getElementById("individ-block").style.marginTop = "134px";
+      var mql = window.matchMedia('all and (max-height: 886px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginTop = "-400px";
+      }
+      var mql = window.matchMedia('all and (max-height: 700px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginTop = "-500px";
+      }
       var mql = window.matchMedia('all and (max-height: 600px)');
       if (mql.matches) {
         document.getElementById("phone-animation").style.marginTop = "-600px";
@@ -154,12 +162,18 @@ if ($('*').is('.about-yls')) {
       if (mql.matches) {
         document.getElementById("phone-animation").style.marginLeft = "63%";
       }
+      var mql = window.matchMedia('all and (max-width: 980px)');
+      if (mql.matches) {
+       
+        document.getElementById("individ-block").style.marginTop = "70px";
+      }
       var mql = window.matchMedia('all and (max-width: 889px)');
       if (mql.matches) {
         document.getElementById("phone-animation").style.marginLeft = "53%";
       }
       var mql = window.matchMedia('all and (max-width: 700px)');
       if (mql.matches) {
+     
         document.getElementById("phone-animation").style.marginLeft = "40%";
       }
          var mql = window.matchMedia('all and (max-width: 510px)');
@@ -172,21 +186,171 @@ if ($('*').is('.about-yls')) {
       }
       var mql = window.matchMedia('all and (max-width: 484px)');
       if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "10%";
+        document.getElementById("phone-animation").style.marginLeft = "25%";
       }
-        var mql = window.matchMedia('all and (max-width: 400px)');
+        var mql = window.matchMedia('all and (max-width: 435px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "22%";
+      }
+      var mql = window.matchMedia('all and (max-width: 413px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "17%";
+      }
+      var mql = window.matchMedia('all and (max-width: 384px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "12%";
+      }
+      var mql = window.matchMedia('all and (max-width: 365px)');
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "8%";
+      }
+      var mql = window.matchMedia('all and (max-width: 347px)');
       if (mql.matches) {
         document.getElementById("phone-animation").style.marginLeft = "0%";
       }
-   
  }
  else {
-  document.getElementById("individ-block").style.marginTop = "70px";
-  document.getElementById("phone-animation").style.position = "relative";
-  document.getElementById("phone-animation").style.marginTop = "-85px";
+  document.getElementById("individ-block").style.marginTop = "134px";
+  document.getElementById("phone-animation").style.position = "absolute";
+  document.getElementById("phone-animation").style.marginTop = "-125px";
+    var mql = window.matchMedia('all and (max-width: 510px)');
+      if (mql.matches) {
+        document.getElementById("individ-block").style.marginTop = "64px";
+
+      }
 }
 }
 }
+//
+if ($('*').is('.block-events')) {
+  window.eventElem = function () { eventElem() };
+function  eventElem(){
+  document.getElementById("svg-read").style.paddingLeft = "80px";
+  document.getElementById("svg-read").style.opacity = "1";
+  document.getElementById("read-hover").style.fontWeight = "700";
+}
+window.eventOut= function () { eventOut() };
+function eventOut(){
+  document.getElementById("svg-read").style.paddingLeft = "70px";
+  document.getElementById("svg-read").style.opacity = "0";
+  document.getElementById("read-hover").style.fontWeight = "500";
+}
+window.eventElem2 = function () { eventElem2() };
+function  eventElem2(){
+  document.getElementById("svg-read2").style.paddingLeft = "80px";
+  document.getElementById("svg-read2").style.opacity = "1";
+  document.getElementById("read-hover2").style.fontWeight = "700";
+}
+window.eventOut2= function () { eventOut2() };
+function eventOut2(){
+  document.getElementById("svg-read2").style.paddingLeft = "70px";
+  document.getElementById("svg-read2").style.opacity = "0";
+  document.getElementById("read-hover2").style.fontWeight = "500";
+}
+
+
+window.eventElem3 = function () { eventElem3() };
+function  eventElem3(){
+  document.getElementById("svg-read3").style.paddingLeft = "80px";
+  document.getElementById("svg-read3").style.opacity = "1";
+  document.getElementById("read-hover3").style.fontWeight = "700";
+}
+window.eventOut3= function () { eventOut3() };
+function eventOut3(){
+  document.getElementById("svg-read3").style.paddingLeft = "70px";
+  document.getElementById("svg-read3").style.opacity = "0";
+  document.getElementById("read-hover3").style.fontWeight = "500";
+}
+
+
+window.eventElem4 = function () { eventElem4() };
+function  eventElem4(){
+  document.getElementById("svg-read4").style.paddingLeft = "80px";
+  document.getElementById("svg-read4").style.opacity = "1";
+  document.getElementById("read-hover4").style.fontWeight = "700";
+}
+window.eventOut4= function () { eventOut4() };
+function eventOut4(){
+  document.getElementById("svg-read4").style.paddingLeft = "70px";
+  document.getElementById("svg-read4").style.opacity = "0";
+  document.getElementById("read-hover4").style.fontWeight = "500";
+}
+}
+//
+window.btnOver = function () { btnOver() };
+function  btnOver(){
+  document.getElementById("bg-hover").style.transform = "rotate(-4deg)";
+
+}
+window.btnOut= function () { btnOut() };
+function btnOut(){
+  document.getElementById("bg-hover").style.transform = "rotate(0deg)";
+   }
+//
+window.btnOver2 = function () { btnOver2() };
+function  btnOver2(){
+  document.getElementById("bg-hover2").style.transform = "rotate(-4deg)";
+
+}
+window.btnOut2= function () { btnOut2() };
+function btnOut2(){
+document.getElementById("bg-hover2").style.transform = "rotate(0deg)";
+   }
+   //
+   window.btnOver3 = function () { btnOver3() };
+function  btnOver3(){
+  document.getElementById("bg-hover3").style.transform = "rotate(-4deg)";
+
+}
+window.btnOut3= function () { btnOut3() };
+function btnOut3(){
+document.getElementById("bg-hover3").style.transform = "rotate(0deg)";
+   }
+//
+window.btnOver4 = function () { btnOver4() };
+function  btnOver4(){
+  document.getElementById("bg-hover4").style.fontSize = "17px";
+  var mql = window.matchMedia('all and (max-width: 700px)');
+      if (mql.matches) {
+        document.getElementById("bg-hover4").style.fontSize = "13px";
+      }
+}
+window.btnOut4= function () { btnOut4() };
+function btnOut4(){
+document.getElementById("bg-hover4").style.fontSize = "16px";
+var mql = window.matchMedia('all and (max-width: 700px)');
+if (mql.matches) {
+  document.getElementById("bg-hover4").style.fontSize = "12px";
+}
+}
+//
+window.btnOver5 = function () { btnOver5() };
+function  btnOver5(){
+  document.getElementById("bg-hover5").style.transform = "rotate(-4deg)";
+
+}
+window.btnOut5= function () { btnOut5() };
+function btnOut5(){
+document.getElementById("bg-hover5").style.transform = "rotate(0deg)";
+   } 
+   //
+   window.btnOver6 = function () { btnOver6() };
+function  btnOver6(){
+    document.getElementById("bg-hover6").style.fontSize = "17px";
+    var mql = window.matchMedia('all and (max-width: 700px)');
+        if (mql.matches) {
+          document.getElementById("bg-hover6").style.fontSize = "13px";
+        }
+
+}
+window.btnOut6= function () { btnOut6() };
+function btnOut6(){
+  document.getElementById("bg-hover6").style.fontSize = "16px";
+  var mql = window.matchMedia('all and (max-width: 700px)');
+  if (mql.matches) {
+    document.getElementById("bg-hover6").style.fontSize = "12px";
+  }
+   } 
 //text writer
 $(document).ready(function () {
  

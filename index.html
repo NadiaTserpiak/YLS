@@ -589,8 +589,8 @@
             </div>
             <h1 class="yls-txt">Young Leaders School</h1>
           </div>
-          <a class="btn-registration">
-            <svg class="bg-btn-registration" width="267" height="101" viewBox="0 0 267 101" fill="none"
+          <a onmouseover="btnOver()" onmouseout="btnOut()" class="btn-registration">
+            <svg id="bg-hover" class="bg-btn-registration" width="267" height="101" viewBox="0 0 267 101" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M9.20763 20.5719L0.62153 100.489L232.991 95.8277L244.888 12.4543L9.20763 20.5719Z"
                 stroke="white" />
@@ -824,8 +824,8 @@
         <h2 class="txt-individual">Індивідуальний маршрут</h2>
         <p class="txt-online">Пройдіть онлайн тестування, та дізнайтесь, що підходить саме вам!</p>
         <div class="block-purpule">
-          <a>
-            <svg class="bg-btn-pick" width="334" height="126" viewBox="0 0 334 126" fill="none"
+          <a onmouseover="btnOver2()" onmouseout="btnOut2()">
+            <svg id="bg-hover2" class="bg-btn-pick" width="334" height="126" viewBox="0 0 334 126" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M11.3172 25.0503L0.557809 125.195L291.268 119.364L306.175 14.8943L11.3172 25.0503Z"
                 stroke="white" />
@@ -843,7 +843,7 @@
                 </linearGradient>
               </defs>
             </svg>
-            <p class="pick-up-txt">Підібрати</p>
+            <p id="text-upper" class="pick-up-txt">Підібрати</p>
           </a>
         </div>
       </div>
@@ -1060,7 +1060,8 @@
             curae; Praesent sit amet leo ac ligula tincidunt cursus. Phasellus ultricies sollicitudin libero, et
             imperdiet augue suscipit at. Vivamus sed massa purus. In eget commodo turpis. Praesent ut aliquet lectus.
           </p>
-          <a class="btn-know-more"><svg class="svg-know-more" width="267" height="101" viewBox="0 0 267 101" fill="none"
+          <a onmouseover="btnOver3()" onmouseout="btnOut3()" class="btn-know-more">
+            <svg id="bg-hover3" class="svg-know-more" width="267" height="101" viewBox="0 0 267 101" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M9.20739 20.5719L0.621286 100.489L232.991 95.8277L244.888 12.4543L9.20739 20.5719Z"
                 stroke="#663B94" />
@@ -1908,7 +1909,8 @@
 
           </div>
         </div>
-        <a class="btn-know2"><svg class="btn-bg-know" width="267" height="101" viewBox="0 0 267 101" fill="none"
+        <a onmouseover="btnOver4()" onmouseout="btnOut4()" class="btn-know2">
+          <svg  class="btn-bg-know" width="267" height="101" viewBox="0 0 267 101" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M9.20739 20.5719L0.621286 100.489L232.991 95.8277L244.888 12.4543L9.20739 20.5719Z"
               stroke="#6EB52C" />
@@ -1926,7 +1928,7 @@
               </linearGradient>
             </defs>
           </svg>
-          <span class="txt-know-more txt-btn-correct">Дізнатися більше</span></a>
+          <span id="bg-hover4" class="txt-know-more txt-btn-correct">Дізнатися більше</span></a>
       </div>
     </section>
 
@@ -2078,7 +2080,7 @@
 
           <div class="courses-col-4">
             <div class="empty-block">
-              <button class="btn-see-all"><img class="btn-purpule" src="img/btn-see-all.png"><span>Дивитися
+              <button onmouseover="btnOver5()" onmouseout="btnOut5()"  class="btn-see-all"><img id="bg-hover5" class="btn-purpule" src="img/btn-see-all.png"><span>Дивитися
                   всі</span></button>
             </div>
           </div>
@@ -2096,7 +2098,8 @@
     <section class="recent-events">
       <div class="bg-events">
         <div class="block-events">
-          <div class="events-item">
+          <a href="#">
+          <div onmouseover="eventElem()" onmouseout="eventOut()" class="events-item">
             <div class="bg-block-item"><svg class="green-line" width="223" height="235" viewBox="0 0 223 235"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filterd0_d)">
@@ -2121,7 +2124,7 @@
               <p class="data-item">01.02.2020</p>
               <p class="texting-item">Ullam id scelerisque erat. Morbi pellentesque risus sit amet justo vulputate, ac
                 vulputate lorem finibus.</p>
-              <a class="read-btn"><span class="read-arrow"><svg width="21" height="12" viewBox="0 0 21 12" fill="none"
+              <a id="read-hover" class="read-btn"><span id="svg-read" class="read-arrow"><svg width="21" height="12" viewBox="0 0 21 12" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M20.5303 6.53033C20.8232 6.23744 20.8232 5.76256 20.5303 5.46967L15.7574 0.696698C15.4645 0.403804 14.9896 0.403804 14.6967 0.696698C14.4038 0.989591 14.4038 1.46446 14.6967 1.75736L18.9393 6L14.6967 10.2426C14.4038 10.5355 14.4038 11.0104 14.6967 11.3033C14.9896 11.5962 15.4645 11.5962 15.7574 11.3033L20.5303 6.53033ZM6.55671e-08 6.75L20 6.75L20 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z"
@@ -2129,8 +2132,9 @@
                   </svg>
                 </span>Читати</a>
             </div>
-          </div>
-          <div class="events-item">
+          </div></a>
+          <a href="#">
+          <div onmouseover="eventElem2()" onmouseout="eventOut2()" class="events-item">
             <div class="bg-block-item"><svg class="green-line" width="223" height="235" viewBox="0 0 223 235"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filterd0_d)">
@@ -2155,7 +2159,7 @@
               <p class="data-item">01.02.2020</p>
               <p class="texting-item">Ullam id scelerisque erat. Morbi pellentesque risus sit amet justo vulputate, ac
                 vulputate lorem finibus.</p>
-              <a class="read-btn"><span class="read-arrow"><svg width="21" height="12" viewBox="0 0 21 12" fill="none"
+              <a id="read-hover2" class="read-btn"><span  id="svg-read2" class="read-arrow"><svg width="21" height="12" viewBox="0 0 21 12" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M20.5303 6.53033C20.8232 6.23744 20.8232 5.76256 20.5303 5.46967L15.7574 0.696698C15.4645 0.403804 14.9896 0.403804 14.6967 0.696698C14.4038 0.989591 14.4038 1.46446 14.6967 1.75736L18.9393 6L14.6967 10.2426C14.4038 10.5355 14.4038 11.0104 14.6967 11.3033C14.9896 11.5962 15.4645 11.5962 15.7574 11.3033L20.5303 6.53033ZM6.55671e-08 6.75L20 6.75L20 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z"
@@ -2163,8 +2167,9 @@
                   </svg>
                 </span>Читати</a>
             </div>
-          </div>
-          <div class="events-item">
+          </div></a>
+          <a href="#">
+          <div onmouseover="eventElem3()" onmouseout="eventOut3()" class="events-item">
             <div class="bg-block-item"><svg class="green-line" width="223" height="235" viewBox="0 0 223 235"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filterd0_d)">
@@ -2189,7 +2194,7 @@
               <p class="data-item">01.02.2020</p>
               <p class="texting-item">Ullam id scelerisque erat. Morbi pellentesque risus sit amet justo vulputate, ac
                 vulputate lorem finibus.</p>
-              <a class="read-btn"><span class="read-arrow"><svg width="21" height="12" viewBox="0 0 21 12" fill="none"
+              <a id="read-hover3" class="read-btn"><span  id="svg-read3"  class="read-arrow"><svg width="21" height="12" viewBox="0 0 21 12" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M20.5303 6.53033C20.8232 6.23744 20.8232 5.76256 20.5303 5.46967L15.7574 0.696698C15.4645 0.403804 14.9896 0.403804 14.6967 0.696698C14.4038 0.989591 14.4038 1.46446 14.6967 1.75736L18.9393 6L14.6967 10.2426C14.4038 10.5355 14.4038 11.0104 14.6967 11.3033C14.9896 11.5962 15.4645 11.5962 15.7574 11.3033L20.5303 6.53033ZM6.55671e-08 6.75L20 6.75L20 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z"
@@ -2197,8 +2202,9 @@
                   </svg>
                 </span>Читати</a>
             </div>
-          </div>
-          <div class="events-item">
+          </div></a>
+          <a href="#">
+          <div onmouseover="eventElem4()" onmouseout="eventOut4()" class="events-item">
             <div class="bg-block-item"><svg class="green-line" width="223" height="235" viewBox="0 0 223 235"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filterd0_d)">
@@ -2223,7 +2229,7 @@
               <p class="data-item">01.02.2020</p>
               <p class="texting-item">Ullam id scelerisque erat. Morbi pellentesque risus sit amet justo vulputate, ac
                 vulputate lorem finibus.</p>
-              <a class="read-btn"><span class="read-arrow"><svg width="21" height="12" viewBox="0 0 21 12" fill="none"
+              <a  id="read-hover4" class="read-btn"><span  id="svg-read4"  class="read-arrow"><svg width="21" height="12" viewBox="0 0 21 12" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M20.5303 6.53033C20.8232 6.23744 20.8232 5.76256 20.5303 5.46967L15.7574 0.696698C15.4645 0.403804 14.9896 0.403804 14.6967 0.696698C14.4038 0.989591 14.4038 1.46446 14.6967 1.75736L18.9393 6L14.6967 10.2426C14.4038 10.5355 14.4038 11.0104 14.6967 11.3033C14.9896 11.5962 15.4645 11.5962 15.7574 11.3033L20.5303 6.53033ZM6.55671e-08 6.75L20 6.75L20 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z"
@@ -2232,10 +2238,11 @@
                 </span>Читати</a>
             </div>
           </div>
+        </a>
         </div>
       </div>
-      <a class="btn-news">
-        <svg class="btn-bg-know" width="267" height="101" viewBox="0 0 267 101" fill="none"
+      <a onmouseover="btnOver6()" onmouseout="btnOut6()" class="btn-news">
+        <svg  class="btn-bg-know" width="267" height="101" viewBox="0 0 267 101" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M9.20739 20.5719L0.621286 100.489L232.991 95.8277L244.888 12.4543L9.20739 20.5719Z"
             stroke="#663B94" />
@@ -2253,8 +2260,7 @@
             </linearGradient>
           </defs>
         </svg>
-
-        <span class="txt-know-more txt-btn-correct">Більше новин</span></a>
+        <span id="bg-hover6" class="txt-know-more txt-btn-correct">Більше новин</span></a>
     </section>
     <section>
       <div class="catalog-under"></div>
@@ -2286,7 +2292,7 @@
           </div>
           <div class="courses-row catalog-pics">
             <div class="picbox">
-              <img src="img/pic1.png" alt="pic">
+              <img src="img/imgcatal.png" alt="pic">
             </div>
           </div>
         </div>

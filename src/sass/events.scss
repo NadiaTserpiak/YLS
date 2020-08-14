@@ -1,3 +1,4 @@
+
 .recent-events {
     background-color: white;
 }
@@ -8,12 +9,16 @@
     margin-top: 200px;
     padding-top: 129px;
     padding-bottom: 300px;
+  
 }
 
 .block-events {
     display: flex;
     flex-wrap: wrap;
     width: 1197px;
+    a{
+        text-decoration: none;
+    }
 }
 .events-item {
     display: flex;
@@ -24,6 +29,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 216.44px;
+    cursor: pointer;
+    &:hover{
+        .read-btn{
+            font-weight: 700;
+        }
+    }
 }
 .item-boy {
     margin-top: 17px;
@@ -36,6 +47,7 @@
     margin-left: -34px;
     z-index: 0;
     margin-top: 22px;
+    
 }
 .text-block-item {
     width: 289px;
@@ -49,6 +61,7 @@
     color: #22a8ff;
     margin-top: 14px;
     margin-bottom: 13px;
+    text-decoration: none;
 }
 .title-item {
     font-weight: 800;
@@ -73,20 +86,17 @@
     color: #22a8ff;
     cursor: pointer;
     transition: ease;
-    &:hover {
-        font-weight: 700;
-    }
+ 
 }
+ 
 .read-arrow {
     position: absolute;
     padding-left: 70px;
     transition: 0.5s ease;
     opacity: 0;
-    &:hover {
-        padding-left: 80px;
-        opacity: 1;
-    }
 }
+ 
+ 
 .btn-news {
     cursor: pointer;
 }

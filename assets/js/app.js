@@ -11119,8 +11119,20 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.about-yls')) {
     if (document.documentElement.scrollTop > 300) {
       document.getElementById("phone-animation").style.position = "fixed";
       document.getElementById("phone-animation").style.marginLeft = "70.6%";
-      document.getElementById("phone-animation").style.marginTop = "-500px";
+      document.getElementById("phone-animation").style.marginTop = "-300px";
       document.getElementById("individ-block").style.marginTop = "134px";
+      var mql = window.matchMedia('all and (max-height: 886px)');
+
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginTop = "-400px";
+      }
+
+      var mql = window.matchMedia('all and (max-height: 700px)');
+
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginTop = "-500px";
+      }
+
       var mql = window.matchMedia('all and (max-height: 600px)');
 
       if (mql.matches) {
@@ -11143,6 +11155,12 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.about-yls')) {
 
       if (mql.matches) {
         document.getElementById("phone-animation").style.marginLeft = "63%";
+      }
+
+      var mql = window.matchMedia('all and (max-width: 980px)');
+
+      if (mql.matches) {
+        document.getElementById("individ-block").style.marginTop = "70px";
       }
 
       var mql = window.matchMedia('all and (max-width: 889px)');
@@ -11172,24 +11190,258 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.about-yls')) {
       var mql = window.matchMedia('all and (max-width: 484px)');
 
       if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "10%";
+        document.getElementById("phone-animation").style.marginLeft = "25%";
       }
 
-      var mql = window.matchMedia('all and (max-width: 400px)');
+      var mql = window.matchMedia('all and (max-width: 435px)');
+
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "22%";
+      }
+
+      var mql = window.matchMedia('all and (max-width: 413px)');
+
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "17%";
+      }
+
+      var mql = window.matchMedia('all and (max-width: 384px)');
+
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "12%";
+      }
+
+      var mql = window.matchMedia('all and (max-width: 365px)');
+
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.marginLeft = "8%";
+      }
+
+      var mql = window.matchMedia('all and (max-width: 347px)');
 
       if (mql.matches) {
         document.getElementById("phone-animation").style.marginLeft = "0%";
       }
     } else {
-      document.getElementById("individ-block").style.marginTop = "70px";
-      document.getElementById("phone-animation").style.position = "relative";
-      document.getElementById("phone-animation").style.marginTop = "-85px";
+      document.getElementById("individ-block").style.marginTop = "134px";
+      document.getElementById("phone-animation").style.position = "absolute";
+      document.getElementById("phone-animation").style.marginTop = "-125px";
+      var mql = window.matchMedia('all and (max-width: 510px)');
+
+      if (mql.matches) {
+        document.getElementById("individ-block").style.marginTop = "64px";
+      }
     }
   };
 
   window.onscroll = function () {
     scrollFunction();
   };
+} //
+
+
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.block-events')) {
+  var eventElem = function eventElem() {
+    document.getElementById("svg-read").style.paddingLeft = "80px";
+    document.getElementById("svg-read").style.opacity = "1";
+    document.getElementById("read-hover").style.fontWeight = "700";
+  };
+
+  var eventOut = function eventOut() {
+    document.getElementById("svg-read").style.paddingLeft = "70px";
+    document.getElementById("svg-read").style.opacity = "0";
+    document.getElementById("read-hover").style.fontWeight = "500";
+  };
+
+  var eventElem2 = function eventElem2() {
+    document.getElementById("svg-read2").style.paddingLeft = "80px";
+    document.getElementById("svg-read2").style.opacity = "1";
+    document.getElementById("read-hover2").style.fontWeight = "700";
+  };
+
+  var eventOut2 = function eventOut2() {
+    document.getElementById("svg-read2").style.paddingLeft = "70px";
+    document.getElementById("svg-read2").style.opacity = "0";
+    document.getElementById("read-hover2").style.fontWeight = "500";
+  };
+
+  var eventElem3 = function eventElem3() {
+    document.getElementById("svg-read3").style.paddingLeft = "80px";
+    document.getElementById("svg-read3").style.opacity = "1";
+    document.getElementById("read-hover3").style.fontWeight = "700";
+  };
+
+  var eventOut3 = function eventOut3() {
+    document.getElementById("svg-read3").style.paddingLeft = "70px";
+    document.getElementById("svg-read3").style.opacity = "0";
+    document.getElementById("read-hover3").style.fontWeight = "500";
+  };
+
+  var eventElem4 = function eventElem4() {
+    document.getElementById("svg-read4").style.paddingLeft = "80px";
+    document.getElementById("svg-read4").style.opacity = "1";
+    document.getElementById("read-hover4").style.fontWeight = "700";
+  };
+
+  var eventOut4 = function eventOut4() {
+    document.getElementById("svg-read4").style.paddingLeft = "70px";
+    document.getElementById("svg-read4").style.opacity = "0";
+    document.getElementById("read-hover4").style.fontWeight = "500";
+  };
+
+  window.eventElem = function () {
+    eventElem();
+  };
+
+  window.eventOut = function () {
+    eventOut();
+  };
+
+  window.eventElem2 = function () {
+    eventElem2();
+  };
+
+  window.eventOut2 = function () {
+    eventOut2();
+  };
+
+  window.eventElem3 = function () {
+    eventElem3();
+  };
+
+  window.eventOut3 = function () {
+    eventOut3();
+  };
+
+  window.eventElem4 = function () {
+    eventElem4();
+  };
+
+  window.eventOut4 = function () {
+    eventOut4();
+  };
+} //
+
+
+window.btnOver = function () {
+  btnOver();
+};
+
+function btnOver() {
+  document.getElementById("bg-hover").style.transform = "rotate(-4deg)";
+}
+
+window.btnOut = function () {
+  btnOut();
+};
+
+function btnOut() {
+  document.getElementById("bg-hover").style.transform = "rotate(0deg)";
+} //
+
+
+window.btnOver2 = function () {
+  btnOver2();
+};
+
+function btnOver2() {
+  document.getElementById("bg-hover2").style.transform = "rotate(-4deg)";
+}
+
+window.btnOut2 = function () {
+  btnOut2();
+};
+
+function btnOut2() {
+  document.getElementById("bg-hover2").style.transform = "rotate(0deg)";
+} //
+
+
+window.btnOver3 = function () {
+  btnOver3();
+};
+
+function btnOver3() {
+  document.getElementById("bg-hover3").style.transform = "rotate(-4deg)";
+}
+
+window.btnOut3 = function () {
+  btnOut3();
+};
+
+function btnOut3() {
+  document.getElementById("bg-hover3").style.transform = "rotate(0deg)";
+} //
+
+
+window.btnOver4 = function () {
+  btnOver4();
+};
+
+function btnOver4() {
+  document.getElementById("bg-hover4").style.fontSize = "17px";
+  var mql = window.matchMedia('all and (max-width: 700px)');
+
+  if (mql.matches) {
+    document.getElementById("bg-hover4").style.fontSize = "13px";
+  }
+}
+
+window.btnOut4 = function () {
+  btnOut4();
+};
+
+function btnOut4() {
+  document.getElementById("bg-hover4").style.fontSize = "16px";
+  var mql = window.matchMedia('all and (max-width: 700px)');
+
+  if (mql.matches) {
+    document.getElementById("bg-hover4").style.fontSize = "12px";
+  }
+} //
+
+
+window.btnOver5 = function () {
+  btnOver5();
+};
+
+function btnOver5() {
+  document.getElementById("bg-hover5").style.transform = "rotate(-4deg)";
+}
+
+window.btnOut5 = function () {
+  btnOut5();
+};
+
+function btnOut5() {
+  document.getElementById("bg-hover5").style.transform = "rotate(0deg)";
+} //
+
+
+window.btnOver6 = function () {
+  btnOver6();
+};
+
+function btnOver6() {
+  document.getElementById("bg-hover6").style.fontSize = "17px";
+  var mql = window.matchMedia('all and (max-width: 700px)');
+
+  if (mql.matches) {
+    document.getElementById("bg-hover6").style.fontSize = "13px";
+  }
+}
+
+window.btnOut6 = function () {
+  btnOut6();
+};
+
+function btnOut6() {
+  document.getElementById("bg-hover6").style.fontSize = "16px";
+  var mql = window.matchMedia('all and (max-width: 700px)');
+
+  if (mql.matches) {
+    document.getElementById("bg-hover6").style.fontSize = "12px";
+  }
 } //text writer
 
 
@@ -14092,7 +14344,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\n\r\n            ba\r\n             ^\r\n      Expected \"{\".\n   ╷\n63 │             ba\r\n   │               ^\n   ╵\n  src\\sass\\about-us.scss 63:15  @import\n  stdin 12:9                    root stylesheet\r\n      in C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\src\\sass\\about-us.scss (line 63, column 15)\n    at runLoaders (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\webpack\\lib\\NormalModule.js:316:20)\n    at C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at render (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass-loader\\dist\\index.js:89:7)\n    at Function.call$2 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:88191:16)\n    at _render_closure1.call$2 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:77610:12)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:26152:18)\n    at _RootZone.runBinary$3 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:26156:19)\n    at _FutureListener.handleError$1 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24600:19)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24897:40)\n    at Object._Future__propagateToListeners (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:4311:88)\n    at _Future._completeError$2 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24725:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24117:12)\n    at Object._asyncRethrow (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:4065:17)\n    at C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:14087:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:4090:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24138:12)\n    at _awaitOnObject_closure0.call$2 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24130:25)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:26152:18)\n    at _RootZone.runBinary$3 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:26156:19)\n    at _FutureListener.handleError$1 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24600:19)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24897:40)\n    at Object._Future__propagateToListeners (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:4311:88)\n    at _Future._completeError$2 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24725:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24117:12)\n    at Object._asyncRethrow (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:4065:17)\n    at C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:16672:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:4090:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24138:12)\n    at _awaitOnObject_closure0.call$2 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24130:25)\n    at _RootZone.runBinary$3$3 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:26152:18)\n    at _RootZone.runBinary$3 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:26156:19)\n    at _FutureListener.handleError$1 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24600:19)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:24897:40)\n    at Object._Future__propagateToListeners (C:\\Users\\Vasyl\\Desktop\\projects\\NadiaTserpiak.github.io\\YLS\\node_modules\\sass\\sass.dart.js:4311:88)");
 
 /***/ }),
 

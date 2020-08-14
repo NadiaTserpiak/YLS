@@ -256,6 +256,7 @@
     cursor: pointer;
     margin-top: 200px;
     margin-left: 310px;
+    transition: 0.3s ease;
 }
 
 .registration-txt {
@@ -271,6 +272,7 @@
     color: #ffffff;
     width: 194px;
     height: 19px;
+ 
 }
 
 .burger {
@@ -391,7 +393,7 @@
     margin-right: 179px;
     margin-top: -85px;
     z-index: 2;
-    position: absolute;
+    position: relative;
 }
 
 .mobile-phone {
@@ -523,10 +525,13 @@
     line-height: 20px;
     letter-spacing: 0.2em;
     color: #ffffff;
+    z-index: 2;
+    position: absolute;
 }
 
 .bg-btn-pick {
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .block-purpule {
@@ -901,16 +906,16 @@
 @media screen and (max-width: 980px) {
     .individual-way {
         width: 500px;
-
         margin-top: 70px;
     }
-
     .txt-individual {
         font-weight: 900;
         font-size: 35px;
         line-height: 48px;
     }
-
+// #phone-animation{
+//     margin-left: 60%;
+// }
     .txt-online {
         font-size: 18px;
         line-height: 28px;
@@ -960,7 +965,9 @@
     .icon-menu {
         padding-top: 39px;
     }
-
+    // #phone-animation{
+    //     margin-left: 30%;
+    // }
     .welcome-txt {
         font-size: 20px;
         line-height: 20px;
@@ -1151,8 +1158,8 @@
     }
 
     .search-mobile {
-        margin-top: 100px;
-        margin-left: 81.9%;
+        margin-top: 125px;
+        margin-left: 81.6%;
     }
 
     .mobile-enter {
@@ -1164,7 +1171,8 @@
         margin-left: 78%;
         float: none;
         position: absolute;
-        padding-top: 42px;
+        margin-top: 56px;
+        padding-top: 0px;
     }
 
     .input-group .form-control:hover,
@@ -1241,8 +1249,8 @@
     }
 
     .search-mobile {
-        margin-top: 100px;
-        margin-left: 72.7%;
+   
+        margin-left: 72%;
     }
 
     .mobile-enter {
@@ -1254,7 +1262,7 @@
         margin-left: 68%;
         float: none;
         position: absolute;
-        padding-top: 42px;
+    
     }
 
     .bg-btn-registration {
@@ -1274,5 +1282,11 @@
         color: #000;
         cursor: auto;
         background-color: #fff;
+    }
+}
+@media screen and (max-width: 353px) {
+    .search-mobile {
+   
+        margin-left: 73.4%;
     }
 }

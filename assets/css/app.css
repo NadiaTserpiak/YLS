@@ -575,6 +575,7 @@ Dots */
   cursor: pointer;
   margin-top: 200px;
   margin-left: 310px;
+  transition: 0.3s ease;
 }
 
 .registration-txt {
@@ -710,7 +711,7 @@ Dots */
   margin-right: 179px;
   margin-top: -85px;
   z-index: 2;
-  position: absolute;
+  position: relative;
 }
 
 .mobile-phone {
@@ -869,10 +870,13 @@ Dots */
   line-height: 20px;
   letter-spacing: 0.2em;
   color: #ffffff;
+  z-index: 2;
+  position: absolute;
 }
 
 .bg-btn-pick {
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .block-purpule {
@@ -1528,8 +1532,8 @@ Dots */
   }
 
   .search-mobile {
-    margin-top: 100px;
-    margin-left: 81.9%;
+    margin-top: 125px;
+    margin-left: 81.6%;
   }
 
   .mobile-enter {
@@ -1541,7 +1545,8 @@ Dots */
     margin-left: 78%;
     float: none;
     position: absolute;
-    padding-top: 42px;
+    margin-top: 56px;
+    padding-top: 0px;
   }
 
   .input-group .form-control:hover,
@@ -1616,8 +1621,7 @@ Dots */
   }
 
   .search-mobile {
-    margin-top: 100px;
-    margin-left: 72.7%;
+    margin-left: 72%;
   }
 
   .mobile-enter {
@@ -1629,7 +1633,6 @@ Dots */
     margin-left: 68%;
     float: none;
     position: absolute;
-    padding-top: 42px;
   }
 
   .bg-btn-registration {
@@ -1649,6 +1652,11 @@ Dots */
     color: #000;
     cursor: auto;
     background-color: #fff;
+  }
+}
+@media screen and (max-width: 353px) {
+  .search-mobile {
+    margin-left: 73.4%;
   }
 }
 .block-about {
@@ -1903,6 +1911,7 @@ Dots */
 .svg-know-more {
   margin-top: 84px;
   position: absolute;
+  transition: 0.3s ease;
 }
 
 .btn-know-more {
@@ -2573,6 +2582,7 @@ Dots */
   height: 90px;
   z-index: 1;
   position: absolute;
+  transition: 0.3s ease;
 }
 
 .courses-general {
@@ -2668,6 +2678,9 @@ Dots */
   flex-wrap: wrap;
   width: 1197px;
 }
+.block-events a {
+  text-decoration: none;
+}
 
 .events-item {
   display: flex;
@@ -2679,6 +2692,10 @@ Dots */
   background-repeat: no-repeat;
   background-size: cover;
   height: 216.44px;
+  cursor: pointer;
+}
+.bg-block-item:hover .read-btn {
+  font-weight: 700;
 }
 
 .item-boy {
@@ -2708,6 +2725,7 @@ Dots */
   color: #22a8ff;
   margin-top: 14px;
   margin-bottom: 13px;
+  text-decoration: none;
 }
 
 .title-item {
@@ -2733,19 +2751,12 @@ Dots */
   cursor: pointer;
   transition: ease;
 }
-.read-btn:hover {
-  font-weight: 700;
-}
 
 .read-arrow {
   position: absolute;
   padding-left: 70px;
   transition: 0.5s ease;
   opacity: 0;
-}
-.read-arrow:hover {
-  padding-left: 80px;
-  opacity: 1;
 }
 
 .btn-news {
@@ -4262,9 +4273,13 @@ footer .footer__content-left .footer__social ul li {
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
+  transition: 0.3s ease;
 }
 footer .footer__content-left .footer__social ul li:last-child {
   margin-right: 0;
+}
+footer .footer__content-left .footer__social ul li:hover {
+  opacity: 0.7;
 }
 footer .footer__content-right {
   flex: 0 0 calc(50% - 70px);
@@ -4293,6 +4308,10 @@ footer .footer__content-right a {
 }
 footer .footer__content-right .footer__greenbtn {
   background-image: url("../../img/footer-btngreen.png");
+  transition: 0.3 ease;
+}
+footer .footer__content-right .footer__greenbtn:hover {
+  font-size: 17px;
 }
 footer .footer__content-right .footer__violetbtn {
   background-image: url("../../img/footer-btnviolet.png");
@@ -4305,6 +4324,11 @@ footer .footer__content-center {
 }
 footer .footer__content-center .todown {
   margin-top: 15px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+footer .footer__content-center .todown:hover {
+  opacity: 0.8;
 }
 footer .footer__content-center p {
   color: #4f4f4f;
