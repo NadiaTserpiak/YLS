@@ -4474,6 +4474,10 @@ header {
   background-size: cover;
 }
 
+#footer-news {
+  margin-top: -110px;
+}
+
 footer {
   height: 206px;
   margin-top: 80px;
