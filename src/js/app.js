@@ -109,7 +109,7 @@ particlesJS("particles-js", {
     "retina_detect": true
   });
 }
-  
+
 //   var count_particles, stats, update;
 //   stats = new Stats;
 //   stats.setMode(0);
