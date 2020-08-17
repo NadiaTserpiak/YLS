@@ -23,6 +23,18 @@
 .events-item {
     display: flex;
     margin-top: 62px;
+    &:hover{
+        .read-btn {
+            font-weight: 700;
+        }
+        .read-arrow {
+       
+            padding-left: 78px;
+       
+            opacity: 1;
+        }
+         
+    }
 }
 .bg-block-item {
     background-image: url(../../img/green-bg-event.png);
@@ -30,11 +42,7 @@
     background-size: cover;
     height: 216.44px;
     cursor: pointer;
-    &:hover{
-        .read-btn{
-            font-weight: 700;
-        }
-    }
+
 }
 .item-boy {
     margin-top: 17px;

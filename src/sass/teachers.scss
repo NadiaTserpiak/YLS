@@ -1,0 +1,83 @@
+.violet-bg {
+    background-image: url(../../img/bg-teach-block.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 203px;
+    height: 203.33px;
+    cursor: pointer;
+}
+ 
+ .main-teacher{
+     background: #f7f7f7;
+ }
+.block-teachers{
+    width: 1076px;
+    margin-top: -70px;
+}
+.item-person {
+    margin-top: 7px;
+    margin-left: -27px;
+    z-index: 1;
+    position: relative;
+    width: 224.49px;
+    height: 224.49px;
+}
+.vio-line {
+    position: absolute;
+    margin-left: -40px;
+    z-index: 0;
+    margin-top: 21px;
+    width: 205.67px;
+    height: 227.36px;
+}
+.teach-item {
+    flex-direction: column;
+    &:hover {
+        .hr-teach-block {
+            opacity: 1;
+        }
+        .text-about-teacher {
+            color: #333333;
+        }
+    }
+}
+.info-teach {
+    margin-top: 42px;
+    h4 {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #000000;
+    }
+}
+.hr-teach-block {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    border: none;
+    background: #461dff;
+    margin-top: 7px;
+    opacity: 0;
+    margin-left: 91px;
+    transition: 0.3s ease;
+}
+.text-about-teacher {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #e0e0e0;
+    width: 224px;
+    margin-top: 19px;
+    transition: 0.3s ease;
+}
+@media screen and (max-width: 1250px) {
+    .block-teachers{
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .teach-item {
+    margin-left: 20px;
+    }
+}

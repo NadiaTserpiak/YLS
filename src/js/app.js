@@ -221,61 +221,7 @@ if ($('*').is('.about-yls')) {
 }
 }
 }
-//
-if ($('*').is('.block-events')) {
-  window.eventElem = function () { eventElem() };
-function  eventElem(){
-  document.getElementById("svg-read").style.paddingLeft = "80px";
-  document.getElementById("svg-read").style.opacity = "1";
-  document.getElementById("read-hover").style.fontWeight = "700";
-}
-window.eventOut= function () { eventOut() };
-function eventOut(){
-  document.getElementById("svg-read").style.paddingLeft = "70px";
-  document.getElementById("svg-read").style.opacity = "0";
-  document.getElementById("read-hover").style.fontWeight = "500";
-}
-window.eventElem2 = function () { eventElem2() };
-function  eventElem2(){
-  document.getElementById("svg-read2").style.paddingLeft = "80px";
-  document.getElementById("svg-read2").style.opacity = "1";
-  document.getElementById("read-hover2").style.fontWeight = "700";
-}
-window.eventOut2= function () { eventOut2() };
-function eventOut2(){
-  document.getElementById("svg-read2").style.paddingLeft = "70px";
-  document.getElementById("svg-read2").style.opacity = "0";
-  document.getElementById("read-hover2").style.fontWeight = "500";
-}
 
-
-window.eventElem3 = function () { eventElem3() };
-function  eventElem3(){
-  document.getElementById("svg-read3").style.paddingLeft = "80px";
-  document.getElementById("svg-read3").style.opacity = "1";
-  document.getElementById("read-hover3").style.fontWeight = "700";
-}
-window.eventOut3= function () { eventOut3() };
-function eventOut3(){
-  document.getElementById("svg-read3").style.paddingLeft = "70px";
-  document.getElementById("svg-read3").style.opacity = "0";
-  document.getElementById("read-hover3").style.fontWeight = "500";
-}
-
-
-window.eventElem4 = function () { eventElem4() };
-function  eventElem4(){
-  document.getElementById("svg-read4").style.paddingLeft = "80px";
-  document.getElementById("svg-read4").style.opacity = "1";
-  document.getElementById("read-hover4").style.fontWeight = "700";
-}
-window.eventOut4= function () { eventOut4() };
-function eventOut4(){
-  document.getElementById("svg-read4").style.paddingLeft = "70px";
-  document.getElementById("svg-read4").style.opacity = "0";
-  document.getElementById("read-hover4").style.fontWeight = "500";
-}
-}
 //
 window.btnOver = function () { btnOver() };
 function  btnOver(){
@@ -370,7 +316,6 @@ $(document).ready(function () {
         prevArrow: $('.prev-slider-program'),
         nextArrow: $('.next-slider-program'),
       });
-    
 });
 
 //adaptive slider
