@@ -326,28 +326,28 @@ $(document).ready(function () {
 });
 
 //adaptive slider
-var mql = window.matchMedia('(min-width: 820px) and (max-width: 1380px)');
-if (mql.matches) {
-    $('.autoplay').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                prevArrow: $('.prev-slider-program'),
-                nextArrow: $('.next-slider-program'),
-              });
-}
-var mql = window.matchMedia('all and (max-width: 820px)');
-if (mql.matches) {
-    $('.autoplay').slick({
-                slidesToScroll: 1,
-                slidesToShow: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                prevArrow: $('.prev-slider-program'),
-                nextArrow: $('.next-slider-program'),
-              });
-}
+// var mql = window.matchMedia('(min-width: 820px) and (max-width: 1380px)');
+// if (mql.matches) {
+//     $('.autoplay').slick({
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 autoplay: true,
+//                 autoplaySpeed: 2000,
+//                 prevArrow: $('.prev-slider-program'),
+//                 nextArrow: $('.next-slider-program'),
+//               });
+// }
+// var mql = window.matchMedia('all and (max-width: 820px)');
+// if (mql.matches) {
+//     $('.autoplay').slick({
+//                 slidesToScroll: 1,
+//                 slidesToShow: 1,
+//                 autoplay: true,
+//                 autoplaySpeed: 2000,
+//                 prevArrow: $('.prev-slider-program'),
+//                 nextArrow: $('.next-slider-program'),
+//               });
+// }
 if ($('*').is('.welcome-txt')) {
     const textTime = 1100;
     const textNode = document.querySelector('.welcome-txt');

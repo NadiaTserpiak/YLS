@@ -11386,32 +11386,28 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     nextArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()('.next-slider-program')
   });
 }); //adaptive slider
-
-var mql = window.matchMedia('(min-width: 820px) and (max-width: 1380px)');
-
-if (mql.matches) {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.autoplay').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()('.prev-slider-program'),
-    nextArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()('.next-slider-program')
-  });
-}
-
-var mql = window.matchMedia('all and (max-width: 820px)');
-
-if (mql.matches) {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.autoplay').slick({
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()('.prev-slider-program'),
-    nextArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()('.next-slider-program')
-  });
-}
+// var mql = window.matchMedia('(min-width: 820px) and (max-width: 1380px)');
+// if (mql.matches) {
+//     $('.autoplay').slick({
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 autoplay: true,
+//                 autoplaySpeed: 2000,
+//                 prevArrow: $('.prev-slider-program'),
+//                 nextArrow: $('.next-slider-program'),
+//               });
+// }
+// var mql = window.matchMedia('all and (max-width: 820px)');
+// if (mql.matches) {
+//     $('.autoplay').slick({
+//                 slidesToScroll: 1,
+//                 slidesToShow: 1,
+//                 autoplay: true,
+//                 autoplaySpeed: 2000,
+//                 prevArrow: $('.prev-slider-program'),
+//                 nextArrow: $('.next-slider-program'),
+//               });
+// }
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.welcome-txt')) {
   var textWriter = function textWriter(node, ms) {
