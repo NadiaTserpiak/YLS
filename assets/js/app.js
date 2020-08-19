@@ -14354,8 +14354,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\flyfox05\Desktop\YLS\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\flyfox05\Desktop\YLS\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\Vasyl\Desktop\projects\NadiaTserpiak.github.io\YLS\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Vasyl\Desktop\projects\NadiaTserpiak.github.io\YLS\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })
