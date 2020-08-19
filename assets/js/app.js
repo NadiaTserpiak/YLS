@@ -11246,24 +11246,6 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.about-yls')) {
 } //
 
 
-var bgTree = document.getElementById("background-tree"); //При движении мышью вызываем функцию, которая меняет положение фона
-
-document.addEventListener("mousemove", function (e) {
-  MoveBackground(e);
-});
-
-function MoveBackground(e) {
-  //Рассчитываем, насколько далеко от начала оси находится курсор: 0 - 0, 0.5 - середина экрана, 1 - ширина экрана (например, 1920)
-  //Затем умножаем получившееся число на 30 - настолько будет сдвигаться фон
-  //Например, если курсор находится посередине страницы (0.5), то при умножении получится 15
-  //Далее отнимаем половину от 30, чтобы фон мог двигаться как влево, так и вправо
-  var offsetX = e.clientX / window.innerWidth * 30 - 15;
-  var offsetY = e.clientY / window.innerHeight * 10 - 5; //Меняем положение фона
-
-  bgTree.setAttribute("style", "background-position: " + offsetX + "px " + offsetY + "px;");
-} //
-
-
 window.btnOver = function () {
   btnOver();
 };
