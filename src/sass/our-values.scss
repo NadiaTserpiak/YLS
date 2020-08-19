@@ -26,7 +26,7 @@
 
 #particles-js {
     margin-left: 500px;
-    width: 700px;
+    width: 600px;
     height: 1300px;
     position: absolute;
     z-index: 0;
@@ -94,27 +94,6 @@
 }
 .btn-know2 {
     cursor: pointer;
-}
-@media screen and (max-width: 1315px) {
-    .block-values {
-        width: 100%;
-    }
-    .texting-offer {
-        font-size: 20px;
-        text-align: center;
-        margin-top: 110px;
-    }
-    .offer-container {
-        width: 650px;
-        padding-bottom: 300px;
-    }
-    #particles-js {
-        margin-left: 0px;
-        width: 70%;
-        height: 1900px;
-        position: absolute;
-        z-index: 0;
-    }
 }
 
 .included-programs {
@@ -185,6 +164,54 @@
         }
     }
 }
+@media screen and (max-width: 1315px) {
+    .block-values {
+        width: 80%;
+    }
+    // .texting-offer {
+    //     font-size: 20px;
+    //     text-align: center;
+    //     margin-top: 110px;
+    // }
+    .offer-container {
+        width: 1050px;
+        padding-bottom: 300px;
+     
+    }
+    #particles-js {
+        margin-left: 0px;
+        width: 50%;
+        height: 600px;
+        position: absolute;
+        z-index: 0;
+        margin-top: 50px;
+    }
+    .offer-item {
+        width: 490px;
+        height: 150px;
+        padding: 37px 20px 0px 50px;
+    }
+ 
+    .text-offer {
+        font-size: 15px;
+    }
+    .our-values {
+        padding-top: 118px;
+        margin-top: 60px;
+    }
+    .block-values {
+        width: 100%;
+    }
+    .bg-values{
+        display: none;
+    }
+    .texting-offer {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 110px;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     .autoplay {
         margin-top: 200px;
@@ -197,9 +224,36 @@
         padding-left: 0px;
         margin-top: 30px;
     }
+   
+}
+@media screen and (max-width: 1140px) {
+    .texting-offer {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
     .our-values {
-        padding-top: 198px;
-        margin-top: 60px;
+        padding-top: 128px;
+        margin-top: 120px;
+    }
+    .values-txt {
+      margin-top: 10px;
+      text-align: center;
+      position: static;
+      z-index: 1;
+    }
+  
+   
+}
+@media screen and (max-width: 1070px) {
+    .offer-container {
+        width: 560px;
+        padding-bottom: 300px;
+     
+    }
+    .our-values {
+        padding-top: 200px;
+    
     }
 }
 @media screen and (max-width: 1055px) {
@@ -251,10 +305,10 @@
     }
 
     .texting-offer {
-        font-size: 16px;
+        font-size: 14px;
         width: 300px;
         line-height: 20px;
-        margin-top: 90px;
+        margin-top: 40px;
     }
     .offer-item {
         display: flex;
@@ -436,5 +490,8 @@
         margin: 0 auto;
         width: 180px;
         text-align: left;
+    }
+    .adapt_cours-col{
+        display: none;
     }
 }

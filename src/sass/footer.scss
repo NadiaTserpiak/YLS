@@ -117,7 +117,7 @@ footer {
 
         .footer__greenbtn {
             background-image: url("../../img/footer-btngreen.png");
-          transition: 0.3 ease;
+          transition: 0.3s ease;
             &:hover{
                 font-size: 17px;
             }
@@ -126,7 +126,10 @@ footer {
         .footer__violetbtn {
             background-image: url("../../img/footer-btnviolet.png");
             margin-left: 110px;
-          
+            transition: 0.3s ease;
+            &:hover{
+                font-size: 17px;
+            }
         }
     }
 

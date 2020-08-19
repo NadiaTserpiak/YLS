@@ -294,12 +294,22 @@
 }
 
 .overlay-content {
-    position: relative;
+    z-index: 999;
+    position: absolute;
     top: 0px;
     width: 100%;
+    height: 900px;
     padding-top: 20px;
     background-color: black;
 }
+@media screen and (max-height: 700px) {
+    .overlay-content {
+ 
+        height: 700px;
+     
+    }
+}
+
 
 .overlay a {
     font-weight: 800;
@@ -312,6 +322,7 @@
     margin-bottom: 40px;
     text-align: left;
     transition: 0.3s;
+
 }
 
 .overlay a:hover,
@@ -328,9 +339,10 @@
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    margin-left: 30px;
+    padding-left: 30px;
     color: #ffffff;
     padding-bottom: 30px;
+    background-color: black;
 }
 
 #closeNavB {
@@ -397,6 +409,13 @@
 }
 #phone-animation{
 margin-left: 70%;
+&:hover{
+    .text-block-phone {
+  opacity: 1;
+        margin-left: 141px;
+ 
+    }
+}
 }
 .mobile-phone {
     cursor: pointer;
@@ -460,7 +479,7 @@ margin-left: 70%;
     padding-top: 13px;
     width: 146.13px;
     height: 73px;
-    margin-left: 141px;
+    margin-left: 181px;
     margin-top: 30px;
     position: absolute;
     background: #ffffff;
@@ -468,17 +487,19 @@ margin-left: 70%;
     animation: phone-text 3s;
     animation-iteration-count: infinite;
     z-index: 0;
+    transition: 0.4s ease;
+    opacity: 0;
 }
 
-@keyframes phone-text {
-    from {
-        margin-left: 185px;
-    }
+// @keyframes phone-text {
+//     from {
+//         margin-left: 185px;
+//     }
 
-    to {
-        margin-left: 141px;
-    }
-}
+//     to {
+//         margin-left: 141px;
+//     }
+// }
 
 .box-text-phone {
     filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.2));
@@ -548,90 +569,97 @@ margin-left: 70%;
     margin-left: 705px;
     margin-top: -83px;
 }
-
-.svg-animate1 {
-    margin-top: -100px;
-    margin-left: 20px;
-    position: absolute;
-    animation: svg-animation1 27s;
-    animation-iteration-count: infinite;
-    z-index: -1;
+// #scene{
+//     width: 90%;
+// }
+.svg-animate{
+  position: absolute;
+  margin-left: 5%;
 }
-
-@keyframes svg-animation1 {
-    0% {
-        margin-top: -90px;
-    }
-
-    100% {
-        margin-top: 1987px;
-    }
-}
-
+ 
 .svg-animate2 {
-    margin-top: -70px;
-    margin-left: 60px;
+    margin-top: 220px;
+    margin-left: 2%;
     z-index: -1;
     position: absolute;
-    animation: svg-animation2 25s;
-    animation-iteration-count: infinite;
 }
-
-@keyframes svg-animation2 {
-    0% {
-        margin-top: -40px;
-    }
-
-    100% {
-        margin-top: 1986px;
-    }
-}
-
 .svg-animate3 {
     z-index: -1;
-    margin-top: 20px;
-    margin-left: 260px;
+    margin-top: 380px;
+    margin-left: 12%;
     position: absolute;
-    animation: svg-animation3 23s;
-    animation-iteration-count: infinite;
+ 
 }
 
-@keyframes svg-animation3 {
-    0% {
-        margin-top: 10px;
-    }
-
-    100% {
-        margin-top: 1999px;
-    }
-}
 .svg-animate4 {
     z-index: -1;
-    margin-top: -70px;
-    margin-left: 60%;
-    position: absolute;
-    animation: svg-animation3 37s;
-    animation-iteration-count: infinite;
+    margin-top: -10px;
+margin-left: 95%;
+ position: absolute;
 }
 
 .svg-animate5 {
     z-index: -1;
-    margin-top: 70px;
+    margin-top: 180px;
     margin-left: 88%;
     position: absolute;
-    animation: svg-animation3 29s;
-    animation-iteration-count: infinite;
 }
 
 .svg-animate6 {
     z-index: -1;
-    margin-top: 80px;
-    margin-left: 80%;
+    margin-top: 380px;
     position: absolute;
-    animation: svg-animation3 24s;
-    animation-iteration-count: infinite;
+    margin-left: 97%;
 }
-
+.svg-animate7 {
+    z-index: -1;
+    margin-top: 570px;
+    margin-left: 2%;
+    position: absolute;
+ 
+}
+.svg-animate8 {
+    z-index: -1;
+    margin-top: -20px;
+    margin-left: 48%;
+    position: absolute;
+}
+.svg-animate9 {
+    z-index: -1;
+    margin-top: 110px;
+    margin-left: 55%;
+    position: absolute;
+}
+.svg-animate10{
+    z-index: -1;
+    margin-top: 610px;
+    margin-left: 89%;
+    position: absolute;
+}
+.svg-animate11{
+    z-index: -1;
+    margin-top: 810px;
+    margin-left:14%;
+    position: absolute;
+}
+.svg-animate12{
+    z-index: -1;
+    margin-top: 600px;
+    margin-left:30%;
+    position: absolute;
+}
+.svg-animate13{
+ 
+    margin-top: 640px;
+    margin-left:55%;
+    position: absolute;
+}
+.svg-animate14{
+ 
+    margin-top: 840px;
+    margin-left:95%;
+    position: absolute;
+}
 .mobile-enter {
     display: none;
 }
@@ -733,6 +761,9 @@ margin-left: 70%;
         margin-left: 405px;
         margin-top: -88px;
     }
+    .svg-animate {
+        margin-left: 1%;
+    }
     .svg-animate4 {
         margin-left: 50%;
     }
@@ -746,6 +777,64 @@ margin-left: 70%;
     }
     #phone-animation{
         margin-left: 60%;
+        }
+        .svg-animate4 {
+            z-index: -1;
+            margin-top: -10px;
+        margin-left: 92%;
+         position: absolute;
+        }
+        
+        .svg-animate5 {
+            z-index: -1;
+            margin-top: 180px;
+            margin-left: 88%;
+            position: absolute;
+        }
+        
+        .svg-animate6 {
+            z-index: -1;
+            margin-top: 380px;
+            position: absolute;
+            margin-left: 93%;
+        }
+   
+        .svg-animate8 {
+            z-index: -1;
+            margin-top: -20px;
+            margin-left: 48%;
+            position: absolute;
+        }
+        .svg-animate9 {
+            z-index: -1;
+            margin-top: 110px;
+            margin-left: 55%;
+            position: absolute;
+        }
+        .svg-animate10{
+            z-index: -1;
+            margin-top: 610px;
+            margin-left: 89%;
+            position: absolute;
+        }
+      
+        .svg-animate12{
+            z-index: -1;
+            margin-top: 600px;
+            margin-left:20%;
+            position: absolute;
+        }
+        .svg-animate13{
+         
+            margin-top: 550px;
+            margin-left:59%;
+            position: absolute;
+        }
+        .svg-animate14{
+         
+            margin-top: 840px;
+            margin-left:90%;
+            position: absolute;
         }
 }
 
@@ -970,6 +1059,15 @@ margin-left: 70%;
         cursor: auto;
         background-color: #fff;
     }
+    .svg_icons {
+        width: 20px;
+    }
+    .svg-animate13{
+         
+        margin-top: 450px;
+        margin-left:79%;
+        position: absolute;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -1071,7 +1169,18 @@ margin-left: 70%;
             background: rgba(0, 0, 0, 0.3);
         }
     }
-
+    .svg-animate13{
+         
+        margin-top: 260px;
+        margin-left:79%;
+        position: absolute;
+    }
+    .svg-animate3{
+         
+        margin-top: 299px;
+        margin-left:7%;
+        position: absolute;
+    }
     .search-mobile {
         margin-left: 62%;
     }

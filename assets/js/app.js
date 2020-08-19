@@ -10983,7 +10983,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 
-__webpack_require__(/*! ./slick/slick */ "./src/js/slick/slick.js"); //
+__webpack_require__(/*! ./slick/slick */ "./src/js/slick/slick.js"); // const Parallax = require('parallax-js');
+//
+// var scene = document.getElementById('scene');
+// var parallaxInstance = new Parallax(scene, {
+//   relativeInput: true
+// });
 
 /* ---- particles.js config ---- */
 
@@ -10999,13 +11004,13 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.block-values')) {
         }
       },
       "color": {
-        "value": "#7838BC"
+        "value": "#b189dc"
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 2,
-          "color": "#7838BC"
+          "color": "#b189dc"
         },
         "polygon": {
           "nb_sides": 5
@@ -11034,7 +11039,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.block-values')) {
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#7838BC",
+        "color": "#b189dc",
         "opacity": 0.4,
         "width": 1
       },
@@ -11117,6 +11122,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.block-values')) {
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.about-yls')) {
   var scrollFunction = function scrollFunction() {
     if (document.documentElement.scrollTop > 300) {
+      document.getElementById("footer-main").style.zIndex = "44";
       document.getElementById("phone-animation").style.position = "fixed";
       document.getElementById("phone-animation").style.marginLeft = "70.6%";
       document.getElementById("phone-animation").style.marginTop = "-300px";
@@ -11124,7 +11130,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.about-yls')) {
       var mql = window.matchMedia('all and (max-height: 886px)');
 
       if (mql.matches) {
-        document.getElementById("phone-animation").style.marginTop = "-400px";
+        document.getElementById("phone-animation").style.paddingTop = "10px";
       }
 
       var mql = window.matchMedia('all and (max-height: 700px)');
@@ -11237,6 +11243,24 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.about-yls')) {
   window.onscroll = function () {
     scrollFunction();
   };
+} //
+
+
+var bgTree = document.getElementById("background-tree"); //При движении мышью вызываем функцию, которая меняет положение фона
+
+document.addEventListener("mousemove", function (e) {
+  MoveBackground(e);
+});
+
+function MoveBackground(e) {
+  //Рассчитываем, насколько далеко от начала оси находится курсор: 0 - 0, 0.5 - середина экрана, 1 - ширина экрана (например, 1920)
+  //Затем умножаем получившееся число на 30 - настолько будет сдвигаться фон
+  //Например, если курсор находится посередине страницы (0.5), то при умножении получится 15
+  //Далее отнимаем половину от 30, чтобы фон мог двигаться как влево, так и вправо
+  var offsetX = e.clientX / window.innerWidth * 30 - 15;
+  var offsetY = e.clientY / window.innerHeight * 10 - 5; //Меняем положение фона
+
+  bgTree.setAttribute("style", "background-position: " + offsetX + "px " + offsetY + "px;");
 } //
 
 
@@ -11447,7 +11471,84 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.welcome-txt')) {
   var textTime = 1100;
   var textNode = document.querySelector('.welcome-txt');
   textWriter(textNode, textTime);
+} //
+
+
+window.BigVideo = function () {
+  BigVideo();
+};
+
+function BigVideo() {
+  document.getElementById("big_video").style.zIndex = "3";
+  document.getElementById("big_video").style.opacity = "1";
+  document.getElementById("img-bg").style.opacity = "0";
 } // -
+
+
+window.BigGallery = function () {
+  BigGallery();
+};
+
+function BigGallery() {
+  document.getElementById("img_modal").style.display = "block";
+  document.getElementById("social-network").style.opacity = "0";
+  document.getElementById("text-follow").style.opacity = "0";
+} //
+
+
+window.closeGallery = function () {
+  closeGallery();
+};
+
+function closeGallery() {
+  document.getElementById("img_modal").style.display = "none";
+  document.getElementById("social-network").style.opacity = "1";
+  document.getElementById("text-follow").style.opacity = "1";
+} //
+
+
+window.BigGallery2 = function () {
+  BigGallery2();
+};
+
+function BigGallery2() {
+  document.getElementById("img_modal2").style.display = "block";
+  document.getElementById("social-network").style.opacity = "0";
+  document.getElementById("text-follow").style.opacity = "0";
+} //
+
+
+window.closeGallery2 = function () {
+  closeGallery2();
+};
+
+function closeGallery2() {
+  document.getElementById("img_modal2").style.display = "none";
+  document.getElementById("social-network").style.opacity = "1";
+  document.getElementById("text-follow").style.opacity = "1";
+} //
+
+
+window.BigGallery3 = function () {
+  BigGallery3();
+};
+
+function BigGallery3() {
+  document.getElementById("img_modal3").style.display = "block";
+  document.getElementById("social-network").style.opacity = "0";
+  document.getElementById("text-follow").style.opacity = "0";
+} //
+
+
+window.closeGallery3 = function () {
+  closeGallery3();
+};
+
+function closeGallery3() {
+  document.getElementById("img_modal3").style.display = "none";
+  document.getElementById("social-network").style.opacity = "1";
+  document.getElementById("text-follow").style.opacity = "1";
+} //
 
 
 window.openNav = function () {
@@ -11458,7 +11559,7 @@ function openNav() {
   document.getElementById("myNav").style.width = "100%";
   document.getElementById("myNav").style.height = "100%";
   document.getElementById("myNav").style.position = "fixed";
-  document.getElementById("phone-animation").style.opacity = "0";
+  document.getElementById("main-container").style.opacity = "0";
 }
 
 window.closeNav = function () {
@@ -11469,7 +11570,7 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
   document.getElementById("myNav").style.height = "0%";
   document.getElementById("myNav").style.position = "none";
-  document.getElementById("phone-animation").style.opacity = "1";
+  document.getElementById("main-container").style.opacity = "1";
 } //video  slider 1
 
 
