@@ -11578,8 +11578,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.single-item')) {
 
   var startvideo = function startvideo() {
     document.getElementById("start").style.display = "none";
-    document.getElementById("pause").style.display = "inline";
-    myVideo.setAttribute("controls");
+    document.getElementById("pause").style.display = "inline"; // myVideo.setAttribute("controls");
   };
 
   var pausevideo = function pausevideo() {

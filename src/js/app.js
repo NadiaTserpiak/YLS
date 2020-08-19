@@ -486,7 +486,7 @@ if ($('*').is('.single-item')) {
     function startvideo() {
         document.getElementById("start").style.display = "none";
         document.getElementById("pause").style.display = "inline";
-        myVideo.setAttribute("controls");
+        // myVideo.setAttribute("controls");
     }
     window.pausevideo = function () { pausevideo() };
     function pausevideo() {
