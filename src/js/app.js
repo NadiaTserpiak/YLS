@@ -7,114 +7,114 @@ require('./slick/slick');
 // var parallaxInstance = new Parallax(scene, {
 //   relativeInput: true
 // });
- 
+
 /* ---- particles.js config ---- */
 if ($('*').is('.block-values')) {
-particlesJS("particles-js", {
-    "particles": {
-      "number": {
-        "value": 270,
-        "density": {
-          "enable": true,
-          "value_area": 1000
-        }
-      },
-      "color": {
-        "value": "#b189dc"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 2,
-          "color": "#b189dc"
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 270,
+                "density": {
+                    "enable": true,
+                    "value_area": 1000
+                }
+            },
+            "color": {
+                "value": "#b189dc"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 2,
+                    "color": "#b189dc"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                }
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#b189dc",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
         },
-        "polygon": {
-          "nb_sides": 5
-        }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 3,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#b189dc",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "grab"
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "grab"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 140,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
         },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 140,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true
-  });
+        "retina_detect": true
+    });
 }
 
 //   var count_particles, stats, update;
@@ -137,176 +137,176 @@ particlesJS("particles-js", {
 
 //
 if ($('*').is('.about-yls')) {
-  window.onscroll = function () { scrollFunction() };
-  function scrollFunction() {
-    if (document.documentElement.scrollTop > 300) {
-      document.getElementById("footer-main").style.zIndex = "44";
-      document.getElementById("phone-animation").style.position = "fixed";
-      document.getElementById("phone-animation").style.marginLeft = "70.6%";
-      document.getElementById("phone-animation").style.marginTop = "-300px";
-      document.getElementById("individ-block").style.marginTop = "134px";
-      var mql = window.matchMedia('all and (max-height: 886px)');
-      if (mql.matches) {
-         document.getElementById("phone-animation").style.paddingTop = "10px";
-      }
-      var mql = window.matchMedia('all and (max-height: 700px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginTop = "-500px";
-      }
-      var mql = window.matchMedia('all and (max-height: 600px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginTop = "-600px";
-      }
-      var mql = window.matchMedia('all and (max-height: 500px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginTop = "-700px";
-      }
-   
-      var mql = window.matchMedia('all and (max-width: 1323px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "67%";
-      }
-      var mql = window.matchMedia('all and (max-width: 1166px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "63%";
-      }
-      var mql = window.matchMedia('all and (max-width: 980px)');
-      if (mql.matches) {
-       
-        document.getElementById("individ-block").style.marginTop = "70px";
-      }
-      var mql = window.matchMedia('all and (max-width: 889px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "53%";
-      }
-      var mql = window.matchMedia('all and (max-width: 700px)');
-      if (mql.matches) {
-     
-        document.getElementById("phone-animation").style.marginLeft = "40%";
-      }
-         var mql = window.matchMedia('all and (max-width: 510px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginTop = "-250px";
-      }
-      var mql = window.matchMedia('all and (max-width: 543px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "30%";
-      }
-      var mql = window.matchMedia('all and (max-width: 484px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "25%";
-      }
-        var mql = window.matchMedia('all and (max-width: 435px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "22%";
-      }
-      var mql = window.matchMedia('all and (max-width: 413px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "17%";
-      }
-      var mql = window.matchMedia('all and (max-width: 384px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "12%";
-      }
-      var mql = window.matchMedia('all and (max-width: 365px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "8%";
-      }
-      var mql = window.matchMedia('all and (max-width: 347px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "0%";
-      }
- }
- else {
-  document.getElementById("individ-block").style.marginTop = "134px";
-  document.getElementById("phone-animation").style.position = "absolute";
-  document.getElementById("phone-animation").style.marginTop = "-125px";
-    var mql = window.matchMedia('all and (max-width: 510px)');
-      if (mql.matches) {
-        document.getElementById("individ-block").style.marginTop = "64px";
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+        if (document.documentElement.scrollTop > 300) {
+            document.getElementById("footer-main").style.zIndex = "44";
+            document.getElementById("phone-animation").style.position = "fixed";
+            document.getElementById("phone-animation").style.marginLeft = "70.6%";
+            document.getElementById("phone-animation").style.marginTop = "-300px";
+            document.getElementById("individ-block").style.marginTop = "134px";
+            var mql = window.matchMedia('all and (max-height: 886px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.paddingTop = "10px";
+            }
+            var mql = window.matchMedia('all and (max-height: 700px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginTop = "-500px";
+            }
+            var mql = window.matchMedia('all and (max-height: 600px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginTop = "-600px";
+            }
+            var mql = window.matchMedia('all and (max-height: 500px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginTop = "-700px";
+            }
 
-      }
-}
-}
+            var mql = window.matchMedia('all and (max-width: 1323px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginLeft = "67%";
+            }
+            var mql = window.matchMedia('all and (max-width: 1166px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginLeft = "63%";
+            }
+            var mql = window.matchMedia('all and (max-width: 980px)');
+            if (mql.matches) {
+
+                document.getElementById("individ-block").style.marginTop = "70px";
+            }
+            var mql = window.matchMedia('all and (max-width: 889px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginLeft = "53%";
+            }
+            var mql = window.matchMedia('all and (max-width: 700px)');
+            if (mql.matches) {
+
+                document.getElementById("phone-animation").style.marginLeft = "40%";
+            }
+            var mql = window.matchMedia('all and (max-width: 510px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginTop = "-250px";
+            }
+            var mql = window.matchMedia('all and (max-width: 543px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginLeft = "30%";
+            }
+            var mql = window.matchMedia('all and (max-width: 484px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginLeft = "25%";
+            }
+            var mql = window.matchMedia('all and (max-width: 435px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginLeft = "22%";
+            }
+            var mql = window.matchMedia('all and (max-width: 413px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginLeft = "17%";
+            }
+            var mql = window.matchMedia('all and (max-width: 384px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginLeft = "12%";
+            }
+            var mql = window.matchMedia('all and (max-width: 365px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginLeft = "8%";
+            }
+            var mql = window.matchMedia('all and (max-width: 347px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.marginLeft = "0%";
+            }
+        }
+        else {
+            document.getElementById("individ-block").style.marginTop = "134px";
+            document.getElementById("phone-animation").style.position = "absolute";
+            document.getElementById("phone-animation").style.marginTop = "-125px";
+            var mql = window.matchMedia('all and (max-width: 510px)');
+            if (mql.matches) {
+                document.getElementById("individ-block").style.marginTop = "64px";
+
+            }
+        }
+    }
 }
 //
 window.btnOver = function () { btnOver() };
-function  btnOver(){
-  document.getElementById("bg-hover").style.transform = "rotate(-4deg)";
+function btnOver() {
+    document.getElementById("bg-hover").style.transform = "rotate(-4deg)";
 
 }
-window.btnOut= function () { btnOut() };
-function btnOut(){
-  document.getElementById("bg-hover").style.transform = "rotate(0deg)";
-   }
+window.btnOut = function () { btnOut() };
+function btnOut() {
+    document.getElementById("bg-hover").style.transform = "rotate(0deg)";
+}
 //
 window.btnOver2 = function () { btnOver2() };
-function  btnOver2(){
-  document.getElementById("bg-hover2").style.transform = "rotate(-4deg)";
+function btnOver2() {
+    document.getElementById("bg-hover2").style.transform = "rotate(-4deg)";
 
 }
-window.btnOut2= function () { btnOut2() };
-function btnOut2(){
-document.getElementById("bg-hover2").style.transform = "rotate(0deg)";
-   }
-   //
-   window.btnOver3 = function () { btnOver3() };
-function  btnOver3(){
-  document.getElementById("bg-hover3").style.transform = "rotate(-4deg)";
+window.btnOut2 = function () { btnOut2() };
+function btnOut2() {
+    document.getElementById("bg-hover2").style.transform = "rotate(0deg)";
+}
+//
+window.btnOver3 = function () { btnOver3() };
+function btnOver3() {
+    document.getElementById("bg-hover3").style.transform = "rotate(-4deg)";
 
 }
-window.btnOut3= function () { btnOut3() };
-function btnOut3(){
-document.getElementById("bg-hover3").style.transform = "rotate(0deg)";
-   }
+window.btnOut3 = function () { btnOut3() };
+function btnOut3() {
+    document.getElementById("bg-hover3").style.transform = "rotate(0deg)";
+}
 //
 window.btnOver4 = function () { btnOver4() };
-function  btnOver4(){
-  document.getElementById("bg-hover4").style.fontSize = "17px";
-  var mql = window.matchMedia('all and (max-width: 700px)');
-      if (mql.matches) {
+function btnOver4() {
+    document.getElementById("bg-hover4").style.fontSize = "17px";
+    var mql = window.matchMedia('all and (max-width: 700px)');
+    if (mql.matches) {
         document.getElementById("bg-hover4").style.fontSize = "13px";
-      }
+    }
 }
-window.btnOut4= function () { btnOut4() };
-function btnOut4(){
-document.getElementById("bg-hover4").style.fontSize = "16px";
-var mql = window.matchMedia('all and (max-width: 700px)');
-if (mql.matches) {
-  document.getElementById("bg-hover4").style.fontSize = "12px";
-}
+window.btnOut4 = function () { btnOut4() };
+function btnOut4() {
+    document.getElementById("bg-hover4").style.fontSize = "16px";
+    var mql = window.matchMedia('all and (max-width: 700px)');
+    if (mql.matches) {
+        document.getElementById("bg-hover4").style.fontSize = "12px";
+    }
 }
 //
 window.btnOver5 = function () { btnOver5() };
-function  btnOver5(){
-  document.getElementById("bg-hover5").style.transform = "rotate(-4deg)";
+function btnOver5() {
+    document.getElementById("bg-hover5").style.transform = "rotate(-4deg)";
 
 }
-window.btnOut5= function () { btnOut5() };
-function btnOut5(){
-document.getElementById("bg-hover5").style.transform = "rotate(0deg)";
-   } 
-   //
-   window.btnOver6 = function () { btnOver6() };
-function  btnOver6(){
+window.btnOut5 = function () { btnOut5() };
+function btnOut5() {
+    document.getElementById("bg-hover5").style.transform = "rotate(0deg)";
+}
+//
+window.btnOver6 = function () { btnOver6() };
+function btnOver6() {
     document.getElementById("bg-hover6").style.fontSize = "17px";
     var mql = window.matchMedia('all and (max-width: 700px)');
-        if (mql.matches) {
-          document.getElementById("bg-hover6").style.fontSize = "13px";
-        }
+    if (mql.matches) {
+        document.getElementById("bg-hover6").style.fontSize = "13px";
+    }
 
 }
-window.btnOut6= function () { btnOut6() };
-function btnOut6(){
-  document.getElementById("bg-hover6").style.fontSize = "16px";
-  var mql = window.matchMedia('all and (max-width: 700px)');
-  if (mql.matches) {
-    document.getElementById("bg-hover6").style.fontSize = "12px";
-  }
-   } 
+window.btnOut6 = function () { btnOut6() };
+function btnOut6() {
+    document.getElementById("bg-hover6").style.fontSize = "16px";
+    var mql = window.matchMedia('all and (max-width: 700px)');
+    if (mql.matches) {
+        document.getElementById("bg-hover6").style.fontSize = "12px";
+    }
+}
 //text writer
 $(document).ready(function () {
- 
+
     $('.single-item').slick({
         prevArrow: $('.prev-slider-video'),
         nextArrow: $('.next-slider-video'),
@@ -322,7 +322,7 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         prevArrow: $('.prev-slider-program'),
         nextArrow: $('.next-slider-program'),
-      });
+    });
 });
 
 //adaptive slider
@@ -396,7 +396,7 @@ function BigVideo() {
     document.getElementById("big_video").style.zIndex = "3";
     document.getElementById("big_video").style.opacity = "1";
     document.getElementById("img-bg").style.opacity = "0";
-   
+
 }
 // -
 window.BigGallery = function () { BigGallery() };
@@ -404,7 +404,7 @@ function BigGallery() {
     document.getElementById("img_modal").style.display = "block";
     document.getElementById("social-network").style.opacity = "0";
     document.getElementById("text-follow").style.opacity = "0";
-    
+
 }
 //
 window.closeGallery = function () { closeGallery() };
@@ -412,7 +412,7 @@ function closeGallery() {
     document.getElementById("img_modal").style.display = "none";
     document.getElementById("social-network").style.opacity = "1";
     document.getElementById("text-follow").style.opacity = "1";
-    
+
 }
 //
 window.BigGallery2 = function () { BigGallery2() };
@@ -420,7 +420,7 @@ function BigGallery2() {
     document.getElementById("img_modal2").style.display = "block";
     document.getElementById("social-network").style.opacity = "0";
     document.getElementById("text-follow").style.opacity = "0";
-    
+
 }
 //
 window.closeGallery2 = function () { closeGallery2() };
@@ -428,7 +428,7 @@ function closeGallery2() {
     document.getElementById("img_modal2").style.display = "none";
     document.getElementById("social-network").style.opacity = "1";
     document.getElementById("text-follow").style.opacity = "1";
-    
+
 }
 //
 window.BigGallery3 = function () { BigGallery3() };
@@ -436,15 +436,15 @@ function BigGallery3() {
     document.getElementById("img_modal3").style.display = "block";
     document.getElementById("social-network").style.opacity = "0";
     document.getElementById("text-follow").style.opacity = "0";
-    
+
 }
 //
-window.closeGallery3= function () { closeGallery3() };
+window.closeGallery3 = function () { closeGallery3() };
 function closeGallery3() {
     document.getElementById("img_modal3").style.display = "none";
     document.getElementById("social-network").style.opacity = "1";
     document.getElementById("text-follow").style.opacity = "1";
-    
+
 }
 //
 window.openNav = function () { openNav() };
@@ -537,4 +537,61 @@ $('.slider-nav').slick({
     focusOnSelect: true,
     vertical: true,
     verticalSwiping: true
+});
+
+
+
+
+
+// CALC
+$('.stepwrap1 .next-step').click(function () {
+    $('.stepnum').addClass('stephide');
+    $('.stepwrap2').removeClass('stephide');
+
+    $('.stepshead__box').removeClass('active');
+    $('.stepshead__box.box1').addClass('check');
+    $('.stepshead__box.box2').addClass('active');
+});
+// -2
+$('.stepwrap2 .prev-step').click(function () {
+    $('.stepnum').addClass('stephide');
+    $('.stepwrap1').removeClass('stephide');
+
+    $('.stepshead__box').removeClass('active');
+    $('.stepshead__box').removeClass('check');
+    $('.stepshead__box.box1').addClass('active');
+});
+$('.stepwrap2 .next-step').click(function () {
+    $('.stepnum').addClass('stephide');
+    $('.stepwrap3').removeClass('stephide');
+
+    $('.stepshead__box').removeClass('active');
+    $('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
+    $('.stepshead__box.box3').addClass('active');
+});
+// -3
+$('.stepwrap3 .prev-step').click(function () {
+    $('.stepnum').addClass('stephide');
+    $('.stepwrap2').removeClass('stephide');
+
+    $('.stepshead__box').removeClass('active').removeClass('check');
+    $('.stepshead__box.box1').addClass('check');
+    $('.stepshead__box.box2').addClass('active');
+});
+$('.stepwrap3 .next-step').click(function () {
+    $('.stepnum').addClass('stephide');
+    $('.stepwrap4').removeClass('stephide');
+
+    $('.stepshead__box').removeClass('active');
+    $('.stepshead__box.box1, .stepshead__box.box2, .stepshead__box.box3').addClass('check');
+    $('.stepshead__box.box4').addClass('active');
+});
+// 4
+$('.stepwrap4 .prev-step').click(function () {
+    $('.stepnum').addClass('stephide');
+    $('.stepwrap3').removeClass('stephide');
+
+    $('.stepshead__box').removeClass('active').removeClass('check');
+    $('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
+    $('.stepshead__box.box3').addClass('active');
 });
