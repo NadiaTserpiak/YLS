@@ -595,3 +595,23 @@ $('.stepwrap4 .prev-step').click(function () {
     $('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
     $('.stepshead__box.box3').addClass('active');
 });
+
+$(document).ready(function () {
+    if ($(window).width() < 768) {
+        $('.sidebar-filter__cont').click(function () {
+            $(this).children('form').slideToggle();
+            $(this).toggleClass('rotatebefore');
+        });
+    }
+
+    $(window).resize(function () {
+        if ($(window).width() < 768) {
+            $('.sidebar-filter__cont').click(function () {
+                $(this).children('form').slideToggle();
+                $(this).toggleClass('rotatebefore');
+            });
+        }
+    });
+
+
+});

@@ -11683,6 +11683,23 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap4 .prev-step').click(fun
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box3').addClass('active');
 });
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() < 768) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.sidebar-filter__cont').click(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).children('form').slideToggle();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass('rotatebefore');
+    });
+  }
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).resize(function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() < 768) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.sidebar-filter__cont').click(function () {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).children('form').slideToggle();
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass('rotatebefore');
+      });
+    }
+  });
+});
 
 /***/ }),
 

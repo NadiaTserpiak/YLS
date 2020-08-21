@@ -3764,6 +3764,10 @@ header {
     display: none;
   }
 }
+.sidebar-filter__cont form {
+  display: block;
+}
+
 @media (max-width: 767.8px) {
   .courses-container {
     max-width: 575px;
@@ -3801,6 +3805,42 @@ header {
 
   .icon-menu-cours {
     margin-top: -64px;
+  }
+
+  .sidebar-filter__cont form {
+    display: none;
+    margin-top: 20px;
+  }
+
+  .sidebar-filter .sidebar-filter__wrap .sidebar-filter__cont > .title {
+    margin-bottom: 0;
+  }
+
+  .sidebar-filter .sidebar-filter__wrap {
+    padding: 25px 20px 16px 20px;
+  }
+
+  .sidebar-filter__cont {
+    position: relative;
+  }
+
+  .sidebar-filter__cont:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background-image: url("../../img/filterarrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    transition: 0.3s;
+  }
+
+  .sidebar-filter__cont.rotatebefore:after {
+    transform: rotate(-180deg);
   }
 }
 @media (max-width: 575.8px) {
@@ -5344,6 +5384,12 @@ header.darkheader {
 
 .stepnum.stephide {
   display: none;
+}
+
+footer .footer__content-right .footer__violetbtn:hover,
+footer .footer__content-right .footer__greenbtn:hover {
+  font-size: 16px !important;
+  opacity: 0.5;
 }
 
 @media (max-width: 1600.8px) {
