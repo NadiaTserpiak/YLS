@@ -141,6 +141,7 @@ if ($('*').is('.about-yls')) {
 }
 }
 //pre
+if ($('*').is('.main-container')) {
 function loadData() {
   return new Promise((resolve, reject) => {
     setTimeout(resolve, 2000);
@@ -153,7 +154,7 @@ loadData()
     preloaderEl.classList.add('hidden');
     preloaderEl.classList.remove('visible');
   });
-
+}
 //
 window.btnOver = function () { btnOver() };
 function btnOver() {

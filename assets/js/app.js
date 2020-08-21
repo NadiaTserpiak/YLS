@@ -11124,17 +11124,20 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.about-yls')) {
 } //pre
 
 
-function loadData() {
-  return new Promise(function (resolve, reject) {
-    setTimeout(resolve, 2000);
-  });
-}
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-container')) {
+  var loadData = function loadData() {
+    return new Promise(function (resolve, reject) {
+      setTimeout(resolve, 2000);
+    });
+  };
 
-loadData().then(function () {
-  var preloaderEl = document.getElementById('preloader');
-  preloaderEl.classList.add('hidden');
-  preloaderEl.classList.remove('visible');
-}); //
+  loadData().then(function () {
+    var preloaderEl = document.getElementById('preloader');
+    preloaderEl.classList.add('hidden');
+    preloaderEl.classList.remove('visible');
+  });
+} //
+
 
 window.btnOver = function () {
   btnOver();
