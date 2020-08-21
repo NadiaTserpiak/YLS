@@ -1,0 +1,563 @@
+header.darkheader {
+    background-color: $dark-color;
+    top: 0;
+    height: 160px;
+}
+
+.calc-page {
+    padding-top: 160px;
+    background: radial-gradient(#ffffff, #e8e8e8);
+}
+
+.calc-wrapper {
+    min-height: 400px;
+    max-width: 1236px;
+    padding: 60px 15px 0 15px;
+    width: 100%;
+
+    .title {
+        color: $dark-color;
+        letter-spacing: 0.2em;
+        font-size: 18px;
+        line-height: 48px;
+        margin: 0;
+    }
+}
+
+.calc-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.toend {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.stepshead {
+    max-width: 520px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .stepshead__box {
+        margin: 0;
+        width: 95px;
+        text-align: center;
+
+        &:first-child .stepshead__num::after {
+            display: none;
+        }
+
+        .stepshead__num {
+            width: 60px;
+            height: 58px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #BDBDBD;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 48px;
+            background: url('../../img/steppic.png') no-repeat;
+            background-size: contain;
+            background-position: center;
+            position: relative;
+            filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.1));
+            margin-bottom: 15px;
+            padding-left: 5px;
+
+            &:after {
+                content: '';
+                display: inline-block;
+                background: url('../../img/stepdots.png') no-repeat;
+                background-size: 100%;
+                background-position: center;
+                width: 65px;
+                height: 14px;
+                position: absolute;
+                left: -66px;
+            }
+
+
+        }
+
+        .stepshead__title {
+            color: #BDBDBD;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+
+    .stepshead__box.active {
+        .stepshead__num {
+            background: url('../../img/steppicact.png') no-repeat;
+            color: $white;
+            background-size: 100% 100%;
+
+            &:after {
+                background: url('../../img/stepdotsact.png') no-repeat;
+                background-size: 100%;
+                background-position: center;
+                width: 65px;
+                height: 14px;
+                position: absolute;
+                left: -66px;
+            }
+        }
+
+        .stepshead__title {
+            color: #22A8FF;
+        }
+    }
+
+    .stepshead__box.check {
+        .stepshead__num {
+            background: url('../../img/checkstep.svg'), url('../../img/steppicact.png');
+            background-repeat: no-repeat, no-repeat;
+            background-position: center center, center center;
+            color: transparent;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            user-select: none;
+            background-size: 20px, 100% 100%;
+
+            &:after {
+                background: url('../../img/stepdotsact.png') no-repeat;
+                background-size: 100%;
+                background-position: center;
+                width: 65px;
+                height: 14px;
+                position: absolute;
+                left: -66px;
+            }
+        }
+
+        .stepshead__title {
+            color: #22A8FF;
+        }
+    }
+}
+
+.calcform {
+    margin-top: 80px;
+    margin-bottom: 150px;
+    background-image: url('../../img/calcfig.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+
+    .step {
+        .steptitle {
+            font-size: 16px;
+            line-height: 24px;
+            color: #22A8FF;
+            margin: 0 0 35px 0;
+        }
+
+        .title {
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 24px;
+            color: #000000;
+            margin: 0 0 32px 0;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            margin: 0 0 56px 0;
+        }
+    }
+
+    .radiofield {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .radiofield__box {
+            width: 180px;
+            height: 100px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('../../img/radiobg.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1));
+            margin: 0;
+
+            .radiobox {
+                label {
+                    color: $black;
+                    font-weight: 800;
+                    font-size: 24px;
+                    line-height: 48px;
+                    margin: 0;
+                    position: relative;
+                    padding-left: 30px;
+                    cursor: pointer;
+
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        border: 3px solid #22A8FF;
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                input[type="radio"] {
+                    display: none;
+                }
+
+                input[type="radio"]:checked+label::after {
+                    background-image: url('../../img/radiocheck.svg');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 9px 9px;
+                }
+            }
+        }
+    }
+
+    .stepwrap3 {
+        .radiofield {
+            .radiofield__box {
+                max-width: 360px;
+                width: 100%;
+                height: auto;
+                display: block;
+                background-image: url('../../img/calcstbg.png');
+                background-size: 100% 100%;
+                padding: 97px 74px 64px 74px;
+
+                label {
+                    text-align: center;
+                    padding: 0;
+                    display: block;
+
+                    &:after {
+                        right: 0;
+                        margin: 0 auto;
+                        top: -25px;
+                    }
+
+                    .titlest3 {
+                        color: $blue-link;
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        font-size: 18px;
+                        line-height: 24px;
+                        position: relative;
+                        margin: 0;
+                        padding-bottom: 12px;
+                        letter-spacing: normal;
+                        margin-bottom: 35px;
+
+                        &:after {
+                            content: '';
+                            display: inline-block;
+                            height: 1px;
+                            width: 60px;
+                            background: $blue-link;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .descrt3 {
+                        margin-top: 26px;
+                        text-align: center;
+
+                        .tit {
+                            color: $black;
+                            margin: 0 0 10px 0;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+
+                        .des {
+                            text-align: left;
+                            color: #4F4F4F;
+                            font-size: 16px;
+                            line-height: 20px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .radiofield {
+        flex-wrap: wrap;
+    }
+
+    .stepwrap4 {
+        .radiofield {
+            display: flex;
+
+            .radiofield__box {
+                width: auto;
+                background-size: 100% 100%;
+                height: 90px;
+
+                .radiobox {
+                    padding: 0 28px 0 31px;
+
+                    label {
+                        font-size: 16px;
+
+                        &:after {
+                            border-radius: 0;
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+
+                    input[type="checkbox"] {
+                        display: none;
+                    }
+
+                    input[type="checkbox"]:checked+label:after {
+                        background-image: url('../../img/checkic.svg');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 100%;
+                        background-color: $blue-link;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btnssect {
+    text-align: center;
+    margin-top: 60px;
+    bottom: -35px;
+    position: relative;
+
+    span,
+    input.next-step {
+        display: inline-flex;
+        cursor: pointer;
+        width: 270px;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        letter-spacing: 0.2em;
+        font-size: 16px;
+        line-height: 20px;
+        filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
+        margin: 0 8px;
+        padding-top: 10px;
+        transition: .3s;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+
+    .prev-step {
+        background-image: url('../../img/calcbtn1.png');
+        color: #461DFF;
+
+        &:hover {
+            transform: rotate(-5deg)
+        }
+    }
+
+    .next-step {
+        background-image: url('../../img/calcbtn2.png');
+        color: $white;
+
+        &:hover {
+            transform: rotate(5deg)
+        }
+    }
+}
+
+.btnssect .prev-step.disabledstep {
+    background-image: url('../../img/calcbtn3.png');
+    color: #BDBDBD;
+    transform: none;
+    cursor: default;
+}
+
+.stepnum.stephide {
+    display: none;
+}
+
+footer .footer__content-right .footer__violetbtn:hover,
+footer .footer__content-right .footer__greenbtn:hover {
+    font-size: 16px !important;
+    opacity: .5;
+}
+
+
+@media(max-width:1600.8px) {
+    header.darkheader {
+        height: 140px;
+    }
+
+    .calc-page {
+        padding-top: 140px;
+    }
+
+    .calc-wrapper .title {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .stepshead .stepshead__box .stepshead__num {
+        width: 50px;
+        height: 48px;
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .calcform .step .steptitle {
+        margin-bottom: 15px;
+    }
+
+    .calcform .step .title {
+        line-height: normal;
+    }
+
+    .calcform .step .title {
+        font-size: 32px;
+        margin-bottom: 20px;
+        letter-spacing: 0.1em;
+    }
+
+    .calcform .radiofield .radiofield__box {
+        width: 150px;
+        height: 80px;
+        background-size: 100% 100%;
+    }
+
+    .calcform .radiofield .radiofield__box .radiobox label {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .btnssect span {
+        width: 240px;
+        height: 70px;
+        padding-top: 5px;
+    }
+
+    .calcform .stepwrap4 .radiofield .radiofield__box .radiobox {
+        padding: 0 24px;
+    }
+
+    .calcform .stepwrap4 .radiofield .radiofield__box {
+        height: 70px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .calcform .stepwrap3 .radiofield .radiofield__box {
+        max-width: 300px;
+        padding: 60px 30px 50px 30px;
+    }
+
+    .calcform .stepwrap3 .radiofield .radiofield__box label .titlest3 {
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+    .calcform .stepwrap3 .radiofield .radiofield__box label .descrt3 {
+        margin-top: 15px;
+    }
+
+    .calcform .stepwrap4 .radiofield {
+        justify-content: center;
+
+        .radiofield__box {
+            margin: 0 20px 20px 20px;
+        }
+    }
+}
+
+@media(max-width:991.8px) {
+    .stepshead .stepshead__box .stepshead__num:after {
+        display: none;
+    }
+
+    .calcform .radiofield .radiofield__box {
+        margin-bottom: 20px;
+    }
+
+    .calcform {
+        background-image: none;
+    }
+
+    .calcform .stepwrap3 .radiofield {
+        justify-content: center;
+
+        .radiofield__box {
+            margin: 0 20px 20px 20px;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+    .calc-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    header.darkheader {
+        height: auto;
+    }
+
+    .calc-wrapper {
+        padding-top: 25px;
+    }
+
+    .calc-wrapper .title {
+        margin-bottom: 20px;
+    }
+
+    .calcform {
+        margin-top: 30px;
+    }
+
+    .btnssect {
+        margin-top: 20px;
+    }
+
+    .btnssect .prev-step.disabledstep {
+        margin-bottom: 15px;
+    }
+
+    .calcform .radiofield {
+        justify-content: center;
+    }
+
+    .calcform .radiofield .radiofield__box {
+        margin: 0 5px 20px 5px;
+    }
+
+    .calcform .stepwrap4 .radiofield .radiofield__box .radiobox label {
+        display: block;
+    }
+}

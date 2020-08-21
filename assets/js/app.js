@@ -11305,7 +11305,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".close-modal-call").click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".search-mobile-cours").css("opacity", "1");
   });
-}); //
+}); // });
+//
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.about-yls')) {
   var PopTime = function PopTime() {
@@ -11580,6 +11581,69 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-nav').slick({
   focusOnSelect: true,
   vertical: true,
   verticalSwiping: true
+}); // CALC
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap1 .next-step').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2').removeClass('stephide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1').addClass('check');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box2').addClass('active');
+}); // -2
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2 .prev-step').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap1').removeClass('stephide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('check');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1').addClass('active');
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2 .next-step').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3').removeClass('stephide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box3').addClass('active');
+}); // -3
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3 .prev-step').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2').removeClass('stephide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active').removeClass('check');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1').addClass('check');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box2').addClass('active');
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3 .next-step').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap4').removeClass('stephide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1, .stepshead__box.box2, .stepshead__box.box3').addClass('check');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box4').addClass('active');
+}); // 4
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap4 .prev-step').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3').removeClass('stephide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active').removeClass('check');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box3').addClass('active');
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() < 768) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.sidebar-filter__cont').click(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).children('form').slideToggle();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass('rotatebefore');
+    });
+  }
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).resize(function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() < 768) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.sidebar-filter__cont').click(function () {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).children('form').slideToggle();
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass('rotatebefore');
+      });
+    }
+  });
 });
 
 /***/ }),
