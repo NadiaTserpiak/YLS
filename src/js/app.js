@@ -116,25 +116,8 @@ particlesJS("particles-js", {
     "retina_detect": true
   });
 }
-
-//   var count_particles, stats, update;
-//   stats = new Stats;
-//   stats.setMode(0);
-//   stats.domElement.style.position = 'absolute';
-//   stats.domElement.style.left = '0px';
-//   stats.domElement.style.top = '0px';
-//   document.body.appendChild(stats.domElement);
-//   count_particles = document.querySelector('.js-count-particles');
-//   update = function() {
-//     stats.begin();
-//     stats.end();
-//     if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-//       count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-//     }
-//     requestAnimationFrame(update);
-//   };
-//   requestAnimationFrame(update);
-
+ 
+ 
 //
 if ($('*').is('.about-yls')) {
   window.onscroll = function () { scrollFunction() };
@@ -142,93 +125,35 @@ if ($('*').is('.about-yls')) {
     if (document.documentElement.scrollTop > 300) {
       document.getElementById("footer-main").style.zIndex = "44";
       document.getElementById("phone-animation").style.position = "fixed";
-      document.getElementById("phone-animation").style.marginLeft = "70.6%";
-      document.getElementById("phone-animation").style.marginTop = "-300px";
-      document.getElementById("individ-block").style.marginTop = "134px";
-      var mql = window.matchMedia('all and (max-height: 886px)');
-      if (mql.matches) {
-         document.getElementById("phone-animation").style.paddingTop = "10px";
-      }
-      var mql = window.matchMedia('all and (max-height: 700px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginTop = "-500px";
-      }
-      var mql = window.matchMedia('all and (max-height: 600px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginTop = "-600px";
-      }
-      var mql = window.matchMedia('all and (max-height: 500px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginTop = "-700px";
-      }
-   
-      var mql = window.matchMedia('all and (max-width: 1323px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "67%";
-      }
-      var mql = window.matchMedia('all and (max-width: 1166px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "63%";
-      }
-      var mql = window.matchMedia('all and (max-width: 980px)');
-      if (mql.matches) {
-       
-        document.getElementById("individ-block").style.marginTop = "70px";
-      }
-      var mql = window.matchMedia('all and (max-width: 889px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "53%";
-      }
-      var mql = window.matchMedia('all and (max-width: 700px)');
-      if (mql.matches) {
      
-        document.getElementById("phone-animation").style.marginLeft = "40%";
-      }
-         var mql = window.matchMedia('all and (max-width: 510px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginTop = "-250px";
-      }
-      var mql = window.matchMedia('all and (max-width: 543px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "30%";
-      }
-      var mql = window.matchMedia('all and (max-width: 484px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "25%";
-      }
-        var mql = window.matchMedia('all and (max-width: 435px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "22%";
-      }
-      var mql = window.matchMedia('all and (max-width: 413px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "17%";
-      }
-      var mql = window.matchMedia('all and (max-width: 384px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "12%";
-      }
-      var mql = window.matchMedia('all and (max-width: 365px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "8%";
-      }
-      var mql = window.matchMedia('all and (max-width: 347px)');
-      if (mql.matches) {
-        document.getElementById("phone-animation").style.marginLeft = "0%";
-      }
+      document.getElementById("phone-animation").style.bottom = "20px";
+      document.getElementById("individ-block").style.paddingTop= "70px";
+     
  }
  else {
-  document.getElementById("individ-block").style.marginTop = "134px";
-  document.getElementById("phone-animation").style.position = "absolute";
-  document.getElementById("phone-animation").style.marginTop = "-125px";
-    var mql = window.matchMedia('all and (max-width: 510px)');
-      if (mql.matches) {
-        document.getElementById("individ-block").style.marginTop = "64px";
+  // document.getElementById("individ-block").style.marginTop = "134px";
+  document.getElementById("phone-animation").style.position = "relative";
+  document.getElementById("phone-animation").style.bottom = "0px";
+  document.getElementById("phone-animation").style.marginTop = "-100px";
+  document.getElementById("individ-block").style.paddingTop= "20px";
 
-      }
 }
 }
 }
+//pre
+function loadData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, 2000);
+  })
+}
+
+loadData()
+  .then(() => {
+    let preloaderEl = document.getElementById('preloader');
+    preloaderEl.classList.add('hidden');
+    preloaderEl.classList.remove('visible');
+  });
+
 //
 window.btnOver = function () { btnOver() };
 function  btnOver(){
@@ -323,8 +248,49 @@ $(document).ready(function () {
         prevArrow: $('.prev-slider-program'),
         nextArrow: $('.next-slider-program'),
       });
-});
+      //popup
+      var elementts = $('.modal-overlay-page, .modal-page');
 
+      $('.modal-btn-page').click(function () {
+        elementts.addClass('active-page');
+      });
+    
+      $('.close-modal-page').click(function () {
+        elementts.removeClass('active-page');
+      });
+      //popupphone
+      var element = $('.modal-overlay-call, .modal-call');
+
+      $('.modal-btn-call').click(function () {
+        element.addClass('active-call');
+      });
+    
+      $('.close-modal-call').click(function () {
+        element.removeClass('active-call');
+      });
+     //
+     
+  $(".call-phone2").click(function(){
+    $(".search-items").css("opacity", "0");
+  });
+  $(".close-modal-call").click(function(){
+    $(".search-items").css("opacity", "1");
+  });
+  //
+  $(".call-phone2").click(function(){
+    $(".search-mobile-cours").css("opacity", "0");
+  });
+  $(".close-modal-call").click(function(){
+    $(".search-mobile-cours").css("opacity", "1");
+  });
+});
+//
+if ($('*').is('.about-yls')) {
+function PopTime() {
+  document.getElementById("popupTime").style.display = "block";   
+}
+
+setTimeout(PopTime, 9000);}
 //adaptive slider
 // var mql = window.matchMedia('(min-width: 820px) and (max-width: 1380px)');
 // if (mql.matches) {
@@ -391,6 +357,11 @@ if ($('*').is('.welcome-txt')) {
     textWriter(textNode, textTime);
 }
 //
+window.closepopTime = function () { closepopTime() };
+function closepopTime() {
+    document.getElementById("popupTime").style.display = "none";   
+}
+//
 window.BigVideo = function () { BigVideo() };
 function BigVideo() {
     document.getElementById("big_video").style.zIndex = "3";
@@ -404,7 +375,8 @@ function BigGallery() {
     document.getElementById("img_modal").style.display = "block";
     document.getElementById("social-network").style.opacity = "0";
     document.getElementById("text-follow").style.opacity = "0";
-    
+    document.getElementById("phone-animation").style.opacity = "0";
+
 }
 //
 window.closeGallery = function () { closeGallery() };
@@ -412,7 +384,7 @@ function closeGallery() {
     document.getElementById("img_modal").style.display = "none";
     document.getElementById("social-network").style.opacity = "1";
     document.getElementById("text-follow").style.opacity = "1";
-    
+    document.getElementById("phone-animation").style.opacity = "1";
 }
 //
 window.BigGallery2 = function () { BigGallery2() };
@@ -420,7 +392,7 @@ function BigGallery2() {
     document.getElementById("img_modal2").style.display = "block";
     document.getElementById("social-network").style.opacity = "0";
     document.getElementById("text-follow").style.opacity = "0";
-    
+    document.getElementById("phone-animation").style.opacity = "0";
 }
 //
 window.closeGallery2 = function () { closeGallery2() };
@@ -428,6 +400,7 @@ function closeGallery2() {
     document.getElementById("img_modal2").style.display = "none";
     document.getElementById("social-network").style.opacity = "1";
     document.getElementById("text-follow").style.opacity = "1";
+    document.getElementById("phone-animation").style.opacity = "1";
     
 }
 //
@@ -436,7 +409,7 @@ function BigGallery3() {
     document.getElementById("img_modal3").style.display = "block";
     document.getElementById("social-network").style.opacity = "0";
     document.getElementById("text-follow").style.opacity = "0";
-    
+    document.getElementById("phone-animation").style.opacity = "0";
 }
 //
 window.closeGallery3= function () { closeGallery3() };
@@ -444,7 +417,7 @@ function closeGallery3() {
     document.getElementById("img_modal3").style.display = "none";
     document.getElementById("social-network").style.opacity = "1";
     document.getElementById("text-follow").style.opacity = "1";
-    
+    document.getElementById("phone-animation").style.opacity = "1";
 }
 //
 window.openNav = function () { openNav() };

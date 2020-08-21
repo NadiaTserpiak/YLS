@@ -80,7 +80,7 @@ footer {
                     &:last-child {
                         margin-right: 0;
                     }
-                    &:hover{
+                    &:hover {
                         opacity: 0.7;
                     }
                 }
@@ -112,14 +112,13 @@ footer {
             font-size: 16px;
             line-height: 20px;
             margin: 0;
-         
         }
 
         .footer__greenbtn {
             background-image: url("../../img/footer-btngreen.png");
-          transition: 0.3s ease;
-            &:hover{
-                font-size: 17px;
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.5;
             }
         }
 
@@ -127,8 +126,8 @@ footer {
             background-image: url("../../img/footer-btnviolet.png");
             margin-left: 110px;
             transition: 0.3s ease;
-            &:hover{
-                font-size: 17px;
+            &:hover {
+                opacity: 0.5;
             }
         }
     }
@@ -140,11 +139,11 @@ footer {
 
         .todown {
             margin-top: 15px;
-              margin-top: 15px;
-              transition: 0.3s ease;
-              &:hover{
-                  opacity: 0.8;
-              }
+            margin-top: 15px;
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.8;
+            }
         }
 
         p {
