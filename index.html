@@ -285,10 +285,19 @@
             <li class="menu-items">YLS Проекти</li>
             <li class="menu-items">YLS Новини</li>
             <li class="menu-items">Контакти</li>
-            <li class="menu-items"><svg class="circle-svg" width="7" height="7" viewBox="0 0 7 7"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="3.5" cy="3.5" r="3.5" fill="#6EB52C" />
-              </svg>Ua</li>
+            <span class="menu-dropdown">
+              <li class="menu-items">
+                <svg class="circle-svg" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3.5" cy="3.5" r="3.5" fill="#6EB52C" />
+                </svg>Ua
+                <div class="dropdown-content drondown_language">
+                  <ul class="content-items">
+                    <li class="down-item">Ru</li>
+                  </ul>
+                </div>
+              </li>
+            </span>
             <li class="menu-items search-items">
               <form class="search-form">
                 <div class="input-group search-group">
@@ -296,19 +305,6 @@
                 </div>
               </form>
             </li>
-            <!-- <div class="search-box">
-              <input  type="text" class="input-search" placeholder="Пошук">
-           <span class="box-btn-search">
-            <svg class="close-search" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.91615 4.99993L9.80995 8.89392C10.0634 9.14721 10.0634 9.55675 9.80995 9.81003C9.55667 10.0633 9.14714 10.0633 8.89386 9.81003L4.99994 5.91604L1.10614 9.81003C0.85274 10.0633 0.443335 10.0633 0.190051 9.81003C-0.0633505 9.55675 -0.0633505 9.14721 0.190051 8.89392L4.08385 4.99993L0.190051 1.10593C-0.0633505 0.852638 -0.0633505 0.443107 0.190051 0.189817C0.316278 0.0634699 0.482246 0 0.648097 0C0.813947 0 0.979797 0.0634699 1.10614 0.189817L4.99994 4.08382L8.89386 0.189817C9.0202 0.0634699 9.18605 0 9.3519 0C9.51775 0 9.6836 0.0634699 9.80995 0.189817C10.0634 0.443107 10.0634 0.852638 9.80995 1.10593L5.91615 4.99993Z" fill="#BDBDBD"/>
-            </svg>
-         <span class="line-search"><svg class="line-svg" width="1" height="30" viewBox="0 0 1 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0H1V30H0V0Z" fill="#BDBDBD"/>
-              </svg>  </span>             
-              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 17.2037L12.9123 12.1161C13.9097 10.9383 14.5145 9.41798 14.5145 7.75726C14.5145 4.03108 11.4834 1 7.75726 1C4.03111 1 1 4.03108 1 7.75726C1 11.4834 4.03108 14.5145 7.75726 14.5145C9.41798 14.5145 10.9383 13.9097 12.1161 12.9123L17.2037 18L18 17.2037ZM7.75726 13.3883C4.65248 13.3883 2.12622 10.862 2.12622 7.75726C2.12622 4.65248 4.65248 2.12622 7.75726 2.12622C10.862 2.12622 13.3883 4.65248 13.3883 7.75726C13.3883 10.862 10.862 13.3883 7.75726 13.3883Z" fill="#6EB52C" stroke="#6EB52C"/>
-                </svg>
-            </div> -->
           </ul>
           <svg class="mobile-enter" width="35" height="29" viewBox="0 0 35 29" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -564,7 +560,7 @@
                 <a>YLS Проекти</a>
                 <a>YLS Новини</a>
                 <a>Контакти</a>
-                <a>Ua</a>
+                <a><span>Ua</span><span style="color: #828282; margin-left: 20px;">Ru</span></a>
                 <div class="contact-burger">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -2655,7 +2651,7 @@
       </div>
     </div>
   </footer>
-  <div id="preloader">
+ <div id="preloader">
     <svg  id="clip-path" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g class="circle-mask" clip-path="url(#clip0)">
       <path  d="M59.4552 56.0852C59.8215 57.1759 59.7735 58.3632 59.3205 59.4209C58.3233 58.8473 57.5711 57.9278 57.2065 56.8367C56.8418 55.7456 56.89 54.5587 57.3419 53.5007C58.3398 54.0735 59.092 54.9934 59.4552 56.0852Z" fill="#099939"/>
@@ -2703,7 +2699,7 @@
       </clipPath>
       </defs>
       </svg>
-  </div>
+  </div> 
 </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>

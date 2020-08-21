@@ -265,10 +265,19 @@
                 <li class="menu-items">YLS Проекти</li>
                 <li class="menu-items">YLS Новини</li>
                 <li class="menu-items">Контакти</li>
-                <li onclick="openSearch()" class="menu-items"><svg class="circle-svg" width="7" height="7"
-                        viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="menu-dropdown">
+                    <li class="menu-items">
+                      <svg class="circle-svg" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <circle cx="3.5" cy="3.5" r="3.5" fill="#6EB52C" />
-                    </svg>Ua</li>
+                      </svg>Ua
+                      <div class="dropdown-content drondown_language">
+                        <ul class="content-items">
+                          <li class="down-item">Ru</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </span>
                 <li class="menu-items search-items">
                     <form class="search-form">
                         <div class="input-group search-group">
@@ -521,7 +530,7 @@
                         <a>YLS Проекти</a>
                         <a>YLS Новини</a>
                         <a>Контакти</a>
-                        <a>Ua</a>
+                        <a><span>Ua</span><span style="color: #828282; margin-left: 20px;">Ru</span></a>
                         <div class="contact-burger">
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">

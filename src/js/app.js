@@ -141,13 +141,13 @@ if ($('*').is('.about-yls')) {
 }
 }
 //pre
-if ($('*').is('.main-container')) {
+if ($('*').is('#main-container')) {
+
 function loadData() {
   return new Promise((resolve, reject) => {
     setTimeout(resolve, 2000);
   })
 }
-
 loadData()
   .then(() => {
     let preloaderEl = document.getElementById('preloader');
@@ -519,10 +519,6 @@ $('.slider-nav').slick({
     verticalSwiping: true
 });
 
-
-
-
-
 // CALC
 $('.stepwrap1 .next-step').click(function () {
     $('.stepnum').addClass('stephide');
@@ -575,20 +571,19 @@ $('.stepwrap4 .prev-step').click(function () {
     $('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
     $('.stepshead__box.box3').addClass('active');
 });
-
 $(document).ready(function () {
     if ($(window).width() < 768) {
-        $('.sidebar-filter__cont').click(function () {
-            $(this).children('form').slideToggle();
-            $(this).toggleClass('rotatebefore');
+        $('.sidebar-filter__cont .title').click(function () {
+            $(this).next().slideToggle();
+            $(this).parent().toggleClass('rotatebefore');
         });
     }
 
     $(window).resize(function () {
         if ($(window).width() < 768) {
-            $('.sidebar-filter__cont').click(function () {
-                $(this).children('form').slideToggle();
-                $(this).toggleClass('rotatebefore');
+            $('.sidebar-filter__cont .title').click(function () {
+                $(this).next().slideToggle();
+                $(this).parent().toggleClass('rotatebefore');
             });
         }
     });

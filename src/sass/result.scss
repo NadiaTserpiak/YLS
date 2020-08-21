@@ -1,0 +1,11 @@
+#left_block{
+    min-height: 0px;
+}
+#block_result{
+ margin-left: -80px;
+}
+@media screen and (max-width: 991px) {
+    #block_result{
+        margin-left: 0;
+       }  
+}

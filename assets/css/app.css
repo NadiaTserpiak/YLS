@@ -575,6 +575,14 @@ Dots */
   margin-left: -38px;
 }
 
+.drondown_language {
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 8px;
+  width: 59px;
+  height: 47px;
+  margin-left: -19px;
+}
+
 .dropdown-content .content-items {
   font-weight: 800;
   font-size: 16px;
@@ -4591,12 +4599,17 @@ header {
     background-size: 100% 100%;
     position: absolute;
     right: 0;
-    top: 7px;
+    top: 0;
     transition: 0.3s;
   }
 
   .sidebar-filter__cont.rotatebefore:after {
     transform: rotate(-180deg);
+  }
+
+  .sidebar-filter .sidebar-filter__wrap .sidebar-filter__cont > .title {
+    position: relative;
+    z-index: 2;
   }
 }
 @media (max-width: 575.8px) {
@@ -4756,6 +4769,11 @@ header {
   text-decoration: none;
   position: relative;
   top: -75px;
+  transition: 0.3s ease;
+}
+.abcourses__topsect .rightbox .reglink:hover {
+  -webkit-filter: drop-shadow(0px 14px 15px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0px 14px 15px rgba(0, 0, 0, 0.3));
 }
 .abcourses__topsect .abcours-btnsection {
   text-align: center;
@@ -5039,6 +5057,11 @@ header {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   padding: 25px 20px 20px 20px;
+  transition: 0.3s ease;
+}
+.learn-program .learn-program__box a.beauty-btn:hover {
+  -webkit-filter: drop-shadow(0px 14px 15px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0px 14px 15px rgba(0, 0, 0, 0.3));
 }
 
 .todown {
@@ -6290,6 +6313,19 @@ footer .footer__content-right .footer__greenbtn:hover {
 
   .calcform .stepwrap4 .radiofield .radiofield__box .radiobox label {
     display: block;
+  }
+}
+#left_block {
+  min-height: 0px;
+}
+
+#block_result {
+  margin-left: -80px;
+}
+
+@media screen and (max-width: 991px) {
+  #block_result {
+    margin-left: 0;
   }
 }
 footer {

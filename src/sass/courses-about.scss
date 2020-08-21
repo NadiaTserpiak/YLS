@@ -88,6 +88,10 @@
             text-decoration: none;
             position: relative;
             top: -75px;
+            transition: 0.3s ease;
+            &:hover {
+                filter: drop-shadow(0px 14px 15px rgba(0, 0, 0, 0.3));
+            }
         }
     }
 
@@ -371,6 +375,10 @@
 
         a.beauty-btn {
             @include beauty-button;
+            transition: 0.3s ease;
+            &:hover {
+                filter: drop-shadow(0px 14px 15px rgba(0, 0, 0, 0.3));
+            }
         }
     }
 }
@@ -514,6 +522,7 @@
 
     .learn-program .learn-program__box a.beauty-btn {
         margin-bottom: 40px;
+ 
     }
 
     .learn-program .learn-program__box ul {

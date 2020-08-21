@@ -51,12 +51,6 @@
       }
     
   }
-//   #preloader:after {
-//     content: "";
-//     font-size: 60px;
-//     margin: 0 auto;
-//     animation: spin 3s linear;
-//   }
  
   .visible {
     visibility: visible;
@@ -262,7 +256,13 @@
     text-align: center;
     margin-left: -38px;
 }
-
+.drondown_language{
+    background: rgb(0, 0, 0, 0.5);
+    padding-top: 8px;
+    width: 59px;
+    height: 47px;
+    margin-left: -19px;
+}
 .dropdown-content .content-items {
     font-weight: 800;
     font-size: 16px;
@@ -387,6 +387,8 @@
     text-align: left;
     transition: 0.3s;
 }
+ 
+ 
 
 .overlay a:hover,
 .overlay a:focus {
