@@ -724,10 +724,7 @@ header {
     .sidebar-filter__cont.rotatebefore:after {
         transform: rotate(-180deg);
     }
-    .sidebar-filter .sidebar-filter__wrap .sidebar-filter__cont > .title {
-        position: relative;
-        z-index: 2;
-    }
+  
 
 }
 @media (max-width: 575.8px) {
